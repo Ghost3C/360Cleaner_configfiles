@@ -1,0 +1,3275 @@
+[General]
+LastCount=83
+
+[Categorys]
+1=Internet Explorer上网历史痕迹|9|Internet Explorer浏览器上网产生的访问历史、临时文件，建议定期清理。|1000|10485760
+11=Firefox上网历史痕迹|35|Firefox浏览器上网产生的访问历史、临时文件，建议定期清理。|1000|10485760
+12=Chrome上网历史痕迹|38|Chrome浏览器上网产生的访问历史、临时文件，建议定期清理。|1000|10485760
+13=其他上网历史痕迹|39|其他浏览器或工具上网产生的访问历史、临时文件，建议定期清理。|1000|10485760
+3=系统历史痕迹|0|Windows使用过程中产生的痕迹，建议定期清理。|100|10485760
+
+41=Windows自带程序|73|Windows操作系统内置程序100|10485760
+42=办公软件|51|文本编辑器程序100|10485760
+43=媒体播放|14|主流音视频播放程序清理100|10485760
+44=压缩工具|18|数据压缩解压工具清理100|10485760
+59=其他应用程序|4|其他应用程序100|10485760
+5=注册表|19
+999=垃圾文件|0
+8=Windows8 Metro App|0
+
+[ProcNames]
+iexplore.exe=IE浏览器
+360se.exe=360安全浏览器
+theworld.exe=世界之窗浏览器
+twchrome.exe=世界之窗浏览器
+ttraveler.exe=腾讯TT浏览器
+greenbrowser.exe=绿色浏览器
+greenbrowser.ex=绿色浏览器
+360chrome.exe=360极速浏览器
+Chrome.exe=Chrome浏览器
+;太阳花浏览器=chrome.exe
+;枫树浏览器=chrome.exe
+liebao.exe=猎豹浏览器
+SogouExplorer.exe=搜狗浏览器
+SogouExplorer.e=搜狗浏览器
+Alibrowser.exe=阿云浏览器
+dragon.exe=Comodo龙安全浏览器
+FireFox.exe=FireFox浏览器
+opera.exe=Opera浏览器
+Safari.exe=Safari浏览器
+baidubrowser.exe=百度浏览器
+myie.exe=MyIE2浏览器
+maxthon.exe=傲游浏览器
+saayaa.exe=闪游浏览器
+krbrowser.exe=KR浏览器
+UCBrowser.exe=UC浏览器
+KChrome.exe=快快浏览器
+Juzi.exe=桔子浏览器
+2345Explorer.exe=2345王牌浏览器
+2345chrome.exe=2345加速浏览器
+hao123browser.exe=百度浏览器hao123专版
+
+;Internet Explorer
+[CustomTraceIE001]
+Category=1
+Order=1
+AppName=Internet Explorer 清理
+ICONID=9
+ProcName=iexplore.exe;theworld.exe;360se.exe;greenbrowser.exe;greenbrowser.ex;ttraveler.exe;saayaa.exe;maxthon.exe;myie.exe;krbrowser.exe;UCBrowser.exe;KChrome.exe;Juzi.exe
+Installed=1
+IncludeOtherProc=1
+
+[CustomTraceIE005]
+Category=1
+Order=2
+AppName=Internet Explorer 地址栏网址历史
+ICONID=9
+Recommend=False
+ProcName=iexplore.exe;theworld.exe;360se.exe;greenbrowser.exe;greenbrowser.ex;ttraveler.exe;saayaa.exe;maxthon.exe;myie.exe;krbrowser.exe;UCBrowser.exe;KChrome.exe;Juzi.exe
+Installed=1
+IncludeOtherProc=1
+;Item1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\TypedURLs|(RegExpr="(?i)url[\d]+")(ShowValue=1)
+
+
+[CustomTraceIE004]
+Category=1
+Order=3
+AppName=Internet Explorer Cookie
+ICONID=9
+Recommend=False
+ProcName=iexplore.exe;theworld.exe;360se.exe;greenbrowser.exe;greenbrowser.ex;ttraveler.exe;saayaa.exe;maxthon.exe;myie.exe;krbrowser.exe;UCBrowser.exe;KChrome.exe;Juzi.exe
+Installed=1
+IncludeOtherProc=1
+
+[CustomTraceIE002]
+Category=1
+Order=4
+AppName=Internet Explorer 自动保存的表单(清理时有效)
+ICONID=9
+Recommend=False
+ProcName=iexplore.exe;theworld.exe;360se.exe;greenbrowser.exe;greenbrowser.ex;ttraveler.exe;saayaa.exe;maxthon.exe;myie.exe;krbrowser.exe;UCBrowser.exe;KChrome.exe;Juzi.exe
+Installed=1
+IncludeOtherProc=1
+
+[CustomTraceIE003]
+Category=1
+Order=5
+AppName=Internet Explorer 自动保存的密码(清理时有效)
+ICONID=9
+Recommend=False
+ProcName=iexplore.exe;theworld.exe;360se.exe;greenbrowser.exe;greenbrowser.ex;ttraveler.exe;saayaa.exe;maxthon.exe;myie.exe;krbrowser.exe;UCBrowser.exe;KChrome.exe;Juzi.exe
+Installed=1
+IncludeOtherProc=1
+
+[CustomTraceIEIndexDat]
+Category=1
+Order=5
+AppName=Internet Explorer Index.dat上网痕迹清理
+ICONID=9
+Recommend=False
+ProcName=iexplore.exe;theworld.exe;360se.exe;greenbrowser.exe;greenbrowser.ex;ttraveler.exe;saayaa.exe;maxthon.exe;myie.exe;krbrowser.exe;UCBrowser.exe;KChrome.exe;Juzi.exe
+Installed=1
+IncludeOtherProc=1
+
+[CustomTraceIEVisitHistory]
+Category=1
+Order=1
+AppName=Internet Explorer 访问历史
+ICONID=9
+ProcName=iexplore.exe;theworld.exe;360se.exe;greenbrowser.exe;greenbrowser.ex;ttraveler.exe;saayaa.exe;maxthon.exe;myie.exe;krbrowser.exe;UCBrowser.exe;KChrome.exe;Juzi.exe
+Installed=1
+IncludeOtherProc=1
+
+;Firefox
+[Trace000010]
+Category=11
+Order=1
+AppName=FireFox 缓存清理
+ICONID=35
+ProcName=firefox.exe
+DataFile1=IniKey|%APPDATA%\Mozilla\Firefox\Profiles.ini|(section=Profile0)(ident=Path)
+DataFile2=FirefoxValue|%APPDATA%\Mozilla\Firefox\%DataFile1%
+DataFile3=FirefoxValue|%LOCAL_APPDATA%\Mozilla\Firefox\%DataFile1%
+Item1=Directory|%DataFile2%\Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item2=Directory|%DataFile3%\Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe
+
+[TraceFireFoxHistory]
+Category=11
+Order=1
+AppName=FireFox 历史清理
+ICONID=35
+ProcName=firefox.exe
+DataFile1=IniKey|%APPDATA%\Mozilla\Firefox\Profiles.ini|(section=Profile0)(ident=Path)
+DataFile2=FirefoxValue|%APPDATA%\Mozilla\Firefox\%DataFile1%
+DataFile3=FirefoxValue|%LOCAL_APPDATA%\Mozilla\Firefox\%DataFile1%
+Item1=SQLite|%APPDATA%\Mozilla\Firefox\%DataFile1%\places.sqlite|(Table=moz_historyvisits)
+Item2=SQLite|%APPDATA%\Mozilla\Firefox\%DataFile1%\places.sqlite|(Table=moz_places)(condition="where id not in (select fk from moz_bookmarks where not fk isnull)")
+;Item3=SQLite|%APPDATA%\Mozilla\Firefox\%DataFile1%\downloads.sqlite|(Table=moz_downloads)
+Item3=File|%APPDATA%\Mozilla\Firefox\%DataFile1%|(files=2history url;downloads.rdf;history.dat;sessionstore.js;downloads.sqlite)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe
+
+
+
+[Trace000011]
+Category=11
+Order=2
+AppName=FireFox 自动保存的表单和搜索历史
+ICONID=35
+Recommend=False
+ProcName=firefox.exe
+DataFile1=IniKey|%APPDATA%\Mozilla\Firefox\Profiles.ini|(section=Profile0)(ident=Path)
+;Item1=SQLite|%APPDATA%\Mozilla\Firefox\%DataFile1%\formhistory.sqlite|(Table=moz_formhistory)
+Item1=File|%APPDATA%\Mozilla\Firefox\%DataFile1%|(files=formhistory.dat;formhistory.sqlite)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe
+
+[Trace000012]
+Category=11
+Order=3
+AppName=FireFox 自动保存的密码
+ICONID=35
+Recommend=False
+ProcName=firefox.exe
+DataFile1=IniKey|%APPDATA%\Mozilla\Firefox\Profiles.ini|(section=Profile0)(ident=Path)
+Item1=SQLite|%APPDATA%\Mozilla\Firefox\%DataFile1%\signons.sqlite|(Table=moz_logins)(ScanFolder=1)
+Item2=File|%APPDATA%\Mozilla\Firefox\%DataFile1%|(files=signons2.txt)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe
+
+[TraceFirefoxCookie]
+Category=11
+Order=4
+AppName=FireFox Cookie
+Recommend=False
+ICONID=35
+ProcName=firefox.exe
+DataFile1=IniKey|%APPDATA%\Mozilla\Firefox\Profiles.ini|(section=Profile0)(ident=Path)
+Item1=File|%APPDATA%\Mozilla\Firefox\%DataFile1%|(files=cookies.txt;cookies.sqlite)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe
+
+;Chrome
+[Trace000013]
+Category=12
+Order=1
+AppName=Chrome 缓存文件清理
+ICONID=38
+ProcName=chrome.exe
+Item1=Directory|%LOCAL_APPDATA%\Google\Chrome\User Data\Default\Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item2=Directory|%LOCAL_APPDATA%\Google\Chrome\User Data\Default\Media Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item3=Directory|%LOCAL_APPDATA%\Google\Chrome\User Data\Default\App Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item4=Directory|%LOCAL_APPDATA%\Google\Chrome\User Data\Default\Application Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item5=Directory|%LOCAL_APPDATA%\Google\Chrome\User Data\Default\JumpListIcons|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item6=Directory|%LOCAL_APPDATA%\Google\Chrome\User Data\Default\JumpListIconsOld|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+InstallKey=File|%LOCAL_APPDATA%\Google\Chrome\Application\chrome.exe
+
+
+[Trace000013Chrome]
+Category=12
+Order=1
+AppName=Chrome 历史清理
+ICONID=38
+ProcName=chrome.exe
+Item0=SQLite|%LOCAL_APPDATA%\Google\Chrome\User Data\Default\History|(Table=visits)
+Item1=SQLite|%LOCAL_APPDATA%\Google\Chrome\User Data\Default\History|(Table=keyword_search_terms)
+Item2=SQLite|%LOCAL_APPDATA%\Google\Chrome\User Data\Default\History|(Table=downloads)
+Item3=Directory|%LOCAL_APPDATA%\Google\Chrome\User Data\Default|(include=History Index *;Archived History*;Visited Links;Current Tabs;Last Tabs;Current Session;Last Session;History Provider Cache;Shortcuts*)(IncludeSubFolder=0)
+InstallKey=File|%LOCAL_APPDATA%\Google\Chrome\Application\chrome.exe
+
+[Trace000014]
+Category=12
+Order=2
+AppName=Chrome 自动保存的表单
+ProcName=chrome.exe
+ICONID=38
+Recommend=False
+Item1=SQLite|%LOCAL_APPDATA%\Google\Chrome\User Data\Default\Web Data|(Table=autofill)
+Item2=SQLite|%LOCAL_APPDATA%\Google\Chrome\User Data\Default\Web Data|(Table=autofill_dates)
+InstallKey=File|%LOCAL_APPDATA%\Google\Chrome\Application\chrome.exe
+
+[Trace000015]
+Category=12
+Order=3
+AppName=Chrome 自动保存的密码
+ProcName=chrome.exe
+ICONID=38
+Recommend=False
+Item1=SQLite|%LOCAL_APPDATA%\Google\Chrome\User Data\Default\Web Data|(Table=logins)
+Item2=SQLite|%LOCAL_APPDATA%\Google\Chrome\User Data\Default\Login Data|(Table=logins)
+InstallKey=File|%LOCAL_APPDATA%\Google\Chrome\Application\chrome.exe
+
+[Trace000016]
+Category=12
+Order=3
+AppName=Chrome 快速拨号(九宫格)
+ProcName=chrome.exe
+ICONID=38
+Recommend=False
+Item1=Directory|%LOCAL_APPDATA%\Google\Chrome\User Data\Default|(include=Top Sites*)(IncludeSubFolder=0)
+Item2=SQLite|%LOCAL_APPDATA%\Google\Chrome\User Data\Default\History|(Table=segments)
+Item3=SQLite|%LOCAL_APPDATA%\Google\Chrome\User Data\Default\History|(Table=segment_usages)
+Item4=SQLite|%LOCAL_APPDATA%\Google\Chrome\User Data\Default\History|(Table=segment_usage)
+Item5=SQLite|%LOCAL_APPDATA%\Google\Chrome\User Data\Default\History|(Table=urls)
+InstallKey=File|%LOCAL_APPDATA%\Google\Chrome\Application\chrome.exe
+
+[TraceChromeCookie]
+Category=12
+Order=4
+AppName=Chrome Cookie
+Recommend=False
+ICONID=38
+ProcName=chrome.exe
+Item1=SQLite|%LOCAL_APPDATA%\Google\Chrome\User Data\Default\Cookies|(Table=cookies)
+InstallKey=File|%LOCAL_APPDATA%\Google\Chrome\Application\chrome.exe
+
+;chromium
+[TraceChromiumCache]
+Category=12
+Order=1
+AppName=Chromium 缓存文件清理
+ICONID=38
+ProcName=chrome.exe
+Item1=Directory|%LOCAL_APPDATA%\Chromium\User Data\*\Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item2=Directory|%LOCAL_APPDATA%\Chromium\User Data\*\Media Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item3=Directory|%LOCAL_APPDATA%\Chromium\User Data\*\App Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item4=Directory|%LOCAL_APPDATA%\Chromium\User Data\*\Application Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item5=Directory|%LOCAL_APPDATA%\Chromium\User Data\*\JumpListIcons|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item6=Directory|%LOCAL_APPDATA%\Chromium\User Data\*\JumpListIconsOld|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+InstallKey=File|%LOCAL_APPDATA%\Chromium\Application\chrome.exe
+
+
+[TraceChromiumHistory]
+Category=12
+Order=1
+AppName=Chromium 历史清理
+ICONID=38
+ProcName=chrome.exe
+Item1=SQLite|%LOCAL_APPDATA%\Chromium\User Data\*\History|(Table=segments)
+Item2=SQLite|%LOCAL_APPDATA%\Chromium\User Data\*\History|(Table=segment_usages)
+Item3=SQLite|%LOCAL_APPDATA%\Chromium\User Data\*\History|(Table=visits)
+Item4=SQLite|%LOCAL_APPDATA%\Chromium\User Data\*\History|(Table=keyword_search_terms)
+Item5=SQLite|%LOCAL_APPDATA%\Chromium\User Data\*\History|(Table=downloads)
+Item6=Directory|%LOCAL_APPDATA%\Chromium\User Data\*\|(include=History Index *;Archived History*;Visited Links;Current Tabs;Top Sites*;Last Tabs;Current Session;Last Session;History Provider Cache;Shortcuts*)(IncludeSubFolder=0)
+Item7=SQLite|%LOCAL_APPDATA%\Chromium\User Data\*\History|(Table=segment_usage)
+Item8=SQLite|%LOCAL_APPDATA%\Chromium\User Data\*\History|(Table=urls)
+InstallKey=File|%LOCAL_APPDATA%\Chromium\Application\chrome.exe
+
+[TraceChromiumForm]
+Category=12
+Order=2
+AppName=Chromium 自动保存的表单
+ProcName=chrome.exe
+ICONID=38
+Recommend=False
+Item1=SQLite|%LOCAL_APPDATA%\Chromium\User Data\*\Web Data|(Table=autofill)
+Item2=SQLite|%LOCAL_APPDATA%\Chromium\User Data\*\Web Data|(Table=autofill_dates)
+InstallKey=File|%LOCAL_APPDATA%\Chromium\Application\chrome.exe
+
+
+[TraceChromiumPassword]
+Category=12
+Order=3
+AppName=Chromium 自动保存的密码
+ProcName=chrome.exe
+ICONID=38
+Recommend=False
+Item1=SQLite|%LOCAL_APPDATA%\Chromium\User Data\*\Web Data|(Table=logins)
+Item2=SQLite|%LOCAL_APPDATA%\Chromium\User Data\*\Login Data|(Table=logins)
+InstallKey=File|%LOCAL_APPDATA%\Chromium\Application\chrome.exe
+
+[TraceChromiumCookie]
+Category=12
+Order=4
+AppName=Chromium Cookie
+Recommend=False
+ICONID=38
+ProcName=chrome.exe
+Item1=SQLite|%LOCAL_APPDATA%\Chromium\User Data\*\Cookies|(Table=cookies)
+InstallKey=File|%LOCAL_APPDATA%\Chromium\Application\chrome.exe
+
+;Chrome Canary
+[TraceChromeCanaryCache]
+Category=12
+Order=1
+AppName=Chrome Canary 缓存文件清理
+ICONID=38
+ProcName=chrome.exe
+Item1=Directory|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item2=Directory|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\Media Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item3=Directory|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\App Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item4=Directory|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\Application Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item5=Directory|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\JumpListIcons|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item6=Directory|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\JumpListIconsOld|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+InstallKey=File|%LOCAL_APPDATA%\Google\Chrome SxS\Application\chrome.exe
+
+
+[TraceChromeCanaryHistory]
+Category=12
+Order=1
+AppName=Chrome Canary 历史清理
+ICONID=38
+ProcName=chrome.exe
+Item1=SQLite|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\History|(Table=segments)
+Item2=SQLite|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\History|(Table=segment_usages)
+Item3=SQLite|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\History|(Table=visits)
+Item4=SQLite|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\History|(Table=keyword_search_terms)
+Item5=SQLite|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\History|(Table=downloads)
+Item6=Directory|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\|(include=History Index *;Archived History*;Visited Links;Current Tabs;Top Sites*;Last Tabs;Current Session;Last Session;History Provider Cache;Shortcuts*)(IncludeSubFolder=0)
+Item7=SQLite|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\History|(Table=segment_usage)
+Item8=SQLite|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\History|(Table=urls)
+InstallKey=File|%LOCAL_APPDATA%\Google\Chrome SxS\Application\chrome.exe
+
+[TraceChromeCanaryForm]
+Category=12
+Order=2
+AppName=Chrome Canary 自动保存的表单
+ProcName=chrome.exe
+ICONID=38
+Recommend=False
+Item1=SQLite|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\Web Data|(Table=autofill)
+Item2=SQLite|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\Web Data|(Table=autofill_dates)
+InstallKey=File|%LOCAL_APPDATA%\Google\Chrome SxS\Application\chrome.exe
+
+
+[TraceChromeCanaryPassword]
+Category=12
+Order=3
+AppName=Chrome Canary 自动保存的密码
+ProcName=chrome.exe
+ICONID=38
+Recommend=False
+Item1=SQLite|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\Web Data|(Table=logins)
+Item2=SQLite|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\Login Data|(Table=logins)
+InstallKey=File|%LOCAL_APPDATA%\Google\Chrome SxS\Application\chrome.exe
+
+[TraceChromeCanaryCookie]
+Category=12
+Order=4
+AppName=Chrome Canary Cookie
+Recommend=False
+ICONID=38
+ProcName=chrome.exe
+Item1=SQLite|%LOCAL_APPDATA%\Google\Chrome SxS\User Data\*\Cookies|(Table=cookies)
+InstallKey=File|%LOCAL_APPDATA%\Google\Chrome SxS\Application\chrome.exe
+
+;comodo 龙浏览器
+[TraceComodoDragonCache]
+Category=12
+Order=1
+AppName=Comodo 龙安全浏览器缓存文件清理
+ICONID=38
+ProcName=dragon.exe
+Item1=Directory|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item2=Directory|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\Media Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item3=Directory|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\App Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item4=Directory|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\Application Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item5=Directory|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\JumpListIcons|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item6=Directory|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\JumpListIconsOld|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\dragon.exe
+
+
+[TraceComodoDragonHistory]
+Category=12
+Order=1
+AppName=Comodo 龙安全浏览器历史清理
+ICONID=38
+ProcName=dragon.exe
+Item1=SQLite|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\History|(Table=segments)
+Item2=SQLite|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\History|(Table=segment_usages)
+Item3=SQLite|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\History|(Table=visits)
+Item4=SQLite|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\History|(Table=keyword_search_terms)
+Item5=SQLite|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\History|(Table=downloads)
+Item6=Directory|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\|(include=History Index *;Archived History*;Visited Links;Current Tabs;Top Sites*;Last Tabs;Current Session;Last Session;History Provider Cache;Shortcuts*)(IncludeSubFolder=0)
+Item7=SQLite|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\History|(Table=segment_usage)
+Item8=SQLite|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\History|(Table=urls)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\dragon.exe
+
+[TraceComodoDragonForm]
+Category=12
+Order=2
+AppName=Comodo 龙安全浏览器自动保存的表单
+ProcName=dragon.exe
+ICONID=38
+Recommend=False
+Item1=SQLite|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\Web Data|(Table=autofill)
+Item2=SQLite|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\Web Data|(Table=autofill_dates)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\dragon.exe
+
+
+[TraceComodoDragonPassword]
+Category=12
+Order=3
+AppName=Comodo 龙安全浏览器自动保存的密码
+ProcName=dragon.exe
+ICONID=38
+Recommend=False
+Item1=SQLite|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\Web Data|(Table=logins)
+Item2=SQLite|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\Login Data|(Table=logins)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\dragon.exe
+
+[TraceComodoDragonCookie]
+Category=12
+Order=4
+AppName=Comodo 龙安全浏览器Cookie
+Recommend=False
+ICONID=38
+ProcName=dragon.exe
+Item1=SQLite|%LOCAL_APPDATA%\COMODO\Dragon\User Data\*\Cookies|(Table=cookies)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\dragon.exe
+
+;其他上网工具
+[Trace000071]
+Category=13
+Order=1
+AppName=360极速浏览器缓存
+ICONID=38
+ProcName=360chrome.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360chrome.exe\Path
+InstallPath2=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\360chrome.exe\Path
+Item1=Directory|%InstallPath%\..\User Data\Default\CacheIE|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item2=Directory|%InstallPath%\..\User Data\Default\Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item3=Directory|%InstallPath%\..\User Data\Default\Media Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item4=Directory|%InstallPath%\..\User Data\Default\App Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item5=Directory|%InstallPath%\..\User Data\Default\Application Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item6=Directory|%InstallPath%\..\User Data\Default\JumpListIcons|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item7=Directory|%InstallPath%\..\User Data\Default\JumpListIconsOld|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360chrome.exe;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\360chrome.exe
+
+
+[Trace360Chrome]
+Category=13
+Order=1
+AppName=360极速浏览器历史
+ICONID=38
+ProcName=360chrome.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360chrome.exe\Path
+InstallPath2=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\360chrome.exe\Path
+Item1=Directory|%InstallPath%\..\User Data\Default|(include=History Index*;History;Thumbnails;Visited Links;Current Tabs;Top Sites*;Last Tabs;Current Session;Archived History*;Last Session;Shortcuts*)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360chrome.exe;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\360chrome.exe
+
+
+[Trace360ChromeFormData]
+Category=13
+Order=1
+AppName=360极速浏览器表单和密码
+ICONID=38
+ProcName=360chrome.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360chrome.exe\Path
+InstallPath2=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\360chrome.exe\Path
+Item1=Directory|%InstallPath%\..\User Data\Default|(include=Login Data)(IncludeSubFolder=0)
+Item2=SQLite|%InstallPath%\..\User Data\Default\Web Data|(Table=autofill)
+Item3=SQLite|%InstallPath%\..\User Data\Default\Web Data|(Table=autofill_dates)
+Item4=SQLite|%InstallPath%\..\User Data\Default\Web Data|(Table=autofill_profiles)
+Item5=SQLite|%InstallPath%\..\User Data\Default\Web Data|(Table=logins)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360chrome.exe;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\360chrome.exe
+
+[Trace360ChromeCookie]
+Category=13
+Order=1
+AppName=360极速浏览器Cookie
+ICONID=38
+ProcName=360chrome.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360chrome.exe\Path
+InstallPath2=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\360chrome.exe\Path
+Item1=Directory|%InstallPath%\..\User Data\Default|(include=Cookies)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360chrome.exe;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\360chrome.exe
+
+
+[Trace360se6Cache]
+Category=13
+Order=1
+AppName=360安全浏览器缓存
+ICONID=38
+ProcName=360se.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se6.exe\Path
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se.exe\Path
+InstallPath3=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se 3.exe\Path
+Item1=Directory|%InstallPath%\..\User Data\Default\CacheIE|(DeleteSubFolder=0)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item2=Directory|%InstallPath%\..\User Data\Default\Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item3=Directory|%InstallPath%\..\User Data\Default\Media Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item4=Directory|%InstallPath%\..\User Data\Default\App Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item5=Directory|%InstallPath%\..\User Data\Default\Application Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item6=Directory|%InstallPath%\..\User Data\Default\JumpListIcons|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item7=Directory|%InstallPath%\..\User Data\Default\JumpListIconsOld|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se6.exe;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se.exe;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se 3.exe
+
+
+[Trace360se6History]
+Category=13
+Order=1
+AppName=360安全浏览器历史
+ICONID=38
+ProcName=360se.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se6.exe\Path
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se.exe\Path
+InstallPath3=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se 3.exe\Path
+Item1=Directory|%InstallPath%\..\User Data\Default|(include=History Index*;History;Thumbnails;Visited Links;Current Tabs;Last Tabs;Current Session;Archived History*;Last Session;Shortcuts*)(IncludeSubFolder=0)
+Item2=File|%AppData%\360se\*\data\|(files=history.dat)
+Item3=File|%AppData%\360se\data\history.dat
+Item4=File|%AppData%\360se\data\user.dat
+Item5=Directory|%InstallPath%\User Data\Default|(include=History Index*;History;Thumbnails;Visited Links;Current Tabs;Last Tabs;Current Session;Archived History*;Last Session;Shortcuts*)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se6.exe;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se.exe;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se 3.exe
+
+
+[Trace360se6FormData]
+Category=13
+Order=1
+AppName=360安全浏览器表单和密码
+ICONID=38
+ProcName=360se.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se6.exe\Path
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se.exe\Path
+InstallPath3=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se 3.exe\Path
+Item1=Directory|%InstallPath%\..\User Data\Default|(include=Login Data)(IncludeSubFolder=0)
+Item2=SQLite|%InstallPath%\..\User Data\Default\Web Data|(Table=autofill)
+Item3=SQLite|%InstallPath%\..\User Data\Default\Web Data|(Table=autofill_dates)
+Item4=SQLite|%InstallPath%\..\User Data\Default\Web Data|(Table=autofill_profiles)
+Item5=SQLite|%InstallPath%\..\User Data\Default\Web Data|(Table=logins)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se6.exe;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se.exe;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se 3.exe
+
+[Trace360se6Cookie]
+Category=13
+Order=1
+AppName=360安全浏览器Cookie
+ICONID=38
+ProcName=360se.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se6.exe\Path
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se.exe\Path
+InstallPath3=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se 3.exe\Path
+Item1=Directory|%InstallPath%\..\User Data\Default|(include=Cookies)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se6.exe;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se.exe;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se 3.exe
+
+[Trace000040]
+Category=13
+Order=2
+AppName=Maxthon浏览器历史
+ICONID=32
+ProcName=maxthon.exe
+DataFile1=RegValue|HKEY_CURRENT_USER\Software\Maxthon\Folder
+DataFile2=RegValue|HKEY_CURRENT_USER\Software\Maxthon2\Folder
+;DataFile3=RegValue|HKEY_CURRENT_USER\Software\Maxthon3\Folder
+Item1=File|%DataFile1%\Config\Dynamic.ini
+Item2=File|%DataFile2%\*\Data\LastSession.ini
+Item3=File|%DataFile2%\*\Data\Session.ini
+Item4=File|%DataFile2%\*\Data\Dynamic.ini
+Item5=File|%DataFile2%\*\Data\history2.dat
+Item6=File|%AppData%\Maxthon3\Users\*\History|(files=History.dat;lasttab.dat;mxundo.dat)
+Item7=IniSection|%AppData%\Maxthon3\Users\*\Config\config.ini|(SectionList=LastTabs)
+InstallKey=Directory|%AppData%\Maxthon3\;%AppData%\Maxthon2;
+
+
+[Trace000075]
+Category=13
+Order=3
+AppName=Maxthon地址栏历史记录
+ICONID=32
+Recommend=False
+ProcName=maxthon.exe
+DataFile1=RegValue|HKEY_CURRENT_USER\Software\Maxthon2\Folder
+Item1=INISection|%DataFile1%\*\Config\Config.ini|(SectionList=TypedUrls)
+Item2=File|%AppData%\Maxthon3\Users\*\SmartUrl\SmartUrl.dat
+InstallKey=Directory|%AppData%\Maxthon3\;%AppData%\Maxthon2;
+
+
+[TraceMaxthonCookie]
+Category=13
+Order=2
+AppName=Maxthon浏览器Cookie
+ICONID=32
+ProcName=maxthon.exe
+Item1=File|%AppData%\Maxthon3\Users\*\Cookie\Cookie.dat
+InstallKey=Directory|%AppData%\Maxthon3\;%AppData%\Maxthon2;
+
+[Trace000038]
+Category=13
+AppName=MyIE2
+ICONID=29
+ProcName=myie.exe
+DataFile1=RegValue|HKEY_CURRENT_USER\Software\MYIE2\Folder
+Item1=IniKey|%DataFile1%\Config\myie.ini|(Section=UndoUrl)(RegExpr="(?i)(Title|url)[\d]+")
+Item2=IniKey|%Local_AppData%\VirtualStore\Program Files\MYIE2\Config\myie.ini|(Section=UndoUrl)(RegExpr="(?i)(Title|url)[\d]+")
+Order=4
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\MYIE2;
+
+[Trace000069]
+Category=13
+Order=5
+AppName=腾讯TT浏览器历史记录
+ICONID=68
+ProcName=TTraveler.exe
+Item1=SQLite|%AppData%\Tencent\TencentTraveler\100\navinfo.db|(Table=histable)
+Item2=SQLite|%AppData%\Tencent\TencentTraveler\100\navinfo.db|(Table=urltable)(condition="where iIndex not in (select iUrlIndex from favtable)")
+Item3=IniSection|%AppData%\Tencent\TencentTraveler\100\TtConf.dat|(SectionList=strNameSpace_Mbrowser;SEARCHHISTORY;MAXVISITURLS;MAXVISITHOSTS;LASTOPENURL;CUROPENURL)
+Item4=File|%AppData%\Tencent\TencentTraveler\100|(files=NewMostVisitInfo.ini;TtConf.dat.bak)
+InstallKey=Directory|%AppData%\Tencent\TencentTraveler
+
+[TraceQQBrowser]
+Category=13
+Order=5
+AppName=腾讯QQ浏览器历史记录
+ICONID=68
+ProcName=QQBrowser.exe
+Item1=Directory|%AppData%\Tencent\QQBrowser\thumb|(IncludeSubFolder=1)(exclude=thumbs.db)(FilterWhiteList=0)
+Item2=SQLite|%AppData%\Tencent\QQBrowser\user_data\0\recent_closed_tab.db|(Table=recent_closed_tab)
+Item3=SQLite|%AppData%\Tencent\QQBrowser\user_data\0\history.db|(Table=history)
+Item4=SQLite|%AppData%\Tencent\QQBrowser\user_data\0\{ED81EB6C-3DC4-4322-96F1-1B8716C404C4}.db|(Table=top_most)
+Item5=SQLite|%AppData%\Tencent\QQBrowser\user_data\0\{ED81EB6C-3DC4-4322-96F1-1B8716C404C4}.db|(Table=urls)
+Item6=SQLite|%AppData%\Tencent\QQBrowser\user_data\DB\history.db|(Table=history)
+Item7=SQLite|%AppData%\Tencent\QQBrowser\DB\history.db|(Table=history)
+Item8=File|%AppData%\Tencent\QQBrowser\repeal.xml
+InstallKey=Directory|%AppData%\Tencent\QQBrowser
+
+[TraceQQBrowserCookie]
+Category=13
+Order=5
+AppName=腾讯QQ浏览器Cookie
+ICONID=68
+ProcName=QQBrowser.exe
+Item1=File|%AppData%\Tencent\QQBrowser\user_data\0\cookie.db
+Item2=File|%AppData%\Tencent\QQBrowser\webkit_cache\*\|(files=cookies)
+InstallKey=Directory|%AppData%\Tencent\QQBrowser
+
+[TraceQQBrowserFormData]
+Category=13
+Order=5
+AppName=腾讯QQ浏览器自动保存的表单和密码
+ICONID=68
+ProcName=QQBrowser.exe
+Item1=SQLite|%AppData%\Tencent\QQBrowser\user_data\0\{75A78384-8765-4852-ABB7-8D5FA8BF48E2}.db|(Table=autoFillList)
+InstallKey=Directory|%AppData%\Tencent\QQBrowser
+
+[Trace000080]
+Category=13
+Order=5
+AppName=世界之窗浏览器(TheWorld)历史
+ICONID=29
+ProcName=TheWorld.exe;TheWorld6.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\TheWorld.exe\Path
+Item1=File|%InstallPath%\data|(files=history.dat;user.dat)
+Item2=File|%AppData%\TheWorld\data|(files=history.dat;user.dat)
+Item3=File|%AppData%\TheWorld 3\data|(files=history.dat;user.dat)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\TheWorld.exe
+
+[Trace000081]
+Category=13
+Order=5
+AppName=世界之窗极速浏览器(TheWorld Chrome)缓存
+ICONID=38
+ProcName=twchrome.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\twchrome.exe\Path
+Item1=Directory|%InstallPath%\..\User Data\Default\Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item2=Directory|%InstallPath%\..\User Data\Default\Media Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item3=Directory|%InstallPath%\..\User Data\Default\App Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item4=Directory|%InstallPath%\..\User Data\Default\Application Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item5=Directory|%InstallPath%\..\User Data\Default\CacheIE|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item6=Directory|%InstallPath%\..\User Data\Default\JumpListIcons|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item7=Directory|%InstallPath%\..\User Data\Default\JumpListIconsOld|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\twchrome.exe
+
+[TraceTheWorldChrome]
+Category=13
+Order=5
+AppName=世界之窗极速浏览器(TheWorld Chrome)历史
+ICONID=38
+ProcName=twchrome.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\twchrome.exe\Path
+Item1=Directory|%InstallPath%\..\User Data\Default|(include=History Index*;History;Thumbnails;Visited Links;Current Tabs;Top Sites*;Last Tabs;Current Session;Archived History*;Last Session;Shortcuts*)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\twchrome.exe
+
+[TraceTheWorldChromeForm]
+Category=13
+Order=5
+AppName=世界之窗极速浏览器(TheWorld Chrome)表单
+ICONID=38
+ProcName=twchrome.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\twchrome.exe\Path
+;Item1=Directory|%InstallPath%\..\User Data\Default|(include=Web Data;Login Data)(IncludeSubFolder=0)
+Item1=Directory|%InstallPath%\..\User Data\Default|(include=Web Data)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\twchrome.exe
+
+[TraceTheWorldChromePassword]
+Category=13
+Order=5
+AppName=世界之窗极速浏览器(TheWorld Chrome)密码
+ICONID=38
+ProcName=twchrome.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\twchrome.exe\Path
+Item1=Directory|%InstallPath%\..\User Data\Default|(include=Login Data)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\twchrome.exe
+
+[TraceTheWorldChromeCookie]
+Category=13
+Order=5
+AppName=世界之窗极速浏览器(TheWorld Chrome)Cookie
+ICONID=38
+ProcName=twchrome.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\twchrome.exe\Path
+Item1=Directory|%InstallPath%\..\User Data\Default|(include=Cookies)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\twchrome.exe
+
+
+[TraceTheWorldCache]
+Category=13
+Order=5
+AppName=世界之窗浏览器缓存
+ICONID=38
+ProcName=TheWorld6.exe;TheWorld.exe
+InstallPath1=RegValue|HKEY_CURRENT_USER\Software\TheWorld6\last_install_path
+InstallPath2=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\TheWorld6\InstallLocation
+Item1=Directory|%InstallPath%\TheWorld6\User Data\Default\Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item2=Directory|%InstallPath%\TheWorld6\User Data\Default\Media Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item3=Directory|%InstallPath%\TheWorld6\User Data\Default\App Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item4=Directory|%InstallPath%\TheWorld6\User Data\Default\Application Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item5=Directory|%InstallPath%\TheWorld6\User Data\Default\CacheIE|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item6=Directory|%InstallPath%\TheWorld6\User Data\Default\JumpListIcons|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item7=Directory|%InstallPath%\TheWorld6\User Data\Default\JumpListIconsOld|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\TheWorld6.exe;HKEY_CURRENT_USER\Software\TheWorld6
+
+[TraceTheWorldHistory]
+Category=13
+Order=5
+AppName=世界之窗浏览器历史
+ICONID=38
+ProcName=TheWorld6.exe;TheWorld.exe
+InstallPath1=RegValue|HKEY_CURRENT_USER\Software\TheWorld6\last_install_path
+InstallPath2=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\TheWorld6\InstallLocation
+Item1=Directory|%InstallPath%\TheWorld6\User Data\Default|(include=History Index*;History;Thumbnails;Visited Links;Current Tabs;Top Sites*;Last Tabs;Current Session;Archived History*;Last Session;Shortcuts*)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\TheWorld6.exe;HKEY_CURRENT_USER\Software\TheWorld6
+
+[TraceTheWorldForm]
+Category=13
+Order=5
+AppName=世界之窗浏览器表单
+ICONID=38
+ProcName=TheWorld6.exe;TheWorld.exe
+InstallPath1=RegValue|HKEY_CURRENT_USER\Software\TheWorld6\last_install_path
+InstallPath2=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\TheWorld6\InstallLocation
+;Item1=Directory|%InstallPath%\..\User Data\Default|(include=Web Data;Login Data)(IncludeSubFolder=0)
+Item1=Directory|%InstallPath%\TheWorld6\User Data\Default|(include=Web Data)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\TheWorld6.exe;HKEY_CURRENT_USER\Software\TheWorld6
+
+[TraceTheWorldPassword]
+Category=13
+Order=5
+AppName=世界之窗浏览器密码
+ICONID=38
+ProcName=TheWorld6.exe;TheWorld.exe
+InstallPath1=RegValue|HKEY_CURRENT_USER\Software\TheWorld6\last_install_path
+InstallPath2=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\TheWorld6\InstallLocation
+Item1=Directory|%InstallPath%\TheWorld6\User Data\Default|(include=Login Data)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\TheWorld6.exe;HKEY_CURRENT_USER\Software\TheWorld6
+
+[TraceTheWorldCookie]
+Category=13
+Order=5
+AppName=世界之窗浏览器cookie
+ICONID=38
+ProcName=TheWorld6.exe;TheWorld.exe
+InstallPath1=RegValue|HKEY_CURRENT_USER\Software\TheWorld6\last_install_path
+InstallPath2=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\TheWorld6\InstallLocation
+Item1=Directory|%InstallPath%\TheWorld6\User Data\Default|(include=Cookies)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\TheWorld6.exe;HKEY_CURRENT_USER\Software\TheWorld6
+
+;太阳花
+[TraceSunChromeCache]
+Category=13
+Order=5
+AppName=太阳花浏览器缓存
+ICONID=38
+ProcName=chrome.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器\UninstallString
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器\UninstallString
+DataFile1=Json|%InstallPath%\SunFlower\StartupOption|(Key=cache_data_dir)
+Item1=Directory|%DataFile1%\Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item2=Directory|%DataFile1%\Media Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item3=Directory|%DataFile1%\App Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item4=Directory|%DataFile1%\Application Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item5=Directory|%DataFile1%\CacheIE|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item6=Directory|%DataFile1%\JumpListIcons|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item7=Directory|%DataFile1%\JumpListIconsOld|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item8=Directory|%InstallPath%\User Data\Default\JumpListIcons|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item9=Directory|%InstallPath%\User Data\Default\JumpListIconsOld|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器
+
+[TraceSunChromeHistory]
+Category=13
+Order=5
+AppName=太阳花浏览器历史
+ICONID=38
+ProcName=chrome.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器\UninstallString
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器\UninstallString
+DataFile1=Json|%InstallPath%\SunFlower\StartupOption|(Key=cache_data_dir)
+Item1=Directory|%DataFile1%\|(include=History Index*;History;Thumbnails;Visited Links;Current Tabs;Top Sites*;Last Tabs;Current Session;Archived History*;Last Session;Shortcuts*)(IncludeSubFolder=0)
+Item2=Directory|%InstallPath%\User Data\Default|(include=History Index*;History;Thumbnails;Visited Links;Current Tabs;Top Sites*;Last Tabs;Current Session;Archived History*;Last Session;Shortcuts*)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器
+
+[TraceSunChromeForm]
+Category=13
+Order=5
+AppName=太阳花浏览器表单
+ICONID=38
+ProcName=chrome.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器\UninstallString
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器\UninstallString
+DataFile1=Json|%InstallPath%\SunFlower\StartupOption|(Key=cache_data_dir)
+Item1=Directory|%DataFile1%|(include=Web Data)(IncludeSubFolder=0)
+Item2=Directory|%InstallPath%\User Data\Default|(include=Web Data)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器
+
+[TraceSunChromePassword]
+Category=13
+Order=5
+AppName=太阳花浏览器密码
+ICONID=38
+ProcName=chrome.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器\UninstallString
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器\UninstallString
+DataFile1=Json|%InstallPath%\SunFlower\StartupOption|(Key=cache_data_dir)
+Item1=Directory|%DataFile1%\|(include=Login Data)(IncludeSubFolder=0)
+Item2=Directory|%InstallPath%\User Data\Default|(include=Login Data)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器
+
+[TraceSunChromeCookie]
+Category=13
+Order=5
+AppName=太阳花浏览器Cookie
+ICONID=38
+ProcName=chrome.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器\UninstallString
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器\UninstallString
+DataFile1=Json|%InstallPath%\SunFlower\StartupOption|(Key=cache_data_dir)
+Item1=Directory|%DataFile1%\|(include=Cookies)(IncludeSubFolder=0)
+Item2=Directory|%InstallPath%\User Data\Default|(include=Cookies)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\太阳花浏览器
+
+;枫树
+[TraceMapleSChromeCache]
+Category=13
+Order=5
+AppName=枫树浏览器缓存
+ICONID=38
+ProcName=chrome.exe
+InstallPath1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\ChromePlus\InstallLocation
+DataFile1=IniKey|%InstallPath%\..\User Data\ChromePlus.ini|(section=Startup)(ident=UserCacheDir)
+Item1=Directory|%InstallPath%\..\User Data\Default\Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item2=Directory|%InstallPath%\..\User Data\Default\JumpListIcons|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item3=Directory|%InstallPath%\..\User Data\Default\JumpListIconsOld|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item4=Directory|%InstallPath%\..\User Data\Default\Media Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item5=Directory|%InstallPath%\..\User Data\Default\App Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item6=Directory|%InstallPath%\..\User Data\Default\Application Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item7=Directory|%InstallPath%\..\User Data\Default\CacheIE|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item8=Directory|%DataFile1%\Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item9=Directory|%DataFile1%\Media Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item10=Directory|%DataFile1%\App Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item11=Directory|%DataFile1%\Application Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item12=Directory|%DataFile1%\CacheIE|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\ChromePlus
+
+[TraceMapleChromeHistory]
+Category=13
+Order=5
+AppName=枫树浏览器历史
+ICONID=38
+ProcName=chrome.exe
+InstallPath1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\ChromePlus\InstallLocation
+Item1=Directory|%InstallPath%\..\User Data\Default|(include=History Index*;History;Thumbnails;Visited Links;Current Tabs;Top Sites*;Last Tabs;Current Session;Archived History*;Last Session;Shortcuts*)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\ChromePlus
+
+[TraceMapleChromeForm]
+Category=13
+Order=5
+AppName=枫树浏览器表单
+ICONID=38
+ProcName=chrome.exe
+InstallPath1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\ChromePlus\InstallLocation
+Item1=Directory|%%InstallPath%\..\User Data\Default|(include=Web Data)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\ChromePlus
+
+[TraceMapleChromePassword]
+Category=13
+Order=5
+AppName=枫树浏览器密码
+ICONID=38
+ProcName=chrome.exe
+InstallPath1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\ChromePlus\InstallLocation
+Item1=Directory|%InstallPath%\..\User Data\Default|(include=Login Data)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\ChromePlus
+
+[TraceMapleChromeCookie]
+Category=13
+Order=5
+AppName=枫树浏览器Cookie
+ICONID=38
+ProcName=chrome.exe
+InstallPath1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\ChromePlus\InstallLocation
+Item1=Directory|%InstallPath%\..\User Data\Default|(include=Cookies)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\ChromePlus
+
+;猎豹
+[TraceLiebaoCache]
+Category=13
+Order=5
+AppName=猎豹浏览器缓存
+ICONID=38
+ProcName=liebao.exe
+Item1=Directory|%LOCAL_APPDATA%\liebao\User Data\*\Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item2=Directory|%LOCAL_APPDATA%\liebao\User Data\*\Media Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item3=Directory|%LOCAL_APPDATA%\liebao\User Data\*\CacheIE|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item4=Directory|%LOCAL_APPDATA%\liebao\User Data\*\App Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item5=Directory|%LOCAL_APPDATA%\liebao\User Data\*\Application Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item6=Directory|%LOCAL_APPDATA%\liebao\User Data\*\JumpListIcons|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item7=Directory|%LOCAL_APPDATA%\liebao\User Data\*\JumpListIconsOld|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item8=Directory|%LOCAL_APPDATA%\liebao\User Data\iecache\Content.IE5|(exclude=index.dat;desktop.ini)(DeleteSubFolder=0)(IncludeSubFolder=1)(FilterWhiteList=0)
+InstallKey=Directory|%LOCAL_APPDATA%\liebao\User Data
+
+[TraceLiebaoHistory]
+Category=13
+Order=5
+AppName=猎豹浏览器历史
+ICONID=38
+ProcName=liebao.exe
+Item1=Directory|%LOCAL_APPDATA%\liebao\User Data\*\|(include=History Index*;History;Thumbnails;Visited Links;Current Tabs;Top Sites*;Last Tabs;Current Session;Archived History*;Last Session;Shortcuts*)(IncludeSubFolder=0)
+InstallKey=Directory|%LOCAL_APPDATA%\liebao\User Data
+
+
+[TraceLiebaoForm]
+Category=13
+Order=5
+AppName=猎豹浏览器表单
+ICONID=38
+ProcName=liebao.exe
+Item1=Directory|%LOCAL_APPDATA%\liebao\User Data\*\|(include=Web Data)(IncludeSubFolder=0)
+InstallKey=Directory|%LOCAL_APPDATA%\liebao\User Data
+
+[TraceLiebaoPassword]
+Category=13
+Order=5
+AppName=猎豹浏览器密码
+ICONID=38
+ProcName=liebao.exe
+Item1=Directory|%LOCAL_APPDATA%\liebao\User Data\*\|(include=Login Data)(IncludeSubFolder=0)
+InstallKey=Directory|%LOCAL_APPDATA%\liebao\User Data
+
+[TraceLiebaoCookie]
+Category=13
+Order=5
+AppName=猎豹浏览器Cookie
+ICONID=38
+ProcName=liebao.exe
+Item1=Directory|%LOCAL_APPDATA%\liebao\User Data\*\|(include=Cookies*;SafeBox*)(IncludeSubFolder=0)
+Item2=Directory|%LOCAL_APPDATA%\liebao\User Data\iecache\cookies|(exclude=index.dat;desktop.ini)(DeleteSubFolder=1)(IncludeSubFolder=0)(FilterWhiteList=0)
+Item3=Directory|%LOCAL_APPDATA%\liebao\User Data\*\Local Storage|(IncludeSubFolder=0)(FilterWhiteList=1)
+InstallKey=Directory|%LOCAL_APPDATA%\liebao\User Data
+
+;阿云浏览器
+[TraceAlibrowserCache]
+Category=12
+Order=1
+AppName=阿云浏览器缓存清理
+ICONID=38
+ProcName=Alibrowser.exe
+Item1=Directory|%LOCAL_APPDATA%\Alibaba Cloud Computing\AliBrowser\Profiles\Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item2=Directory|%LOCAL_APPDATA%\Alibaba Cloud Computing\AliBrowser\WebKit\Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item3=Directory|%LOCAL_APPDATA%\Alibaba Cloud Computing\AliBrowser\WebKit\database_cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item4=Directory|%LOCAL_APPDATA%\Alibaba Cloud Computing\AliBrowser\WebKit\file_cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item5=Directory|%LOCAL_APPDATA%\Alibaba Cloud Computing\AliBrowser\WebKit\media_cahe|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+InstallKey=Directory|%LOCAL_APPDATA%\Alibaba Cloud Computing\AliBrowser
+
+
+[TraceAlibrowserHistory]
+Category=12
+Order=1
+AppName=阿云浏览器历史清理
+ICONID=38
+ProcName=Alibrowser.exe
+Item1=Directory|%LOCAL_APPDATA%\Alibaba Cloud Computing\AliBrowser\Profiles|(include=History.aef;HistoryBackup.aef;CurrentStates.aef;RecentClosed Url.aef;Ropen Url.aef;*.tmp)(IncludeSubFolder=0)(FilterWhiteList=0)
+InstallKey=Directory|%LOCAL_APPDATA%\Alibaba Cloud Computing\AliBrowser
+
+
+[TraceAlibrowserFormPassWord]
+Category=12
+Order=2
+AppName=阿云浏览器自动保存的表单和密码
+ProcName=Alibrowser.exe
+ICONID=38
+Recommend=False
+Item1=File|%LOCAL_APPDATA%\Alibaba Cloud Computing\AliBrowser\Profiles\LoginData.aef
+Item2=File|%LOCAL_APPDATA%\Alibaba Cloud Computing\AliBrowser\Profiles\WebData.aef
+InstallKey=Directory|%LOCAL_APPDATA%\Alibaba Cloud Computing\AliBrowser
+
+[TraceAlibrowserCookie]
+Category=12
+Order=4
+AppName=阿云浏览器 Cookie
+Recommend=False
+ICONID=38
+ProcName=Alibrowser.exe
+Item1=File|%LOCAL_APPDATA%\Alibaba Cloud Computing\AliBrowser\Profiles\Cookies.aef
+Item2=File|%LOCAL_APPDATA%\Alibaba Cloud Computing\AliBrowser\WebKit\Cookies
+Item3=File|%LOCAL_APPDATA%\Alibaba Cloud Computing\AliBrowser\Profiles\Cookies
+InstallKey=Directory|%LOCAL_APPDATA%\Alibaba Cloud Computing\AliBrowser
+
+;百度浏览器
+[TraceBaidubrowserCache]
+Category=12
+Order=1
+AppName=百度浏览器缓存清理
+ICONID=38
+ProcName=baidubrowser.exe
+Item1=Directory|%APPDATA%\Baidu\browser\DiskCache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+InstallKey=Directory|%APPDATA%\Baidu\browser
+
+
+[TraceBaidubrowserHistory]
+Category=12
+Order=1
+AppName=百度浏览器历史清理
+ICONID=38
+ProcName=baidubrowser.exe
+Item1=Directory|%APPDATA%\Baidu\browser\UserData\*\|(include=history.db;TopSites.db;VisitedLinks.db;Visited_Link)(IncludeSubFolder=0)(FilterWhiteList=0)
+InstallKey=Directory|%APPDATA%\Baidu\browser
+
+
+[TraceBaidubrowserFormData]
+Category=12
+Order=2
+AppName=百度浏览器自动保存的表单、密码和Cookie
+ProcName=baidubrowser.exe
+ICONID=38
+Recommend=False
+Item1=File|%APPDATA%\Baidu\browser\UserData\*\AutoFill.db
+Item2=File|%APPDATA%\Baidu\browser\UserData\*\cookie.db
+Item3=File|%APPDATA%\Baidu\browser\UserData\*\AutoFill_v2
+Item4=File|%APPDATA%\Baidu\browser\UserData\*\AutoLogin_v2
+Item5=Directory|%APPDATA%\Baidu\browser\Cookie
+Item6=File|%APPDATA%\Baidu\browser\SysData\cookie.db
+Item7=Directory|%APPDATA%\Baidu\browser\SysData\LocalStorage
+InstallKey=Directory|%APPDATA%\Baidu\browser
+
+
+[TraceTTFormData]
+Category=13
+Order=6
+AppName=腾讯TT浏览器自动填表记录
+ICONID=68
+ProcName=TTraveler.exe
+Item1=IniSection|%AppData%\Tencent\TencentTraveler\100\TtConf.dat|(SectionList=FORMDATA)
+InstallKey=Directory|%AppData%\Tencent\TencentTraveler
+
+[CustomTraceOpera001]
+Category=13
+Order=7
+AppName=Opera 缓存清理
+ICONID=37
+ProcName=Opera.exe
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Opera Software;HKEY_LOCAL_MACHINE\SOFTWARE\Opera Software;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Opera Software
+
+[CustomTraceOpera002]
+Category=13
+Order=8
+AppName=Opera 地址栏网址历史
+ICONID=37
+ProcName=Opera.exe
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Opera Software;HKEY_LOCAL_MACHINE\SOFTWARE\Opera Software;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Opera Software
+
+[TraceOperaSession]
+Category=13
+Order=8
+AppName=Opera 会话
+ICONID=37
+ProcName=Opera.exe
+Item1=Directory|%APPDATA%\Opera\Opera\sessions
+Item2=Directory|%APPDATA%\Opera Software\Opera Stable|(include=session.*)(FilterWhiteList=0)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Opera Software;HKEY_LOCAL_MACHINE\SOFTWARE\Opera Software;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Opera Software
+
+[TraceOperaPassword]
+Category=13
+Order=8
+AppName=Opera 自动保存的密码
+ICONID=37
+ProcName=Opera.exe
+Item1=File|%APPDATA%\Opera\Opera\wand.dat
+Item2=SQLite|%APPDATA%\Opera Software\Opera Stable\Web Data|(Table=logins)
+Item3=SQLite|%APPDATA%\Opera Software\Opera Stable\Login Data|(Table=logins)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Opera Software;HKEY_LOCAL_MACHINE\SOFTWARE\Opera Software;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Opera Software
+
+
+[TraceOperaCookie]
+Category=13
+Order=8
+AppName=Opera Cookie
+ICONID=37
+ProcName=Opera.exe
+Item1=Directory|%APPDATA%\Opera\Opera|(include=cookies*.dat)(IncludeSubFolder=0)(FilterWhiteList=0)
+Item2=Directory|%APPDATA%\Opera Software\Opera Stable|(include=Cookies*)(FilterWhiteList=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Opera Software;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Opera Software
+
+[TraceOperaDial]
+Category=13
+Order=8
+AppName=Opera 快速拨号
+ICONID=37
+ProcName=Opera.exe
+Item1=File|%APPDATA%\Opera\Opera\speeddial.ini
+Item2=Directory|%APPDATA%\Opera Software\Opera Stable|(include=favorites.*)(FilterWhiteList=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Opera Software;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Opera Software
+
+
+[Trace000019]
+Category=13
+Order=9
+AppName=Live 工具条搜索记录
+ProcName=iexplore.exe
+KillProcName=scserver.exe
+ICONID=73
+Item1=File|%LOCAL_APPDATA%\Microsoft\Search Enhancement Pack\Search Box Extension\history.dat
+Item2=File|%LOCAL_APPDATA_LOW%\Microsoft\Search Enhancement Pack\Search Box Extension\history.dat
+Item3=File|%LOCAL_APPDATA%\Microsoft\Search Enhancement Pack\Search Box Extension\searchhs.dat
+Item4=File|%LOCAL_APPDATA_LOW%\Microsoft\Search Enhancement Pack\Search Box Extension\searchhs.dat
+Item5=RegValue|HKEY_CURRENT_USER\Software\Microsoft\MSN Apps\SearchBox|(ValueList=History)(ShowValue=1)
+Item6=RegValue|HKEY_CURRENT_USER\Software\Microsoft\MSN Apps\MSN Toolbar|(ValueList=SearchStrings)(ShowValue=1)
+Item7=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\InternetRegistry\REGISTRY\USER\%SID%\Software\Microsoft\MSN Apps\MSN Toolbar|(ValueList=SearchStrings)(ShowValue=1)
+
+[Trace000016]
+Category=13
+Order=10
+AppName=谷歌工具栏搜索记录
+ProcName=iexplore.exe;FireFox.exe
+ICONID=69
+Item1=File|%APPDATA%\Google\Local Search History\google%2Eweb.w
+Item2=File|%APPDATA%\Google\Local Search History\google.web.w
+DataFile1=IniKey|%APPDATA%\Mozilla\Firefox\Profiles.ini|(section=Profile0)(ident=Path)
+Item3=File|%APPDATA%\Mozilla\Firefox\%DataFile1%\GoogleToolbarData\searchhistory.xml
+IncludeOtherProc=1
+
+[Trace000018]
+Category=13
+Order=11
+AppName=百度工具条搜索记录
+ProcName=iexplore.exe;FireFox.exe
+ICONID=71
+Item1=RegKey|HKEY_CURRENT_USER\Software\AppDataLow\Software\baidu\BaiduToolbar\History|(ShowSubValue=1)(ShowValue=1)
+Item2=RegKey|HKEY_CURRENT_USER\Software\AppDataLow\Software\baidu\BaiduToolbar\navhistory|(ShowSubValue=1)(ShowValue=1)
+Item3=RegKey|HKEY_CURRENT_USER\Software\baidu\BaiduToolbar\History|(ShowSubValue=1)(ShowValue=1)
+Item4=RegKey|HKEY_CURRENT_USER\Software\baidu\BaiduToolbar\navhistory|(ShowSubValue=1)(ShowValue=1)
+Item5=RegKey|HKEY_CURRENT_USER\Software\AppDataLow\Software\baidu\BaiduBar\History|(ShowSubValue=1)(ShowValue=1)
+Item6=RegKey|HKEY_CURRENT_USER\Software\AppDataLow\Software\baidu\BaiduBar\navhistory|(ShowSubValue=1)(ShowValue=1)
+Item7=RegKey|HKEY_CURRENT_USER\Software\baidu\BaiduBar\History|(ShowSubValue=1)(ShowValue=1)
+Item8=RegKey|HKEY_CURRENT_USER\Software\baidu\BaiduBar\navhistory|(ShowSubValue=1)(ShowValue=1)
+;for firefox
+DataFile1=IniKey|%APPDATA%\Mozilla\Firefox\Profiles.ini|(section=Profile0)(ident=Path)
+Item9=TextFile|%APPDATA%\Mozilla\Firefox\%DataFile1%\prefs.js|(RegxKey=baidu.stored_historybaidusearch)
+Item10=File|%APPDATA%\Baidu\Toolbar|(files=iexp.dat;logex.dat)
+IncludeOtherProc=1
+
+[Trace000017]
+Category=13
+Order=12
+AppName=QQ工具条搜索记录
+ProcName=iexplore.exe
+ICONID=70
+Item1=RegValue|HKEY_CURRENT_USER\Software\AppDataLow\Tencent\QQToolbar\History|(RegExpr="(?i)History[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\AppDataLow\Tencent\QQToolbar\History|(ValueList=Count)(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\Tencent\QQToolbar\History|(RegExpr="(?i)History[\d]+")(ShowValue=1)
+Item4=RegValue|HKEY_CURRENT_USER\Software\Tencent\QQToolbar\History|(ValueList=Count)(ShowValue=1)
+Item5=RegValue|HKEY_CURRENT_USER\Software\Tencent\QQToolbar|(ValueList=Data)
+Item6=File|%APPDATA%\TENCENT\QQToolbar\visitHistory\visitHistory.ini
+Item7=Directory|%APPDATA%\TENCENT\QQToolbar\PaneImg
+Item8=RegValue|HKEY_CURRENT_USER\Software\Tencent\QQToolbar\History|(ValueList=Width;Height)(ShowValue=1)
+
+
+;[TraceYahooToolbar]
+;Category=13
+;Order=12
+;AppName=雅虎工具条搜索记录
+;ProcName=iexplore.exe
+;ICONID=70
+;Item1=RegKey|HKEY_CURRENT_USER\Software\Yahoo\Companion\SearchHistory|(ShowSubValue=1)(ShowValue=1)
+
+
+[TraceSafariCache]
+Category=12
+Order=2
+AppName=Safari浏览器缓存
+ProcName=Safari.exe
+ICONID=38
+Recommend=False
+Item1=File|%LOCAL_APPDATA%\Apple Computer\Safari\Cache.db
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\Safari.exe
+
+[TraceSafariHistory]
+Category=12
+Order=2
+AppName=Safari浏览器历史
+ProcName=Safari.exe
+ICONID=38
+Recommend=False
+Item1=File|%APPDATA%\Apple Computer\Safari\History.plist
+Item2=File|%APPDATA%\Apple Computer\Safari\LastSession.plist
+Item3=File|%APPDATA%\Apple Computer\Safari\Downloads.plist
+Item4=Directory|%LOCAL_APPDATA%\Apple Computer\Safari\History|(FilterWhiteList=0)
+Item5=Directory|%LOCAL_APPDATA%\Apple Computer\Safari\Webpage Previews|(FilterWhiteList=0)(IncludeSubFolder=0)
+Item6=Directory|%LOCAL_APPDATA%\Apple Computer\Safari\Webpage Previews\*\RECURSE|(FilterWhiteList=0)
+Item7=File|%APPDATA%\Apple Computer\Preferences\com.apple.Safari.plist
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\Safari.exe
+
+[TraceSafariCookies]
+Category=12
+Order=2
+AppName=Safari浏览器Cookie
+ProcName=Safari.exe
+ICONID=38
+Recommend=False
+Item1=Directory|%APPDATA%\Apple Computer\Safari\Cookies
+Item2=Directory|%LOCAL_APPDATA%\Apple Computer\Safari\LocalStorage|(include=*.localstorage)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\Safari.exe
+
+
+[TraceSafariForm]
+Category=12
+Order=2
+AppName=Safari浏览器表单和密码
+ProcName=Safari.exe
+ICONID=38
+Recommend=False
+Item1=File|%APPDATA%\Apple Computer\Safari\FormValues.plist
+Item2=File|%APPDATA%\Apple Computer\Safari\Form Values.plist
+Item3=File|%APPDATA%\Apple Computer\Preferences\keychain.plist
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\Safari.exe
+
+;[Trace000056]
+;Category=3
+;AppName=Windows 错误报告
+;ICONID=47
+;Item1=Directory|%COMMON_APPDATA%\Microsoft\Windows\WER\ReportArchive
+;Item2=Directory|%COMMON_APPDATA%\Microsoft\Windows\WER\ReportQueue
+;Item3=Directory|%COMMON_APPDATA%\Microsoft\Windows\WER\ReportArchive
+;Item4=Directory|%COMMON_APPDATA%\Microsoft\Windows\WER\ReportQueue
+
+[TraceWindowsConsole]
+Category=3
+AppName=Windows 控制台历史记录
+ICONID=1
+Item1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Microsoft Management Console\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Order=1
+Installed=1
+
+[Trace000057]
+Category=3
+AppName=运行(开始菜单中，重启后生效)
+ICONID=1
+Item1=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU|(ShowSubValue=1)(ShowValue=1)
+Order=1
+Installed=1
+
+[Trace000058]
+Category=3
+AppName=最近运行的程序历史记录
+ICONID=2
+Item1=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidlMRU|(ShowSubValue=1)(ShowValue=1)
+Item2=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidlMRULegacy|(ShowSubValue=1)(ShowValue=1)
+Item3=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedMRU|(ShowSubValue=1)(ShowValue=1)
+Order=2
+Installed=1
+
+[Trace000059]
+Category=3
+AppName=文件打开与保存历史记录
+ICONID=3
+Item1=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidlMRU|(ShowSubValue=1)(ShowValue=1)
+Item2=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU|(ShowSubValue=1)(ShowValue=1)
+Order=3
+Installed=1
+
+[Trace000060]
+Category=3
+AppName=窗口位置与大小历史记录
+ICONID=4
+Item1=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\StreamMRU|(ShowSubValue=1)
+Order=4
+Installed=1
+
+[Trace000061]
+Category=3
+AppName=查找计算机
+ICONID=5
+Item1=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Search Assistant\ACMru\5647|(ShowSubValue=1)(ShowValue=1)
+Item2=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FindComputerMRU|(ShowSubValue=1)(ShowValue=1)
+Order=5
+Installed=1
+
+[Trace000062]
+Category=3
+AppName=最近打开的文件
+ICONID=6
+Item1=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs|(ShowSubValue=1)(ShowValue=1)
+Item2=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths|(ShowSubValue=1)(ShowValue=1)
+Item3=Directory|%PROFILE%\Recent|(include=*.lnk)
+Item4=Directory|%RECENT%|(include=*.lnk)
+;Item5=Directory|%AppData%\Microsoft\Windows\Recent\AutomaticDestinations              
+;Item6=Directory|%AppData%\Microsoft\Windows\Recent\CustomDestinations
+Order=6
+Installed=1
+
+[Trace000035]
+Category=3
+AppName=Windows 7 跳转列表（用户锁定项目也会被删除，请慎用）
+ICONID=6
+Recommend=False
+Item1=Directory|%AppData%\Microsoft\Windows\Recent\AutomaticDestinations
+Item2=Directory|%AppData%\Microsoft\Windows\Recent\CustomDestinations
+Order=7
+MinOSVer=601
+Installed=1
+
+
+[CustomTraceFileExt01]
+Category=3
+AppName=文件扩展名历史记录
+ICONID=7
+Order=8
+Installed=1
+
+[CustomNotifyNewApps]
+Category=3
+AppName=突出显示新安装的程序
+ICONID=7
+Order=9
+Installed=1
+
+[CustomTraceRecentProgram]
+Category=3
+AppName=最近打开的程序历史记录
+ICONID=7
+Order=9
+Installed=1
+
+[Trace000064]
+Category=3
+AppName=通知区域图标历史记录
+ICONID=8
+Item1=RegValue|HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify|(ValueList=IconStreams;PastIconsStream;PromotedIconCache)
+Item2=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\TrayNotify|(ValueList=IconStreams;PastIconsStream;PromotedIconCache)
+Item3=RegValue|HKEY_CLASSES_ROOT\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify|(ValueList=IconStreams;PastIconsStream;PromotedIconCache)
+Order=10
+Recommend=False
+Installed=1
+;NeedRestartExplorer = True
+
+;[Trace000065]
+;Category=3
+;AppName=内存转储文件
+;ICONID=57
+;Item1=Directory|%Windows%|(include=*.dmp)
+;Item2=Directory|%Windows%\Minidump|(include=*.dmp)
+
+[Trace000066]
+Category=3
+AppName=Windows搜索历史
+ICONID=62
+Item1=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Search Assistant\ACMru\5604|(ShowSubValue=1)(ShowValue=1)
+Item2=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Search Assistant\ACMru\5603|(ShowSubValue=1)(ShowValue=1)
+Item3=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery|(ShowSubValue=1)(ShowValue=1)
+Order=11
+Recommend=False
+Installed=1
+
+[Trace000068]
+Category=3
+AppName=网络驱动器映射历史
+ICONID=63
+Item1=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Map Network Drive MRU|(ShowSubValue=1)(ShowValue=1)
+Order=12
+Recommend=False
+Installed=1
+
+[CustomTraceSysLog]
+Category=3
+AppName=Windows系统日志
+ICONID=27
+Order=13
+Recommend=False
+Installed=1
+
+;[CustomTraceRecyleBin]
+;Category=3
+;AppName=清空回收站
+;ICONID=46
+;Order=14
+
+[CustomTraceClipBoard]
+Category=3
+AppName=剪贴板内容
+ICONID=64
+Order=15
+Recommend=False
+Installed=1
+
+;[CustomTraceInValidLnk]
+;Category=3
+;AppName=无效的快捷方式
+;ICONID=48
+;Order=0
+
+[Trace00005]
+Category=59
+AppName=SnagIt Editor
+ICONID=86
+ProcName=snagit32.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\1\SnagItEditor\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\2\SnagItEditor\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\3\SnagItEditor\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item4=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\4\SnagItEditor\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item5=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\5\SnagItEditor\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item6=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\6\SnagItEditor\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item7=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\7\SnagItEditor\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item8=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\8\SnagItEditor\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item9=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\9\SnagItEditor\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item10=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\1\Catalog\Recent Editor Files|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item11=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\2\Catalog\Recent Editor Files|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item12=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\3\Catalog\Recent Editor Files|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item13=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\4\Catalog\Recent Editor Files|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item14=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\5\Catalog\Recent Editor Files|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item15=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\6\Catalog\Recent Editor Files|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item16=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\7\Catalog\Recent Editor Files|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item17=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\8\Catalog\Recent Editor Files|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item18=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\9\Catalog\Recent Editor Files|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item19=File|%LOCAL_APPDATA%\TechSmith\Snagit\Tray.bin
+Item20=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\10\SnagItEditor\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item21=RegValue|HKEY_CURRENT_USER\Software\TechSmith\SnagIt\10\Catalog\Recent Editor Files|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SnagIt32.exe
+
+
+
+[Trace00006]
+Category=59
+AppName=EditPlus 文本编辑器
+ICONID=24
+Recommend=True
+ProcName=editplus.exe
+InstallPath1=CLSID|{63AFBDFB-5EF8-4791-AF79-9A3C0DE48974}
+InstallPath2=CLSID|{36D94110-787C-4828-9C1B-0DAFEBC36069}
+InstallPath3=RegValue|HKEY_CURRENT_USER\Software\ES-Computing\EditPlus 3\Install\INI directory
+Item1 =RegValue|HKEY_CURRENT_USER\Software\ES-Computing\EditPlus 2\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item2 =RegValue|HKEY_CURRENT_USER\Software\ES-Computing\EditPlus 2\Recent Dir List|(RegExpr="(?i)Dir[\d]+")(ShowValue=1)
+Item3 =RegValue|HKEY_CURRENT_USER\Software\ES-Computing\EditPlus 3\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item4 =RegValue|HKEY_CURRENT_USER\Software\ES-Computing\EditPlus 3\Recent Dir List|(RegExpr="(?i)Dir[\d]+")(ShowValue=1)
+Item5 =File|%InstallPath%\combobox.ini
+Item6 =File|%InstallPath%\combobox_u.ini
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\editplus.exe
+
+[Trace000020]
+Category=41
+AppName=Windows 画图
+ICONID=12
+ProcName=mspaint.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Applets\Paint\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Order=1
+Installed=1
+
+[Trace000021]
+Category=41
+AppName=Windows 写字板
+ICONID=13
+ProcName=wordpad.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Applets\Wordpad\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Order=2
+Installed=1
+
+[Trace000022]
+Category=41
+AppName=Windows Defender
+ICONID=52
+Item1=Directory|%COMMON_APPDATA%\Microsoft\Windows Defender\Scans\History\Results\Resource
+Order=3
+
+[Trace000023]
+Category=59
+AppName=UltraEdit 文本编辑软件
+ICONID=25
+ProcName=uedit32.exe
+InstallPath1=RegValue|HKEY_CLASSES_ROOT\Applications\Uedit32.exe\shell\edit\command\
+InstallPath2=RegValue|HKEY_CLASSES_ROOT\UltraEdit.dat\shell\open\command\
+InstallPath3=RegValue|HKEY_CLASSES_ROOT\UltraEdit.bin\shell\open\command\
+InstallPath4=RegValue|HKEY_CLASSES_ROOT\UltraEdit.dat\shell\open\command\
+InstallPath5=RegValue|HKEY_CLASSES_ROOT\UltraEdit.hex\shell\open\command\
+InstallPath6=RegValue|HKEY_CLASSES_ROOT\UltraEdit.ini\shell\open\command\
+InstallPath7=RegValue|HKEY_CLASSES_ROOT\UltraEdit.log\shell\open\command\
+InstallPath8=RegValue|HKEY_CLASSES_ROOT\UltraEdit.txt\shell\open\command\
+InstallPath9=RegValue|HKEY_CLASSES_ROOT\UltraEdit.uenc\shell\open\command\
+Item1=INIKey|%InstallPath%\Uedit32.ini|(Section=Recent File List)(RegExpr="(?i)File[\d]+")
+Item2=INIKey|%InstallPath%\Uedit32.ini|(Section=Settings)(KeyList=Last File)
+;Item3=INIKey|%InstallPath%\Uedit32.ini|(Section=Find/Replace)(KeyList=FindString;ReplaceString)
+Item3=INISection|%InstallPath%\Uedit32.ini|(SectionList=Find/Replace)
+Item4=INISection|%InstallPath%\Uedit32.ini|(SectionList=Find in File History;Find History;Replace History;Open Files;LCI)
+Item5=INIKey|%AppData%\IDMComp\UltraEdit\Uedit32.ini|(Section=Recent File List)(RegExpr="(?i)File[\d]+")
+Item6=INIKey|%AppData%\IDMComp\UltraEdit\Uedit32.ini|(Section=Settings)(KeyList=Last File;Last Active Document;Last Project Dir)
+;Item7=INIKey|%AppData%\IDMComp\UltraEdit\Uedit32.ini|(Section=Find/Replace)(KeyList=FindString;ReplaceString)
+Item7=INISection|%AppData%\IDMComp\UltraEdit\Uedit32.ini|(SectionList=Find/Replace)
+Item8=INISection|%AppData%\IDMComp\UltraEdit\Uedit32.ini|(SectionList=Find in File History;Find History;Replace History;Open Files;LCI)
+Order=4
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\Uedit32.exe
+
+[Trace000024]
+Category=41
+AppName=Windows 媒体播放器
+ICONID=14
+ProcName=wmplayer.exe;mplayer2.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Player\RecentFileList|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Player\RecentURLList|(RegExpr="(?i)URL[\d]+")(ShowValue=1)
+Order=5
+Installed=1
+
+
+[Trace000025]
+Category=43
+AppName=RealPlayer/RealOne播放器
+ICONID=22
+ProcName=realplay.exe
+Recommend=False
+Item1=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\MostRecentClips1
+Item2=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\MostRecentClips2
+Item3=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\MostRecentClips3
+Item4=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\MostRecentClips4
+Item5=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\MostRecentClips5
+Item6=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\MostRecentClips6
+Item7=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\MostRecentClips7
+Item8=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\MostRecentClips8
+Item9=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\MostRecentSkins1
+Item10=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\MostRecentSkins2
+Item11=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\MostRecentSkins3
+Item12=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\MostRecentSkins4
+Item13=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\MostRecentSkins5
+Item14=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\MostRecentSkins6
+Item15=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\MostRecentSkins7
+Item16=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\MostRecentSkins8
+Item17=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\LastOpenFileDir
+Item18=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\OpenLocationClips1
+Item19=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\OpenLocationClips2
+Item20=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\OpenLocationClips3
+Item21=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\OpenLocationClips4
+Item22=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\OpenLocationClips5
+Item23=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\OpenLocationClips6
+Item24=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\6.0\Preferences\OpenLocationClips7
+Item25=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\MostRecentClips1
+Item26=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\MostRecentClips2
+Item27=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\MostRecentClips3
+Item28=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\MostRecentClips4
+Item29=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\MostRecentClips5
+Item30=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\MostRecentClips6
+Item31=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\MostRecentClips7
+Item32=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\MostRecentClips8
+Item33=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\MostRecentSkins1
+Item34=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\MostRecentSkins2
+Item35=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\MostRecentSkins3
+Item36=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\MostRecentSkins4
+Item37=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\MostRecentSkins5
+Item38=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\MostRecentSkins6
+Item39=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\MostRecentSkins7
+Item40=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\MostRecentSkins8
+Item41=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\LastOpenFileDir
+Item42=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\OpenLocationClips1
+Item43=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\OpenLocationClips2
+Item44=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\OpenLocationClips3
+Item45=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\OpenLocationClips4
+Item46=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\OpenLocationClips5
+Item47=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\OpenLocationClips6
+Item48=RegKey|HKEY_CURRENT_USER\Software\RealNetworks\RealPlayer\12.0\Preferences\OpenLocationClips7
+Item49=Directory|%AppData%\Real\RealPlayer\History
+Item50=Directory|%AppData%\Real\RealPlayer\历史记录
+Item51=File|%AppData%\Real\RealPlayer|(files=realplayer.ste;urls.ini;cookies.txt;ctd.dat)
+Item52=Directory|%AppData%\Real\RealOne Player\History
+Item53=Directory|%AppData%\Real\RealOne Player\历史记录
+Item54=File|%AppData%\Real\RealOne Player|(files=realplayer.ste;urls.ini;cookies.txt;ctd.dat;)
+Order=11
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\RealPlay.exe
+
+[Trace000026]
+Category=43
+AppName=暴风影音
+ICONID=23
+ProcName=storm.exe;StormPlayer.exe
+Recommend=False
+Item1=RegKey|HKEY_CURRENT_USER\Software\Gabest\Media Player Classic\Recent File List|(ShowSubValue=1)(ShowValue=1)
+Item2=File|%COMMON_APPDATA%\Storm\playlist.smpl
+Item3=File|%COMMON_APPDATA%\Storm\tracfg.xml
+Item4=File|%COMMON_APPDATA%\Storm\CannotPlay.xml
+Item5=XMLNode|%COMMON_APPDATA%\Storm\config.xml|(XPath=/config/netplayhist/item;/config/localplayhist/item)
+Item6=XMLNode|%LOCAL_APPDATA%\VirtualStore\ProgramData\Storm\config.xml|(XPath=/config/netplayhist/item;/config/localplayhist/item)
+Item7=File|%COMMON_APPDATA%\Baofeng\StormPlayer\Profiles\StormPlayer.smpl
+Item8=RegValue|HKEY_CURRENT_USER\Software\Baofeng\StormPlayer\UserConfig|(ValueList=RecordedLastPlayUrl)
+Order=4
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\StormPlayer.exe
+
+[Trace000030]
+Category=42
+Order=1
+AppName=微软 Office
+ICONID=51
+Item1=Directory|%AppData%\Microsoft\Office\Recent
+Item2=Directory|%LOCAL_APPDATA%\Microsoft\Office\OffDiag
+
+Item3=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\Common\Open Find\*\Settings\New\View\2052|(ValueList=Categories;FileNewUpdateTimestamp)
+Item4=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\Common\Open Find\*\Settings\*\File Name MRU|(ValueList=Maximum Entries;Value)
+Item5=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\Common\Open Find\*\Settings\*\View|(ValueList=Data)
+Item6=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\Common\Open Find\*\Settings\*\|(ValueList=PositionInfo-Monitor1)
+
+Item7=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Common\Open Find\*\Settings\New\View\2052|(ValueList=Categories;FileNewUpdateTimestamp)
+Item8=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Common\Open Find\*\Settings\*\File Name MRU|(ValueList=Maximum Entries;Value)
+Item9=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Common\Open Find\*\Settings\*\View|(ValueList=Data)
+Item10=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Common\Open Find\*\Settings\*\|(ValueList=PositionInfo-Monitor1)
+
+Item11=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Common\Open Find\*\Settings\New\View\2052|(ValueList=Categories;FileNewUpdateTimestamp)
+Item12=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Common\Open Find\*\Settings\*\File Name MRU|(ValueList=Maximum Entries;Value)
+Item13=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Common\Open Find\*\Settings\*\View|(ValueList=Data)
+Item14=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Common\Open Find\*\Settings\*\|(ValueList=PositionInfo-Monitor1)
+
+Item15=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\Common\Open Find\Places|(ValueList=ItemSize)
+Item16=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\Common\Open Find\Places\StandardPlaces\Recent|(ShowSubValue=1)(ShowValue=1)
+Item17=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Common\Open Find\Places|(ValueList=ItemSize)
+Item18=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Common\Open Find\Places\StandardPlaces\Recent|(ShowSubValue=1)(ShowValue=1)
+Item19=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Common\Open Find\Places|(ValueList=ItemSize)
+Item20=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Common\Open Find\Places\StandardPlaces\Recent|(ShowSubValue=1)(ShowValue=1)
+
+Item21=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Open Find\*\Settings\New\View\2052|(ValueList=Categories;FileNewUpdateTimestamp)
+Item22=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Open Find\*\Settings\*\File Name MRU|(ValueList=Maximum Entries;Value)
+Item23=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Open Find\*\Settings\*\View|(ValueList=Data)
+Item24=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Open Find\*\Settings\*\|(ValueList=PositionInfo-Monitor1)
+Item25=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Open Find\Places|(ValueList=ItemSize)
+Item26=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Open Find\Places\StandardPlaces\Recent|(ShowSubValue=1)(ShowValue=1)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Office\
+
+
+[Trace000031]
+Category=42
+Order=2
+AppName=微软 Word
+ICONID=21
+ProcName=msword.exe;winword.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\9.0\Word\Data|(ValueList=Settings)
+Item2=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\10.0\Word\Data|(ValueList=Settings)
+Item3=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Word\Data|(ValueList=Settings)
+Item4=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\Word\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item5=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\13.0\Word\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item6=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Word\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item7=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Word\Place MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item8=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Word\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item9=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Word\Place MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\Winword.exe
+
+[Trace000034]
+Category=42
+Order=3
+AppName=微软 Excel
+ICONID=17
+ProcName=excel.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\9.0\Excel\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\10.0\Excel\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Excel\Recent Files|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item4=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\Excel\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item5=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\13.0\Excel\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item6=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Excel\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item7=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Excel\Place MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item8=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Excel\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item9=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Excel\Place MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\excel.exe
+
+[Trace000033]
+Category=42
+Order=4
+AppName=微软 PowerPoint
+ICONID=16
+ProcName=powerpnt.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\9.0\PowerPoint\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\10.0\PowerPoint\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\PowerPoint\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item4=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\PowerPoint\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item5=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\13.0\PowerPoint\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item6=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\PowerPoint\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item7=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\PowerPoint\Place MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item8=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\PowerPoint\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item9=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\PowerPoint\Place MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\powerpnt.exe
+
+[TraceAccess]
+Category=42
+Order=4
+AppName=微软 Access
+ICONID=16
+ProcName=msaccess.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\9.0\Access\Settings|(RegExpr="(?i)MRU[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\10.0\Access\Settings|(RegExpr="(?i)MRU[\d]+")(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Access\Settings|(RegExpr="(?i)MRU[\d]+")(ShowValue=1)
+Item4=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\Access\Settings|(RegExpr="(?i)MRU[\d]+")(ShowValue=1)
+Item5=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\13.0\Access\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item6=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\13.0\Access\Settings|(RegExpr="(?i)MRU[\d]+")(ShowValue=1)
+Item7=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Access\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item8=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Access\Settings|(RegExpr="(?i)MRU[\d]+")(ShowValue=1)
+Item9=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\9.0\Access\Settings|(RegExpr="(?i)MRUDate[\d]+")(ShowValue=1)
+Item10=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\10.0\Access\Settings|(RegExpr="(?i)MRUDate[\d]+")(ShowValue=1)
+Item11=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Access\Settings|(RegExpr="(?i)MRUDate[\d]+")(ShowValue=1)
+Item12=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\Access\Settings|(RegExpr="(?i)MRUDate[\d]+")(ShowValue=1)
+Item13=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\13.0\Access\Settings|(RegExpr="(?i)MRUDate[\d]+")(ShowValue=1)
+Item14=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Access\Settings|(RegExpr="(?i)MRUDate[\d]+")(ShowValue=1)
+Item15=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Access\Settings|(RegExpr="(?i)MRU[\d]+")(ShowValue=1)
+Item16=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Access\Settings|(RegExpr="(?i)MRUDate[\d]+")(ShowValue=1)
+Item17=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Access\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\MSACCESS.EXE
+
+[TraceSharePoint]
+Category=42
+Order=4
+AppName=微软 SharePoint Designer
+ICONID=16
+ProcName=SPDESIGN.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\9.0\SharePoint Designer\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\10.0\SharePoint Designer\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\SharePoint Designer\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+
+Item4=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\SharePoint Designer\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item5=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\SharePoint Designer\Recent Page List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item6=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\SharePoint Designer\Recent Web List|(RegExpr="(?i)Web[\d]+")(ShowValue=1)
+
+Item7=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\13.0\SharePoint Designer\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item8=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\13.0\SharePoint Designer\Recent Page List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item9=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\13.0\SharePoint Designer\Recent Web List|(RegExpr="(?i)Web[\d]+")(ShowValue=1)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SPDESIGN.EXE
+
+[TracePublisher]
+Category=42
+Order=4
+AppName=微软 Publisher
+ICONID=16
+ProcName=MSPUB.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\9.0\Publisher\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\10.0\Publisher\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Publisher\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item4=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\Publisher\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item5=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\13.0\Publisher\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item6=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\13.0\Publisher\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item7=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Publisher\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item8=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Publisher\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\MSPUB.EXE
+
+
+[TraceVisio]
+Category=42
+Order=4
+AppName=微软 Visio
+ICONID=16
+ProcName=VISIO.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\9.0\Visio\Application|(RegExpr="(?i)LastFile[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\10.0\Visio\Application|(RegExpr="(?i)LastFile[\d]+")(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Visio\Application|(RegExpr="(?i)LastFile[\d]+")(ShowValue=1)
+Item4=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\Visio\Application|(RegExpr="(?i)LastFile[\d]+")(ShowValue=1)
+Item5=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\13.0\Visio\Application|(RegExpr="(?i)LastFile[\d]+")(ShowValue=1)
+Item6=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Visio\Application|(RegExpr="(?i)LastFile[\d]+")(ShowValue=1)
+Item7=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Visio\Application|(RegExpr="(?i)LastFile[\d]+")(ShowValue=1)
+Item8=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Visio\Place MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+Item9=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Visio\File MRU|(RegExpr="(?i)Item\s*[\d]+")(ShowValue=1)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\VISIO.EXE
+
+[Trace000032]
+Category=42
+Order=5
+AppName=微软 FrontPage
+ICONID=15
+ProcName=frontpage.exe;frontpg.exe
+Item1=RegKey|HKEY_CURRENT_USER\Software\Microsoft\FrontPage\Editor\Insert Hyperlink\Recently Used URLs|(ShowSubValue=1)(ShowValue=1)
+Item2=RegKey|HKEY_CURRENT_USER\Software\Microsoft\FrontPage\Editor\Insert Image\Recently Used URLs|(ShowSubValue=1)(ShowValue=1)
+Item3=RegKey|HKEY_CURRENT_USER\Software\Microsoft\FrontPage\Explorer\FrontPage Explorer\Recent File List|(ShowSubValue=1)(ShowValue=1)
+Item4=RegKey|HKEY_CURRENT_USER\Software\Microsoft\FrontPage\Explorer\FrontPage Explorer\Recent Page List|(ShowSubValue=1)(ShowValue=1)
+Item5=RegKey|HKEY_CURRENT_USER\Software\Microsoft\FrontPage\Explorer\FrontPage Explorer\Recent Web List|(ShowSubValue=1)(ShowValue=1)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\frontpage.exe;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\frontpg.exe
+
+[Trace000043]
+Category=42
+Order=6
+AppName=微软Office Picture Manager
+ICONID=58
+ProcName=ois.exe
+Item1=Directory|%Local_AppData%\Microsoft\OIS\thumbnails\
+Item2=Directory|%Local_AppData%\Microsoft\OIS\|(include=OIScatalog.cag)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\ois.exe;
+
+[Trace000027]
+Category=42
+Order=7
+AppName=WPS文字历史记录
+ICONID=65
+Item1=RegKey|HKEY_CURRENT_USER\Software\Kingsoft\Office\4.0\wps\RecentFiles\files|(ShowSubValue=1)(ShowValue=1)
+Item2=RegKey|HKEY_CURRENT_USER\Software\Kingsoft\Office\5.0\wps\RecentFiles\files|(ShowSubValue=1)(ShowValue=1)
+;Item3=RegKey|HKEY_CURRENT_USER\Software\Kingsoft\Office\6.0\wps\RecentFiles\files|(ShowSubValue=1)(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\Kingsoft\Office\6.0\wps\RecentFiles|(ValueList=maximum)
+Item4=RegKey|HKEY_CURRENT_USER\Software\Kingsoft\Office\6.0\wps\RecentFiles\files\*\|(ShowSubValue=1)(ShowValue=1)
+Item5=RegValue|HKEY_CURRENT_USER\Software\Kingsoft\Office\7.0\wps\RecentFiles|(ValueList=maximum)
+Item6=RegKey|HKEY_CURRENT_USER\Software\Kingsoft\Office\7.0\wps\RecentFiles\files\*\|(ShowSubValue=1)(ShowValue=1)
+Item7=RegValue|HKEY_CURRENT_USER\Software\Kingsoft\Office\8.0\wps\RecentFiles|(ValueList=maximum)
+Item8=RegKey|HKEY_CURRENT_USER\Software\Kingsoft\Office\8.0\wps\RecentFiles\files\*\|(ShowSubValue=1)(ShowValue=1)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\wps.exe;
+
+[Trace000028]
+Category=42
+Order=8
+AppName=WPS表格历史记录
+ICONID=66
+Item1=RegKey|HKEY_CURRENT_USER\Software\Kingsoft\Office\4.0\et\RecentFiles\files|(ShowSubValue=1)(ShowValue=1)
+Item2=RegKey|HKEY_CURRENT_USER\Software\Kingsoft\Office\5.0\et\RecentFiles\files|(ShowSubValue=1)(ShowValue=1)
+;Item3=RegKey|HKEY_CURRENT_USER\Software\Kingsoft\Office\6.0\et\RecentFiles\files|(ShowSubValue=1)(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\Kingsoft\Office\6.0\et\RecentFiles|(ValueList=maximum)
+Item4=RegKey|HKEY_CURRENT_USER\Software\Kingsoft\Office\6.0\et\RecentFiles\files\*\|(ShowSubValue=1)(ShowValue=1)
+Item5=RegValue|HKEY_CURRENT_USER\Software\Kingsoft\Office\7.0\et\RecentFiles|(ValueList=maximum)
+Item6=RegKey|HKEY_CURRENT_USER\Software\Kingsoft\Office\7.0\et\RecentFiles\files\*\|(ShowSubValue=1)(ShowValue=1)
+Item7=RegValue|HKEY_CURRENT_USER\Software\Kingsoft\Office\8.0\et\RecentFiles|(ValueList=maximum)
+Item8=RegKey|HKEY_CURRENT_USER\Software\Kingsoft\Office\8.0\et\RecentFiles\files\*\|(ShowSubValue=1)(ShowValue=1)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\et.exe;
+
+[Trace000029]
+Category=42
+Order=9
+AppName=WPS演示历史记录
+ICONID=67
+Item1=RegKey|HKEY_CURRENT_USER\Software\Kingsoft\Office\4.0\wpp\RecentFiles\files|(ShowSubValue=1)(ShowValue=1)
+Item2=RegKey|HKEY_CURRENT_USER\Software\Kingsoft\Office\5.0\wpp\RecentFiles\files|(ShowSubValue=1)(ShowValue=1)
+;Item3=RegKey|HKEY_CURRENT_USER\Software\Kingsoft\Office\6.0\wpp\RecentFiles\files|(ShowSubValue=1)(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\Kingsoft\Office\6.0\wpp\RecentFiles|(ValueList=maximum)
+Item4=RegKey|HKEY_CURRENT_USER\Software\Kingsoft\Office\6.0\wpp\RecentFiles\files\*\|(ShowSubValue=1)(ShowValue=1)
+Item5=RegValue|HKEY_CURRENT_USER\Software\Kingsoft\Office\7.0\wpp\RecentFiles|(ValueList=maximum)
+Item6=RegKey|HKEY_CURRENT_USER\Software\Kingsoft\Office\7.0\wpp\RecentFiles\files\*\|(ShowSubValue=1)(ShowValue=1)
+Item7=RegValue|HKEY_CURRENT_USER\Software\Kingsoft\Office\8.0\wpp\RecentFiles|(ValueList=maximum)
+Item8=RegKey|HKEY_CURRENT_USER\Software\Kingsoft\Office\8.0\wpp\RecentFiles\files\*\|(ShowSubValue=1)(ShowValue=1)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\wpp.exe;
+
+[Trace000036]
+Category=44
+AppName=WinZip
+ICONID=26
+ProcName=winzip.exe;winzip32.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\Nico Mak Computing\WinZip\filemenu|(RegExpr="(?i)filemenu[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\Nico Mak Computing\WinZip\mru\archives|(RegExpr="(?i)[\d]+")(ShowValue=1)
+Order=17
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\winzip.exe
+
+[Trace000037]
+Category=44
+AppName=WinRAR
+ICONID=18
+ProcName=winrar.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\WinRAR\ArcHistory|(RegExpr="(?i)[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\WinRAR\General|(ValueList=LastFolder)(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\WinRAR\DialogEditHistory\ExtrPath|(RegExpr="(?i)[\d]+")(ShowValue=1)
+Item4=RegValue|HKEY_CURRENT_USER\Software\WinRAR\DialogEditHistory\ViewerSearch|(RegExpr="(?i)[\d]+")(ShowValue=1)
+Item5=RegValue|HKEY_CURRENT_USER\Software\WinRAR\DialogEditHistory\ArcName|(RegExpr="(?i)[\d]+")(ShowValue=1)
+Order=18
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\WinRAR.exe
+
+[Trace360Zip]
+Category=59
+AppName=360zip
+ICONID=26
+ProcName=360zip.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\360zip\Recent Document List|(RegExpr="(?i)Document[\d]+")(ShowValue=1)
+Order=17
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360zip.exe
+
+[TraceKugoo]
+Category=43
+AppName=酷狗播放器
+ICONID=31
+ProcName=Kugoo.exe;kugou7.exe;KuGou.exe
+Recommend=False
+DataFile1=RegValue|HKEY_CURRENT_USER\Software\Kugoo\AppFileName
+DataFile2=RegValue|HKEY_CURRENT_USER\Software\Kugoo6\AppFileName
+Item1=IniSection|%DataFile1%\*\Option.ini|(SectionList=SearchItems)
+Item2=IniSection|%Local_AppData%\VirtualStore\Program Files\KuGoo2007\*\Option.ini|(SectionList=SearchItems)
+Item3=IniSection|%DataFile2%\*\Option.ini|(SectionList=SearchItems)
+Item4=IniSection|%Local_AppData%\VirtualStore\Program Files\KuGoo2010\*\Option.ini|(SectionList=SearchItems)
+Item5=IniSection|%APPDATA%\KuGou7\kugou.ini|(SectionList=SearchHistory)
+Item6=SQLite|%APPDATA%\KuGou8\kugou.db|(Table=KeywordSearchHistory)
+Item7=SQLite|%APPDATA%\KuGou8\KGMusicV2.db|(Table=KeywordSearchHistory)
+Order=5
+InstallKey=Directory|%APPDATA%\KuGou8\;%APPDATA%\KuGou7\
+
+[Trace000067]
+Category=59
+AppName=鲁大师漏洞修复留下的补丁
+ProcName=ComputerZ_cn.exe;ComputerZ_cn.ex;ComputerOptZ.exe;ComputerOptZ.exe;ComputerOptZ.ex
+ICONID=56
+Recommend=False
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\Software\ComputerZ\Setup Path
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\Software\Wow6432Node\ComputerZ\Setup Path
+Item1=Directory|%InstallPath%\Hotfix
+
+
+[Trace000041]
+Category=43
+AppName=KMPlayer
+ICONID=33
+ProcName=kmplayer.exe
+Recommend=False
+InstallPath1=RegValue|HKEY_CURRENT_USER\Software\KMPlayer\KMP2.0\OptionArea\InstallPath
+InstallPath2=RegValue|HKEY_CURRENT_USER\Software\KMPlayer\KMP3.0\OptionArea\InstallPath
+Item1=File|%InstallPath%\PlayList\default.kpl
+Item2=RegValue|HKEY_CURRENT_USER\Software\KMPlayer\KMP2.0|(ValueList=LastFileName)(ShowValue=1)
+Item3=RegKey|HKEY_CURRENT_USER\Software\KMPlayer\LastViewFile|(ShowSubValue=1)(ShowValue=1)
+Item4=RegValue|HKEY_CURRENT_USER\Software\KMPlayer\KMP3.0|(ValueList=LastFileName)(ShowValue=1)
+Order=12
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\KMPlayer.exe
+
+[Trace000042]
+Category=59
+AppName=Windows Live Messenger
+ICONID=59
+ProcName=msnmsgr.exe
+Item1=Directory|%AppData%\Microsoft\MSN Messenger|(include=*.sqm)(IncludeSubFolder=0)
+Item2=Directory|%Local_AppData%\Microsoft\MSN Messenger\SqmAPI|(include=*.sqm)(IncludeSubFolder=0)
+Item3=Directory|%Local_AppData%\Microsoft\Windows Live\SqmAPI|(include=*.sqm)(IncludeSubFolder=0)
+Order=24
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\MSNMSGR.EXE;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\MSMSGS.EXE
+
+[Trace000044]
+Category=59
+AppName=Acrobat Reader
+ICONID=50
+ProcName=acrord32.exe
+Item1=RegKey|HKEY_CURRENT_USER\Software\Adobe\Acrobat Reader\1.0\AVGeneral\cRecentFiles|(ShowSubValue=1)(ShowValue=1)
+Item2=RegKey|HKEY_CURRENT_USER\Software\Adobe\Acrobat Reader\2.0\AVGeneral\cRecentFiles|(ShowSubValue=1)(ShowValue=1)
+Item3=RegKey|HKEY_CURRENT_USER\Software\Adobe\Acrobat Reader\3.0\AVGeneral\cRecentFiles|(ShowSubValue=1)(ShowValue=1)
+Item4=RegKey|HKEY_CURRENT_USER\Software\Adobe\Acrobat Reader\4.0\AVGeneral\cRecentFiles|(ShowSubValue=1)(ShowValue=1)
+Item5=RegKey|HKEY_CURRENT_USER\Software\Adobe\Acrobat Reader\5.0\AVGeneral\cRecentFiles|(ShowSubValue=1)(ShowValue=1)
+Item6=RegKey|HKEY_CURRENT_USER\Software\Adobe\Acrobat Reader\6.0\AVGeneral\cRecentFiles|(ShowSubValue=1)(ShowValue=1)
+Item7=RegKey|HKEY_CURRENT_USER\Software\Adobe\Acrobat Reader\7.0\AVGeneral\cRecentFiles|(ShowSubValue=1)(ShowValue=1)
+Item8=RegKey|HKEY_CURRENT_USER\Software\Adobe\Acrobat Reader\8.0\AVGeneral\cRecentFiles|(ShowSubValue=1)(ShowValue=1)
+Item9=RegKey|HKEY_CURRENT_USER\Software\Adobe\Acrobat Reader\9.0\AVGeneral\cRecentFiles|(ShowSubValue=1)(ShowValue=1)
+Item10=RegKey|HKEY_CURRENT_USER\Software\Adobe\Acrobat Reader\10.0\AVGeneral\cRecentFiles|(ShowSubValue=1)(ShowValue=1)
+Item11=RegKey|HKEY_CURRENT_USER\Software\Adobe\Acrobat Reader\11.0\AVGeneral\cRecentFiles|(ShowSubValue=1)(ShowValue=1)
+Order=26
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\AcroRd32.exe
+
+[Trace000045]
+Category=43
+AppName=QQ影音
+ICONID=72
+ProcName=QQPlayer.exe
+Recommend=False
+Item1=File|%AppData%\Tencent\QQPlayer\default.qpl
+Item2=File|%AppData%\Tencent\QQPlayer\History.xml
+Item3=RegValue|HKEY_CURRENT_USER\Software\Tencent\QQPlayer\Settings|(ValueList=FileDlgLastPath)
+Order=1
+
+[Trace00007]
+Category=43
+AppName=QQLive网络电视
+ICONID=85
+ProcName=qqlive.exe
+Recommend=False
+DataFile1=IniKey|%APPDATA%\Tencent\QQLive\user.ini|(section=cache)(ident=directory)
+Item1=Directory|%DataFile1%\vodcache
+Item2=Directory|%APPDATA%\Tencent\QQLive\*\XML|(IncludeSubFolder=1)
+Item3=Directory|%APPDATA%\Tencent\QQLive\xml\*\|(IncludeSubFolder=1)
+Order=2
+
+[Trace000046]
+Category=44
+AppName=7ZIP（压缩/解压缩工具）
+ICONID=75
+ProcName=7zfm.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\7-Zip\FM|(ValueList=FolderHistory;PanelPath0;PanelPath1;CopyHistory)(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\7-Zip\Compression|(ValueList=ArcHistory)(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\7-Zip\Extraction|(ValueList=PathHistory)(ShowValue=1)
+Order=28
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\7zFM.exe
+
+[Trace000047]
+Category=59
+AppName=迅雷搜索历史记录
+ICONID=76
+ProcName=thunder.exe
+InstallPath1=RegValue|HKEY_CURRENT_USER\Software\Thunder Network\Thunder\Path
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Thunder Network\ThunderOem\thunder_backwnd\Path
+InstallPath3=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Thunder Network\Thunder\Path
+Item1=File|%COMMON_APPDATA%\Thunder Network\ThunderGougouSearch\SearchHistory.xml
+Item2=File|%InstallPath%\..\Profiles\GougouSearch\history.history
+Order=29
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Thunder Network\Thunder
+
+[TraceWangWang]
+Category=59
+AppName=淘宝旺旺登录名信息
+ICONID=77
+Recommend=False
+ProcName=aliim.exe;aliwangwang.exe;aliwangwang.ex
+InstallPath1=ClassName|AliIMX.WangWangX
+Item1=File|%InstallPath%\profiles\system\logininfo.xml
+Item2=File|%InstallPath%\profiles\system\lastlogininfo2.xml
+Item3=File|%InstallPath%\profiles\system\lastlogininfo.xml
+Item4=File|%InstallPath%\log.log
+Item5=File|%InstallPath%\profiles\system\gconf.db
+Item6=File|%InstallPath%\..\profiles\system\logininfo.xml
+Item7=File|%InstallPath%\..\profiles\system\lastlogininfo2.xml
+Item8=File|%InstallPath%\..\profiles\system\lastlogininfo.xml
+Item9=File|%InstallPath%\..\log.log
+Item10=File|%InstallPath%\..\profiles\system\gconf.db
+Item11=File|%InstallPath%\*\log.log
+Order=30
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\aliim.exe
+
+[Trace000049]
+Category=59
+AppName=WinImage
+ICONID=78
+ProcName=winimage.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\WinImage|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_LOCAL_MACHINE\Software\WinImage|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Order=31
+
+[Trace000050]
+Category=59
+AppName=HyperSnap
+ICONID=79
+ProcName=hprsnap6.exe;hprsnap5.exe;hprsnap.exe;HprSnap7.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\Hyperionics\HyperSnap 6\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\Hyperionics\HyperSnap-DX v.4\HyperSnap-DX\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\Hyperionics\HyperSnap-DX v.5\HyperSnap-DX\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item4=RegValue|HKEY_CURRENT_USER\Software\Hyperionics\HyperSnap 7\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Order=32
+
+[Trace000051]
+Category=59
+AppName=Download Accelerator Plus
+ICONID=80
+ProcName=dap.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\SpeedBit\Download Accelerator|(ValueList=HistoryFindIndex)(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\SpeedBit\Download Accelerator\SearchTab|(ValueList=SearchHistory)(ShowValue=1)
+;Item3=RegKey|HKEY_CURRENT_USER\Software\SpeedBit\Download Accelerator\FileList|(ShowSubValue=1)(ShowValue=1)
+Item3=Directory|%COMMON_APPDATA%\SpeedBit\DAP\History\*\|(include=*.dat)(IncludeSubFolder=0)
+Order=33
+
+[Trace000052]
+Category=59
+AppName=GetRight
+ICONID=81
+ProcName=getright.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\Headlight\GetRight\MRU|(RegExpr="(?i)(Desc|File|URL)[\d]+")(ShowValue=1)
+Item2=RegKey|HKEY_CURRENT_USER\Software\Headlight\GetRight\TypedDescs|(ShowSubValue=1)(ShowValue=1)
+Item3=RegKey|HKEY_CURRENT_USER\Software\Headlight\GetRight\TypedURLs|(ShowSubValue=1)(ShowValue=1)
+Item4=Directory|%APPDATA%\GetRight Pro|(include=*.hst)
+Order=34
+
+[Trace000053]
+Category=59
+AppName=EmEditor
+ICONID=82
+ProcName=emeditor.exe
+InstallPath1=CLSID|{DFA0CC7F-D36B-47D1-8EF5-415C1DA53F57}
+Item1=IniSection|%InstallPath%\eeCommon.ini|(SectionList=Recent File List)
+Item2=IniSection|%InstallPath%\eeCommon.ini|(SectionList=Recent Folder List)
+Item3=RegValue|HKEY_CURRENT_USER\Software\EmSoft\EmEditor v3\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item4=RegValue|HKEY_CURRENT_USER\Software\EmSoft\EmEditor v3\Recent Folder List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item5=RegValue|HKEY_CURRENT_USER\Software\EmSoft\EmEditorPlugIns\Explorer|(ValueList=LastPath)(ShowValue=1)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\EmSoft\EmEditor v3
+
+[TraceeMule]
+Category=59
+AppName=eMule搜索及文件哈希记录
+ICONID=82
+ProcName=eMule.exe
+InstallPath1=RegValue|HKEY_CURRENT_USER\Software\eMule\Install Path
+Item1=File|%InstallPath%\config\AC_SearchStrings.dat
+Item2=File|%LOCAL_APPDATA%\eMule\config\AC_SearchStrings.dat
+Item3=File|%COMMON_APPDATA%\eMule\config\AC_SearchStrings.dat
+Item4=File|%InstallPath%\config\known.met
+Item5=File|%InstallPath%\config\known2.met
+Item6=File|%InstallPath%\config\known2_64.met
+Item7=File|%LOCAL_APPDATA%\eMule\config\known.met
+Item8=File|%LOCAL_APPDATA%\eMule\config\known2.met
+Item9=File|%LOCAL_APPDATA%\eMule\config\known2_64.met
+Item10=File|%COMMON_APPDATA%\eMule\config\known.met
+Item11=File|%COMMON_APPDATA%\eMule\config\known2.met
+Item12=File|%COMMON_APPDATA%\eMule\config\known2_64.met
+Item13=File|%APPDATA%\eMule\config\AC_SearchStrings.dat
+Item14=File|%APPDATA%\eMule\config\known.met
+Item15=File|%APPDATA%\eMule\config\known2.met
+Item16=File|%APPDATA%\eMule\config\known2_64.met
+Item17=File|%InstallPath%\config\StoredSearches.met
+Item18=File|%LOCAL_APPDATA%\eMule\config\StoredSearches.met
+Item19=File|%APPDATA%\eMule\config\StoredSearches.met
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\eMule\
+
+
+
+[TraceInternetDownloadManager]
+Category=59
+AppName=Internet Download Manager
+ICONID=82
+ProcName=IDM.exe
+Item1=Directory|%APPDATA%\IDM|(include=UrlHistory*.txt)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\DownloadManager
+
+[TraceUltraISO]
+Category=59
+AppName=UltraISO
+ICONID=82
+ProcName=UltraISO.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\EasyBoot Systems\UltraISO\5.0|(ValueList=Reopen;OpenFolder)(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\EasyBoot Systems\UltraISO\5.0|(RegExpr="[a-zA-Z]")(ShowValue=1)
+
+[Trace000054]
+Category=43
+AppName=Media Player Classic
+ICONID=83
+ProcName=mpc.exe;mplayerc.exe;mpc-hc.exe
+Recommend=False
+Item1=File|%AppData%\Media Player Classic\default.mpcpl
+Item2=RegKey|HKEY_CURRENT_USER\Software\Gabest\Media Player Classic\Recent Dub List|(ShowSubValue=1)(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\Gabest\Media Player Classic\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item4=RegValue|HKEY_CURRENT_USER\Software\Gabest\Media Player Classic\Settings|(RegExpr="(?i)(File Name|File Position|DVD Position)\s*[\d]+")(ShowValue=1)
+Order=13
+
+[TraceWindowsMediaCenter]
+Category=43
+AppName=Windows Media Center
+ICONID=83
+ProcName=ehshell.exe
+Recommend=False
+Item1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Media Center\MRU\SettingsMRU|(RegExpr="(?i)MRU #[\d] Path+")(ShowValue=1)
+Item2=Directory|%COMMON_APPDATA%\Microsoft\eHome\logs
+Order=13
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Media Center
+
+[Trace000055]
+Category=43
+AppName=迅雷看看播放器
+ICONID=74
+ProcName=xmp.exe
+Recommend=False
+Item1=Directory|%PUBLIC%\Thunder Network\XMP\Playlists
+Item2=Directory|%COMMON_APPDATA%\Thunder Network\XMP\Playlists
+Item3=Directory|%PUBLIC%\Thunder Network\XMP4\Playlists
+Item4=Directory|%COMMON_APPDATA%\Thunder Network\XMP4\Playlists
+Item5=Directory|%COMMON_APPDATA%\Thunder Network\XMP4\ProgramData\Playlists
+Item6=Directory|%COMMON_APPDATA%\Thunder Network\XMP4\ProgramData\ProgramList
+Item7=Directory|%PUBLIC%\Thunder Network\XMP4\ProgramData\ProgramList
+Item8=Directory|%PUBLIC%\Thunder Network\XMP4\ProgramData\Playlists
+Item9=File|%COMMON_APPDATA%\Thunder Network\KanKan\Cookie\view_histroy.dat
+Order=3
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Thunder Network\Xmp
+
+
+
+[CustomRedundanceDll]
+Category=5
+AppName=冗余的动态链接库
+ICONID=41
+Order=0
+Installed=1
+
+[CustomInvalidSoft]
+Category=5
+AppName=无效的软件
+ICONID=4
+Order=1
+Installed=1
+
+[CustomInvalidInstaller]
+Category=5
+AppName=无效的安装程序
+ICONID=11
+Order=2
+Installed=1
+
+[CustomInvalidUnInstaller]
+Category=5
+AppName=无效的反安装程序
+ICONID=11
+Order=3
+Installed=1
+
+[CustomInvalidHelp]
+Category=5
+AppName=无效的帮助
+ICONID=54
+Order=4
+Installed=1
+
+[CustomInvalidStartMenu]
+Category=5
+AppName=无效的开始菜单
+ICONID=8
+Order=5
+Installed=1
+
+[CustomInvalidRightMenu]
+Category=5
+AppName=无效的右键菜单
+ICONID=73
+Order=6
+Installed=1
+
+[CustomInvalidActiveX]
+Category=5
+AppName=错误的ActiveX信息
+ICONID=55
+Order=7
+Installed=1
+
+[CustomInvalidFileExt]
+Category=5
+AppName=错误的文件关联
+ICONID=55
+Order=8
+Installed=1
+
+[CustomInvalidClass]
+Category=5
+AppName=错误的类信息
+ICONID=55
+Order=9
+Installed=1
+
+[CustomInvalidTypeLib]
+Category=5
+AppName=错误的类型库信息
+ICONID=55
+Order=10
+Installed=1
+
+[CustomInvalidFirewall]
+Category=5
+AppName=无效的防火墙设置
+ICONID=60
+Order=11
+Installed=1
+
+[CustomInvalidMUICache]
+Category=5
+AppName=无效的MUI缓存
+ICONID=41
+Order=12
+Installed=1
+
+[CustomInvalidStartup]
+Category=5
+AppName=无效的启动项目
+ICONID=1
+Order=13
+Installed=1
+
+[CustomInvalidAppPath]
+Category=5
+AppName=无效的应用程序路径
+ICONID=3
+Order=14
+Installed=1
+
+[CustomInvalidFont]
+Category=5
+AppName=无效的字体
+ICONID=61
+Order=15
+Installed=1
+
+[CustomInvalidNameSpace]
+Category=5
+AppName=无效的命名空间
+ICONID=61
+Order=15
+Installed=1
+
+[CustomInvalidCertification]
+Category=5
+AppName=无效的证书
+ICONID=61
+Order=15
+Installed=1
+
+;[TraceKuwo]
+;Category=43
+;Order=6
+;AppName=酷我音乐盒
+;ICONID=88
+;ProcName=KwInfos.exe;KwMusic.exe
+;Recommend=False
+;InstallPath1=RegValue|HKEY_LOCAL_MACHINE\Software\KWMUSIC\KWMUSIC_HOME
+;InstallPath2=RegValue|HKEY_LOCAL_MACHINE\Software\Wow6432Node\KWMUSIC\KWMUSIC_HOME
+;DataFile1=XMLNode|%InstallPath%\setup.xml|(XPath=/Setup/SharePath)
+;Item1=File|%InstallPath%\Local\LocalMusicInfo
+;Item2=Directory|%InstallPath%\PlayList
+;Item3=Directory|%DataFile1%
+;Item3=INIKey|%InstallPath%\config.ini|(Section=Playlist)(KeyList=CurPlaylist;PlaylistShowing)
+
+[TraceFunshion]
+Category=43
+Order=7
+AppName=风行网络电视
+ICONID=89
+ProcName=Funshion.exe
+Recommend=False
+KillProcName=FunshionService.exe
+;DataFile1=INIKey|%UserProfile%\funshion.ini|(section=FILE_PATH)(ident=SEED_PATH)
+;DataFile2=INIKey|%UserProfile%\funshion.ini|(section=FILE_PATH)(ident=MEDIA_PATH)
+;DataFile3=INIKey|%UserProfile%\funshion.ini|(section=FILE_PATH)(ident=ctlpath)
+DataFile1=INIKey|%UserProfile%\funshion.ini|(section=FILE_PATH)(ident=HISTROY_TASK_PATH)
+DataFile2=INIKey|%UserProfile%\funshion.ini|(section=HISTORY_FILE_PATH)(ident=MEDIA_PATH;#)
+;Item1=Directory|%DataFile1%
+;Item2=Directory|%DataFile2%|(exclude=启动风行.lnk;安装最新版本风行.lnk)
+;Item3=Directory|%DataFile3%
+Item1=Directory|%DataFile1%|(Include=*.fsp)
+Item2=Directory|%UserProfile%\funshion\historyTorrent|(Include=*.fsp)
+Item3=File|%UserProfile%\funshion\history.txt
+Item4=Directory|%DataFile2%|(Include=*.fsp)
+Item5=IniSection|%DataFile2%\..\funshion.ini|(SectionList=PlayerTrace)
+Item6=Directory|%DataFile2%\..\control|(Include=*.fsp)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Funshion\Funshion;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Funshion\Funshion
+
+[TracePPTV]
+Category=43
+Order=8
+AppName=PPTV网络电视
+ICONID=90
+ProcName=PPLive.exe
+Recommend=False
+;DataFile1=INIKey|%Common_AppData%\PPLive\Core\config.ini|(section=peer)(ident=cachepath)
+Item1=SQLite|%AppData%\PPLive\PPTV\Favorites\Favorites.s3db|(Table=StoreType)(Condition="where st=1")
+Item2=SQLite|%COMMON_APPDATA%\PPLive\PPTV\Favorites\FavoritesNew.s3db|(Table=StoreType)(Condition="where st=1")
+Item3=SQLite|%COMMON_APPDATA%\PPLive\PPTV\Favorites\watchlog.s3db|(Table=WatchLog)
+Item4=SQLite|%APPDATA%\PPLive\PPTV\Favorites\FavoritesNew.s3db|(Table=StoreType)(Condition="where st=1")
+Item5=SQLite|%APPDATA%\PPLive\PPTV\Favorites\watchlog.s3db|(Table=WatchLog)
+Item6=Directory|%PERSONAL%\PPTV\PP播放记录|(Include=*.lnk)
+Item7=SQLite|%COMMON_APPDATA%\PPLive\PPTV\Favorites\Common.s3db|(Table=Recent)
+;Item7=SQLite|%ProgramData%\PPLive\PPTV\Favorites\Common.s3db|(Table=Recent)
+;Item2=Directory|%DataFile1%
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\PPLive
+
+[TracePPS]
+Category=43
+Order=9
+AppName=PPS网络电视
+ICONID=91
+Recommend=False
+ProcName=PPStream.exe
+KillProcName=PPSAP.exe
+;DataFile1=INIKey|%AppData%\PPStream\psnetwork.ini|(section=vodnet)(ident=pgfpath)
+;Item1=File|%DataFile1%
+Item1=IniSection|%AppData%\PPStream\ppstream.ini|(SectionList=recent)
+Item2=RegKey|HKEY_CURRENT_USER\Software\PPStream\recent|(ShowSubValue=1)(ShowValue=1)
+Item3=Directory|%AppData%\PPStream\PlayHistory|(Include=*.xml)
+;Item4=Directory|%AppData%\PPStream\MediaList\PlayList|(Include=*.xml) ;改为只清理默认播放列表
+Item4=Directory|%AppData%\PPStream\MediaList\PlayList|(Include=默认播放列表.xml)
+Item5=Directory|%AppData%\PPStream\MediaList\Music|(Include=*.xml)
+Item6=Directory|%AppData%\PPStream\MediaList|(Include=MediaDirs.xml;PlayList_Config.xml;pps_medialist_log.txt);
+Item7=SQLite|%AppData%\PPStream\PPSDB.db|(Table=table_file)(Condition="where [name]='historyfile'")
+
+[TraceQVOD]
+Category=43
+Order=10
+AppName=快播(QVOD)
+ICONID=92
+Recommend=False
+ProcName=QvodPlayer.exe
+KillProcName=QvodTerminal.exe;QvodTerminal.ex
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\QvodPlayer\Insert\InsertPath
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\QvodPlayer\Insert\InsertPath
+;DataFile1=XMLNode|%InstallPath%\QvodPlayer.xml|(XPath=/QvodPlayer/General)(Attr=Defaultsavepath)
+Item1=File|%InstallPath%\PlayList\PlayList.xml
+;Item2=Directory|%DataFile1%
+Item2=XMLNode|%InstallPath%\QvodPlayer.xml|(XPath=/QvodPlayer/NewLy)
+Item3=Directory|%InstallPath%\PlayList|(include=*.xml)(exclude=Mediacenter.xml)
+Item4=File|%InstallPath%\TaskCfg.db
+Item5=File|%ProgramData%\QvodPlayer\TaskCfg.db
+Item6=Directory|%ProgramData%\QvodPlayer\PlayList|(include=*.xml)(exclude=Mediacenter.xml)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\QvodPlayer.exe
+
+[TraceQuicktimePlayer]
+Category=43
+Order=10
+AppName=Quicktime播放器
+ICONID=92
+Recommend=False
+ProcName=QuickTimePlayer.exe
+KillProcName=QuickTimePlayer.exe;QTTask.exe
+Item1=RegKey|HKEY_LOCAL_MACHINE\Software\Apple Computer, Inc.\QuickTime\Recent Movies|(ShowSubValue=1)(ShowValue=1)(WOW64KEY=2)
+Item2=File|%UserProfile%\QTPlayerSession.xml
+;Item3=File|%APPDATA%\Apple Computer\QuickTime\QTPlayerSession.xml
+Item3=XMLNode|%APPDATA%\Apple Computer\QuickTime\QTPlayerSession.xml|(XPath=/plist/dict/array)
+Item4=File|%LOCAL_APPDATA%\Apple Computer\QuickTime\QTPlayerSession.xml
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\Software\Apple Computer, Inc.\QuickTime;HKEY_LOCAL_MACHINE\Software\Wow6432Node\Apple Computer, Inc.\QuickTime
+
+[TraceBaiduPlayer]
+Category=43
+Order=10
+AppName=百度影音播放器
+ICONID=92
+ProcName=BaiduPlayer.exe
+Recommend=False
+Item1=Directory|%APPDATA%\Baidu\BaiduPlayer|(include=*.xml)(IncludeSubFolder=0)
+Item2=Directory|%LOCAL_APPDATA_LOW%\Baidu\BaiduPlayer|(include=RecentPlayList.xml;BDYYPlayList.xml)(IncludeSubFolder=0)
+
+[TraceFenglei]
+Category=43
+Order=10
+AppName=风雷影音播放历史
+ICONID=92
+ProcName=fenglei.exe
+Recommend=False
+Item1=Directory|%APPDATA%\fenglei|(include=default.mpcpl;default.fl)(IncludeSubFolder=0)
+Item2=RegValue|HKEY_CURRENT_USER\Software\fenglei\fenglei\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\fenglei\
+
+[TraceXigua]
+Category=43
+Order=10
+AppName=西瓜播放器播放历史
+ICONID=92
+ProcName=XiGuaPlayer.exe
+Recommend=False
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\xigua\InstallPath
+Item1=Directory|%InstallPath%\data|(include=recentplays.xml;histories.xml)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\xigua
+
+[TraceLetv]
+Category=43
+Order=10
+AppName=乐视网络电视播放历史
+ICONID=92
+ProcName=LeTVLoader.exe
+Recommend=False
+Item1=Directory|%APPDATA%\Letv\Client|(include=tv_playlist.xml)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\LeTV\LeTVLive
+
+[TraceQiyi]
+Category=43
+Order=10
+AppName=奇艺影音播放器历史
+ICONID=92
+ProcName=QiyiClient.exe
+Recommend=False
+Item1=SQLite|%COMMON_APPDATA%\QiYi\QiyiClient\qiyi_xkernel.dll|(Table=playlist)(Condition="where iMovieId<>0")
+Item2=SQLite|%PUBLIC%\QiYi\QiyiClient\qiyi_xkernel.dll|(Table=playlist)(Condition="where iMovieId<>0")
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\QiyiClient.exe
+
+[TraceHaoJieDVD]
+Category=43
+Order=10
+AppName=超级解霸播放器历史
+ICONID=92
+ProcName=SthSDVD.exe;SuperPlayer.exe
+Recommend=False
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\herosoft\SuperPlay3500\InstallPath
+Item1=File|%InstallPath%\Default.m3u
+Item2=File|%COMMON_APPDATA%\SuperPlayer\SuperPlayer.supl
+Item3=RegKey|HKEY_CURRENT_USER\Software\SuperPlayer\Config\History|(ShowValue=1)
+Item4=RegKey|HKEY_CURRENT_USER\Software\SuperPlayer\Config\UrlHistory|(ShowValue=1)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\SuperPlayer
+
+
+[TraceBaiduTing]
+Category=43
+Order=10
+AppName=百度Ting播放器记录
+ICONID=92
+ProcName=ting.exe
+Recommend=False
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Baidu\ting\InstallDir
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Baidu\ting\InstallDir
+Item1=Directory|%APPDATA%\Baidu\Music\TingPC\PlayList|(include=*.pl)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Baidu\ting
+
+
+[TraceSogouExplorerHistory]
+Category=13
+ICONID=93
+Order=13
+AppName=搜狗浏览器上网历史记录
+ProcName=SogouExplorer.exe;SogouExplorer.e
+Item1=SQLite|%AppData%\SogouExplorer\HistoryUrl.db|(Table=UndoUrl)
+Item2=SQLite|%AppData%\SogouExplorer\HistoryUrl.db|(Table=UserRankUrl)
+Item3=SQLite|%AppData%\SogouExplorer\HistoryUrl.db|(Table=often)
+Item4=SQLite|%AppData%\SogouExplorer\uhistory.db|(Table=tb_urlhistory)
+Item5=SQLite|%AppData%\SogouExplorer\uhistory.db|(Table=tb_urlinfo)
+Item6=SQLite|%AppData%\SogouExplorer\Misc.db|(Table=DLHis)
+Item7=SQLite|%AppData%\SogouExplorer\Misc.db|(Table=UndoURL)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\SogouExplorer
+
+[TraceSogouExplorerFormData]
+Category=13
+ICONID=93
+Order=14
+AppName=搜狗浏览器智能填表记录
+ProcName=SogouExplorer.exe;SogouExplorer.e
+;Item1=SQLite|%AppData%\SogouExplorer\FormData.dat|(Table=IndexPrecise)
+;Item2=SQLite|%AppData%\SogouExplorer\FormData.dat|(Table=PreciseData)
+;Item3=SQLite|%AppData%\SogouExplorer\FormData.dat|(Table=PreciseNoShow)
+Item1=File|%AppData%\SogouExplorer\FormData.dat
+Recommend=False
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\SogouExplorer
+
+[TraceSogouExplorerCookie]
+Category=13
+ICONID=93
+Order=15
+AppName=搜狗浏览器高速模式Cookie
+ProcName=SogouExplorer.exe;SogouExplorer.e
+Item1=SQLite|%AppData%\SogouExplorer\WebKit\Cookies|(Table=cookies)
+Recommend=False
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\SogouExplorer
+
+
+[TraceShooter]
+Category=43
+AppName=射手影音播放器历史记录
+ICONID=85
+ProcName=splayer.exe
+Recommend=False
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\SPlayer\Install_Dir
+Item1=RegValue|HKEY_CURRENT_USER\Software\SPlayer\射手影音播放器\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\SPlayer\射手影音播放器\Recent Dub List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item3=Directory|%AppData%\SPlayer|(include=*.mpcpl)
+Order=2
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\SPlayer
+
+[TraceYingYinxf]
+Category=43
+AppName=影音先锋播放器历史
+ICONID=85
+ProcName=xfplay.exe
+Recommend=False
+Item1=Directory|%AppData%\xfplayer|(include=PlayList.xfu)
+Order=2
+
+[TraceGVOD]
+Category=43
+AppName=迅播播放器历史
+ICONID=85
+ProcName=gvod.exe
+Recommend=False
+Item1=Directory|%COMMON_APPDATA%\GVOD\Playlists\|(include=*.xml)
+Item2=Directory|%COMMON_APPDATA%\GVOD\|(include=XmpPlaylists.xml;XMPCommitData.sts)
+Item3=XMLNode|%COMMON_APPDATA%\GVOD\GvodUserConfig.xml|(XPath=/XmpConfig/StringSection)
+Item4=Directory|%PUBLIC%\GVOD\Playlists\|(include=*.xml)
+Item5=Directory|%PUBLIC%\GVOD\|(include=XmpPlaylists.xml;XMPCommitData.sts)
+Item6=XMLNode|%PUBLIC%\GVOD\GvodUserConfig.xml|(XPath=/XmpConfig/StringSection)
+Order=2
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\GVOD
+
+[TraceDuoMi]
+Category=43
+AppName=多米音乐历史
+ICONID=85
+ProcName=DuoMi.exe
+Recommend=False
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\DuoMi.exe\
+Item1=Directory|%InstallPath%\data\list|(include=*.pl)
+Order=2
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\DuoMi.exe
+
+
+[TraceFoxit]
+Category=59
+AppName=福昕PDF阅读器历史记录
+ICONID=81
+ProcName=Foxit Reader.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\Foxit Software\福昕阅读器\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\Foxit Software\Foxit Reader 5.0\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\Foxit Software\Foxit Reader 5.0\RecentFiles|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item4=RegValue|HKEY_CURRENT_USER\Software\Foxit Software\Foxit Reader 4.0\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item5=RegValue|HKEY_CURRENT_USER\Software\Foxit Software\Foxit Reader 4.0\RecentFiles|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item6=RegValue|HKEY_CURRENT_USER\Software\Foxit Software\Foxit Reader 3.0\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item7=RegValue|HKEY_CURRENT_USER\Software\Foxit Software\Foxit Reader 3.0\RecentFiles|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Foxit Software\Foxit Reader
+
+Order=34
+
+[TraceFlashGet]
+Category=59
+AppName=FlashGet下载记录
+ICONID=81
+ProcName=Flashget3.exe;Flashget.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\FlashGet Network\FlashGet 3\Path
+InstallPath2=RegValue|HKEY_CURRENT_USER\Software\JetCar\JetCar\Recent File List\File1
+Item1=Directory|%InstallPath%\dat|(include=*.db;*.bak)
+Item2=Directory|%APPDATA%\flashget\v3\dat|(include=*.db;*.bak)
+Item3=RegValue|HKEY_CURRENT_USER\Software\JetCar\JetCar\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item4=Directory|%InstallPath%|(include=Default.*)
+Order=34
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\FlashGet Network\FlashGet 3;HKEY_CURRENT_USER\Software\JetCar\JetCar\
+
+[TraceBitComet]
+Category=59
+AppName=BitComet下载记录
+ICONID=81
+ProcName=BitComet.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\BitComet.exe\
+Item1=Directory|%APPDATA%\BitComet|(include=Downloads.xml;Downloads.xml.bak)
+Item2=Directory|%InstallPath%|(include=Downloads.xml;Downloads.xml.bak)
+Item3=Directory|%LOCAL_APPDATA%\VirtualStore\Program Files\BitComet|(include=Downloads.xml;Downloads.xml.bak)
+Order=34
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\BitComet.exe
+
+[TraceQQDownload]
+Category=59
+AppName=QQ旋风下载记录
+ICONID=81
+ProcName=QQDownload.exe
+Item1=Directory|%APPDATA%\Tencent\QQDownload\*\Setting|(include=History.dat;BTHistory.dat;HistoryBk.dat)
+Order=34
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Tencent\QQDownload
+
+[TraceDreamweaver]
+Category=59
+AppName=Dreamweaver历史记录 
+ICONID=81
+ProcName=Dreamweaver.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Dreamweaver 1\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Dreamweaver 2\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Dreamweaver 3\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item4=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Dreamweaver 4\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item5=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Dreamweaver 5\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item6=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Dreamweaver 6\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item7=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Dreamweaver 7\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item8=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Dreamweaver 8\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item9=RegValue|HKEY_CURRENT_USER\Software\Adobe\Dreamweaver 9\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item10=RegValue|HKEY_CURRENT_USER\Software\Adobe\Dreamweaver CS1\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item11=RegValue|HKEY_CURRENT_USER\Software\Adobe\Dreamweaver CS2\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+
+Item12=RegValue|HKEY_CURRENT_USER\Software\Adobe\Dreamweaver CS3\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item13=RegValue|HKEY_CURRENT_USER\Software\Adobe\Dreamweaver CS3\Open Files|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item14=RegValue|HKEY_CURRENT_USER\Software\Adobe\Dreamweaver CS3\Open Files|(ValueList=Number Open Files)(ShowValue=1)
+
+Item15=RegValue|HKEY_CURRENT_USER\Software\Adobe\Dreamweaver CS4\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item16=RegValue|HKEY_CURRENT_USER\Software\Adobe\Dreamweaver CS4\Open Files|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item17=RegValue|HKEY_CURRENT_USER\Software\Adobe\Dreamweaver CS4\Open Files|(ValueList=Number Open Files)(ShowValue=1)
+
+Item18=RegValue|HKEY_CURRENT_USER\Software\Adobe\Dreamweaver CS5\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item19=RegValue|HKEY_CURRENT_USER\Software\Adobe\Dreamweaver CS5\Open Files|(RegExpr="(?i)Open File\s*[\d]+")(ShowValue=1)
+Item20=RegValue|HKEY_CURRENT_USER\Software\Adobe\Dreamweaver CS5\Open Files|(ValueList=Number Open Files)(ShowValue=1)
+Order=34
+
+[TraceFireWorks]
+Category=59
+AppName=Fireworks历史记录 
+ICONID=81
+ProcName=Fireworks.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Fireworks\1\ini\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Fireworks\2\ini\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Fireworks\3\ini\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item4=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Fireworks\4\ini\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item5=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Fireworks\5\ini\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item6=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Fireworks\6\ini\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item7=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Fireworks\7\ini\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item8=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Fireworks\8\ini\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item9=RegValue|HKEY_CURRENT_USER\Software\Adobe\Fireworks\9\ini\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item10=RegValue|HKEY_CURRENT_USER\Software\Adobe\Fireworks\10\ini\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item11=RegValue|HKEY_CURRENT_USER\Software\Adobe\Fireworks\11\ini\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item12=RegValue|HKEY_CURRENT_USER\Software\Adobe\Fireworks\12\ini\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Order=34
+
+[TraceFlash]
+Category=59
+AppName=Flash历史记录 
+ICONID=81
+ProcName=Flash.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Flash 1\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Flash 2\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Flash 3\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item4=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Flash 4\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item5=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Flash 5\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item6=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Flash 6\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item7=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Flash 7\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item8=RegValue|HKEY_CURRENT_USER\Software\Macromedia\Flash 8\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item9=RegValue|HKEY_CURRENT_USER\Software\Adobe\Flash 9\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item10=RegValue|HKEY_CURRENT_USER\Software\Adobe\Flash 10\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item11=RegValue|HKEY_CURRENT_USER\Software\Adobe\Flash 11\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item12=RegValue|HKEY_CURRENT_USER\Software\Adobe\Flash 12\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item13=RegValue|HKEY_CURRENT_USER\Software\Macromedia\FlashPlayer|(RegExpr="(?i)RecentMovie[\d]+")(ShowValue=1)
+Order=34
+
+;[TraceThunderDownload]
+;Category=59
+;AppName=迅雷下载历史记录
+;ICONID=76
+;ProcName=thunder.exe
+;InstallPath1=RegValue|HKEY_CURRENT_USER\Software\Thunder Network\Thunder\Path
+;InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Thunder Network\ThunderOem\thunder_backwnd\Path
+;InstallPath3=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Thunder Network\Thunder\Path
+;Item1=File|%InstallPath%\UserData\Profiles\Program|(files=ThunderStorage.dat)
+;Item2=File|%InstallPath%\..\UserData\Profiles\Program|(files=ThunderStorage.dat)
+;Item3=File|%InstallPath%\..\Profiles|(files=TaskDb.dat)
+;Order=29
+
+[TraceNetHood]
+Category=3
+AppName=Windows网上邻居
+ICONID=6
+Recommend=False
+InstallPath1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\NetHood
+Item1=Directory|%InstallPath%|(exclude=*.exe)(DeleteSubFolder=1)(IncludeSubFolder=1)
+Order=7
+Installed=1
+
+[TracePrintHood]
+Category=3
+AppName=查找打印机历史记录
+ICONID=6
+Recommend=False
+;Item1=Directory|%USERPROFILE%\PrintHood|(exclude=index.dat;desktop.ini)
+Item1=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\PrnPortsMRU|(ShowSubValue=1)(ShowValue=1)
+Order=7
+Installed=1
+
+[TraceLastRegisterPos]
+Category=3
+AppName=注册表编辑器最后一次使用位置
+ICONID=6
+Recommend=False
+Item1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit|(ValueList=Lastkey)(ShowValue=1)
+Order=7
+Installed=1
+
+[CustomWDHistoryTrace]
+Category=59
+AppName=360网盾历史
+ICONID=81
+ProcName=
+Order=34
+Installed=1
+
+[CustomTraceCuteFtp]
+Category=59
+AppName=CuteFtp站点、日志
+ICONID=81
+ProcName=cuteftppro.exe;cuteftp.exe;cuteftplite.exe
+Order=34
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\GlobalSCAPE
+
+[TraceFlashFXP]
+Category=59
+AppName=FlashFXP连接历史记录
+ICONID=81
+ProcName=FlashFXP.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\FlashFXP\4\Install Path
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\FlashFXP\4\Install Path
+DataFile1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\FlashFXP\4\InstallerDataPath
+DataFile2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\FlashFXP\4\InstallerDataPath
+Item1=File|%InstallPath%\quick.dat
+Item2=File|%DataFile1%\quick.dat
+Item3=IniSection|%InstallPath%\FlashFXP.ini|(SectionList=SITE_MRU)
+Item4=IniSection|%DataFile1%\FlashFXP.ini|(SectionList=SITE_MRU)
+Item5=File|%DataFile2%\quick.dat
+Item6=IniSection|%DataFile2%\FlashFXP.ini|(SectionList=SITE_MRU)
+Order=34
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\FlashFXP;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\FlashFXP
+
+[TraceBeyondCompare]
+Category=59
+AppName=Beyond Compare历史记录
+ICONID=81
+ProcName=BCompare.exe;BC2.exe
+Item1=Directory|%APPDATA%\Scooter Software\Beyond Compare 3|(include=BCSessions.xml;BCCommands.xml;*.bak)(IncludeSubFolder=0)
+Item2=XMLNode|%APPDATA%\Scooter Software\Beyond Compare 3\BCState.xml|(XPath=/BCState/TTextCompareState;/BCState/TDirCompareState;/BCState/TPixCompareState;/BCState/TVerCompareState;/BCState/TTextFindState;/BCState/TDataCompareState;/BCState/THexCompareState;/BCState/TMP3CompareState;/BCState/TRegCompareState;/BCState/TDirSyncState;/BCState/TTextMergeState)
+Item3=RegKey|HKEY_CURRENT_USER\Software\Scooter Software\Beyond Compare\Recent
+Order=34
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Scooter Software\Beyond Compare
+
+[TraceNero]
+Category=59
+AppName=Nero历史记录
+ICONID=81
+ProcName=nero.exe
+Item1=RegValue|HKEY_CURRENT_USER\Software\Nero\*\Nero Burning ROM\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item2=RegValue|HKEY_CURRENT_USER\Software\Nero\*\Cover Designer\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Item3=RegValue|HKEY_CURRENT_USER\Software\Nero\*\Nero - Burning Rom\Recent File List|(RegExpr="(?i)File[\d]+")(ShowValue=1)
+Order=34
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Nero
+
+[CustomTraceUSBTraceClean]
+Category=41
+AppName=USB使用痕迹
+ICONID=88
+Order=1
+Installed=1
+
+[TraceMetroIECache]
+Category=8
+AppName=Metro IE 缓存
+ICONID=9
+ProcName=iexplore.exe
+Item1=Directory|%LOCAL_APPDATA%\Packages\windows_ie_ac_001\AC\INetCache|(DeleteSubFolder=0)(IncludeSubFolder=1)(FilterWhiteList=0)(exclude=container.dat）
+Item2=Directory|%LOCAL_APPDATA%\Packages\windows_ie_ac_001\AC\AppCache|(DeleteSubFolder=0)(IncludeSubFolder=1)(FilterWhiteList=0)(exclude=container.dat）
+Item3=Directory|%LOCAL_APPDATA%\Packages\windows_ie_ac_001\AC\IECompatCache|(DeleteSubFolder=0)(IncludeSubFolder=1)(FilterWhiteList=0)(exclude=container.dat）
+Item4=Directory|%LOCAL_APPDATA%\Packages\windows_ie_ac_001\AC\iecompatuaCache|(DeleteSubFolder=0)(IncludeSubFolder=1)(FilterWhiteList=0)(exclude=container.dat）
+Order=1
+Installed=1
+MinOSVer=602
+
+[TraceMetroIECookie]
+Category=8
+AppName=Metro IE Cookie
+ICONID=9
+ProcName=iexplore.exe
+Item1=Directory|%LOCAL_APPDATA%\Packages\windows_ie_ac_001\AC\INetCookies|(DeleteSubFolder=0)(IncludeSubFolder=1)(FilterWhiteList=0)(exclude=container.dat）
+Item2=Directory|%LOCAL_APPDATA%\Packages\windows_ie_ac_001\AC\Microsoft\Internet Explorer\DOMStore|(DeleteSubFolder=0)(IncludeSubFolder=1)(FilterWhiteList=0)(exclude=container.dat）
+Order=1
+Installed=1
+MinOSVer=602
+
+[TraceMetroChromeCache]
+Category=8
+Order=1
+AppName=Chrome 应用缓存文件清理
+ICONID=38
+ProcName=chrome.exe
+Item1=Directory|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default\Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item2=Directory|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default\Media Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item3=Directory|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default\App Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item4=Directory|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default\Application Cache|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item5=Directory|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default\JumpListIcons|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+Item6=Directory|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default\JumpListIconsOld|(DeleteSubFolder=1)(IncludeSubFolder=1)(FilterWhiteList=0)
+MinOSVer=602
+InstallKey=Directory|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data
+
+[TraceMetroChromeHistory]
+Category=8
+Order=1
+AppName=Chrome 应用历史清理
+ICONID=38
+ProcName=chrome.exe
+Item1=SQLite|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default\History|(Table=segments)
+Item2=SQLite|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default\History|(Table=segment_usages)
+Item3=SQLite|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default\History|(Table=visits)
+Item4=SQLite|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default\History|(Table=keyword_search_terms)
+Item5=SQLite|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default\History|(Table=downloads)
+Item6=Directory|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default|(include=History Index *;Archived History*;Visited Links;Current Tabs;Top Sites*;Last Tabs;Current Session;Last Session;History Provider Cache;Shortcuts*)(IncludeSubFolder=0)
+Item7=SQLite|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default\History|(Table=segment_usage)
+Item8=SQLite|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default\History|(Table=urls)
+MinOSVer=602
+InstallKey=Directory|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data
+
+[TraceMetroChromeForm]
+Category=8
+Order=2
+AppName=Chrome 应用自动保存的表单
+ProcName=chrome.exe
+ICONID=38
+Recommend=False
+Item1=SQLite|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default\Web Data|(Table=autofill)
+Item2=SQLite|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default\Web Data|(Table=autofill_dates)
+MinOSVer=602
+InstallKey=Directory|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data
+
+[TraceMetroChromePwd]
+Category=12
+Order=3
+AppName=Chrome 应用自动保存的密码
+ProcName=chrome.exe
+ICONID=38
+Recommend=False
+Item1=SQLite|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default\Web Data|(Table=logins)
+Item2=SQLite|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default\Login Data|(Table=logins)
+MinOSVer=602
+
+[TraceMetroChromeCookie]
+Category=8
+Order=4
+AppName=Chrome 应用Cookie
+Recommend=False
+ICONID=38
+ProcName=chrome.exe
+Item1=SQLite|%LOCAL_APPDATA%\Google\Chrome\Metro\User Data\Default\Cookies|(Table=cookies)
+MinOSVer=602
+
+[TraceMetroPPTV]
+Category=8
+Order=8
+AppName=PPTV网络电视
+ICONID=90
+ProcName=PPTVForWin8.exe
+Recommend=False
+Item1=File|%LOCAL_APPDATA%\Packages\PPTV.PPTVHD_svvymaqds8vhm\LocalState\filerecent.db
+MinOSVer=602
+
+[TraceMetroQiyi]
+Category=8
+Order=10
+AppName=奇艺影音播放器历史
+ICONID=92
+ProcName=iQiyiVideo.exe
+Recommend=False
+Item1=Directory|%LOCAL_APPDATA%\Packages\0C72C7CD.217379CB4AE6F_atj5cpqqdhzyp\LocalState|(include=history.xml;cloudhistory.xml)
+MinOSVer=602
+
+[TraceUUSee]
+Category=43
+AppName=UUSee网络电视
+ICONID=29
+ProcName=uutran.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\uusee\UUPlayer_2008\UUSeeInstallPath
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\uusee\UUPlayer_2008\UUSeeInstallPath
+Item1=File|%InstallPath%\cache\5C\5CACD8D891055D1513D7AE33DD118E36
+Order=4
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\uusee;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\uusee
+
+[TraceSMPlayer]
+Category=43
+AppName=SMPlayer
+ICONID=29
+ProcName=SMPlayer.exe
+Item1=IniSection|%UserProfile%\.smplayer\smplayer.ini|(SectionList=history;playlist_contents)
+Order=4
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\SMPlayer;HKEY_LOCAL_MACHINE\Wow6432Node\SOFTWARE\SMPlayer
+
+[TraceXiuXiu]
+Category=44
+AppName=XiuXiu
+ICONID=18
+ProcName=XiuXiu.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\美图秀秀\UninstallString
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\美图秀秀\UninstallString
+Item1=File|%InstallPath%\Resources\RecentFiles.ini
+Order=18
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\美图秀秀;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\美图秀秀
+
+[TraceMetroTencentVideo]
+Category=8
+Order=8
+AppName=腾讯视频
+ICONID=90
+ProcName=QQLive.exe
+Recommend=False
+Item1=File|%LOCAL_APPDATA%\Packages\903DB504.56054E940A214_a99ra4d2cbcxa\LocalState\Cache\History\WatchHistory.data
+MinOSVer=602
+
+
+[TraceMetroSohuVideoPlay]
+Category=8
+Order=8
+AppName=搜狐视频播放
+ICONID=90
+ProcName=搜狐视频.exe
+Recommend=False
+Item1=File|%LOCAL_APPDATA%\Packages\518B6F23.22397EDDD7953_93b28d6rvp5bg\LocalState\sohuvideo.db.win8sohuvideo.Model.PlayEpisode[HistorysEpisode.table]
+MinOSVer=602
+
+[TraceMetroSohuVideoLogin]
+Category=8
+Order=8
+AppName=搜狐视频登录
+ICONID=90
+ProcName=搜狐视频.exe
+Recommend=False
+Item1=File|%LOCAL_APPDATA%\Packages\518B6F23.22397EDDD7953_93b28d6rvp5bg\LocalState\sohuvideo.db.win8sohuvideo.Model.User[User.table]
+MinOSVer=602
+
+[TraceAdobeFlashPlayer]
+Category=43
+Order=10
+AppName=Flash播放器
+ICONID=92
+Recommend=False
+Item1=Directory|%APPDATA%\Macromedia\Flash Player\#SharedObjects|(IncludeSubFolder=1)
+Item2=Directory|%APPDATA%\Macromedia\Flash Player\macromedia.com|(IncludeSubFolder=1)
+
+
+[TracePotPlyer]
+Category=43
+Order=10
+AppName=PotPlayer播放器
+ICONID=93
+Recommend=False
+ProcName=PotPlayerMini.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\PotPlayer\UninstallString
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\PotPlayer\UninstallString
+InstallPath3=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\PotPlayer64\UninstallString
+Item1=Directory|%APPDATA%\PotPlayerMini\Playlist|(include=PotPlayerMini.dpl)
+Item2=Directory|%APPDATA%\PotPlayerMini64\Playlist|(include=PotPlayerMini64.dpl)
+Item3=Directory|%InstallPath%\Playlist|(include=PotPlayerMini.dpl)
+Item4=Directory|%InstallPath%\Playlist|(include=PotPlayerMini64.dpl)
+
+[TraceGeePlayer]
+Category=43
+Order=10
+AppName=爱奇艺万能播放器历史
+ICONID=92
+ProcName=GeePlayer.exe
+Item1=File|%APPDATA%\IQIYI Video\LStyle\GpLocalList.xml
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\GeePlayer.exe
+
+[TraceUCBrowserHistory]
+Category=13
+Order=1
+AppName=UC浏览器历史
+ICONID=38
+ProcName=UCBrowser.exe
+InstallPath1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\UCBrowser.exe\Path
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\UCBrowser.exe\Path
+Item1=Directory|%LOCAL_APPDATA%\UCBrowser\User Data\Default|(include=History Index *;Archived History*;Visited Links;Current Tabs;Top Sites*;Last Tabs;Current Session;Last Session;History Provider Cache;Shortcuts*;History.*)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\UCBrowser.exe;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\UCBrowser.exe
+
+[TraceUCBrowserFormData]
+Category=13
+Order=1
+AppName=UC浏览器表单和密码
+ICONID=38
+ProcName=UCBrowser.exe
+InstallPath1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\UCBrowser.exe\Path
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\UCBrowser.exe\Path
+Item1=Directory|%LOCAL_APPDATA%\UCBrowser\User Data\Default|(include=UC Login Data*)(IncludeSubFolder=0)
+Item2=SQLite|%LOCAL_APPDATA%\UCBrowser\User Data\Default\Web Data.55|(Table=autofill)
+Item3=SQLite|%LOCAL_APPDATA%\UCBrowser\User Data\Default\Web Data.55|(Table=autofill_profiles)
+Item4=SQLite|%LOCAL_APPDATA%\UCBrowser\User Data\Default\Web Data.55|(Table=logins)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\UCBrowser.exe;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\UCBrowser.exe
+
+[TraceUCBrowserCookie]
+Category=13
+Order=1
+AppName=UC浏览器Cookie
+ICONID=38
+ProcName=UCBrowser.exe
+InstallPath1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\UCBrowser.exe\Path
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\UCBrowser.exe\Path
+Item1=Directory|%LOCAL_APPDATA%\UCBrowser\User Data\Default|(include=Cookies.7)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\UCBrowser.exe;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\UCBrowser.exe
+
+[TraceYYExplorerHistory]
+Category=13
+Order=1
+AppName=YY浏览器历史
+ICONID=38
+ProcName=YYExplorer.exe
+Item1=Directory|%LOCAL_APPDATA%\YYExplorer\User Data\Default|(include=History Index *;Archived History*;Visited Links;Current Tabs;Top Sites*;Last Tabs;Current Session;Last Session;History Provider Cache;Shortcuts*;History)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\YYExplorer;HKEY_CURRENT_USER\Software\duowan\YYExplorer
+
+[TraceYYExplorerCookie]
+Category=13
+Order=1
+AppName=YY浏览器Cookie
+ICONID=38
+ProcName=YYExplorer.exe
+Item1=Directory|%LOCAL_APPDATA%\YYExplorer\User Data\Default|(include=Cookies)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\YYExplorer;HKEY_CURRENT_USER\Software\duowan\YYExplorer
+
+[TraceYYExplorerFormData]
+Category=13
+Order=1
+AppName=YY浏览器表单和密码
+ICONID=38
+ProcName=YYExplorer.exe
+Item1=Directory|%LOCAL_APPDATA%\YYExplorer\User Data\Default|(include=Login Data)(IncludeSubFolder=0)
+Item2=SQLite|%LOCAL_APPDATA%\YYExplorer\User Data\Default\Web Data|(Table=autofill)
+Item3=SQLite|%LOCAL_APPDATA%\YYExplorer\User Data\Default\Web Data|(Table=autofill_dates)
+Item4=SQLite|%LOCAL_APPDATA%\YYExplorer\User Data\Default\Web Data|(Table=autofill_profiles)
+Item5=SQLite|%LOCAL_APPDATA%\YYExplorer\User Data\Default\Web Data|(Table=logins)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\YYExplorer;HKEY_CURRENT_USER\Software\duowan\YYExplorer
+
+[TraceKChromeHistory]
+Category=13
+Order=1
+AppName=快快浏览器历史
+ICONID=38
+ProcName=KChrome.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\kchrome.exe\Path
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\App Paths\kchrome.exe\Path
+Item1=Directory|%InstallPath%\KChromeUserData\Default|(include=History Index *;Archived History*;Visited Links;Current Tabs;Top Sites*;Last Tabs;Current Session;Last Session;History Provider Cache;Shortcuts*;History)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\kchrome.exe;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\App Paths\kchrome.exe
+
+[TraceKChromeCookie]
+Category=13
+Order=1
+AppName=快快浏览器Cookie
+ICONID=38
+ProcName=KChrome.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\kchrome.exe\Path
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\App Paths\kchrome.exe\Path
+Item1=Directory|%InstallPath%\KChromeUserData\Default|(include=Cookies)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\kchrome.exe;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\App Paths\kchrome.exe
+
+[TraceKChromeFormData]
+Category=13
+Order=1
+AppName=快快浏览器表单和密码
+ICONID=38
+ProcName=KChrome.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\kchrome.exe\Path
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\App Paths\kchrome.exe\Path
+Item1=Directory|%InstallPath%\KChromeUserData\Default|(include=Login Data)(IncludeSubFolder=0)
+Item2=SQLite|%InstallPath%\KChromeUserData\Default\Web Data|(Table=autofill)
+Item3=SQLite|%InstallPath%\KChromeUserData\Default\Web Data|(Table=autofill_dates)
+Item4=SQLite|%InstallPath%\KChromeUserData\Default\Web Data|(Table=autofill_profiles)
+Item4=SQLite|%InstallPath%\KChromeUserData\Default\Web Data|(Table=logins)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\kchrome.exe;HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\App Paths\kchrome.exe
+
+[TraceKWExplorerHistory]
+Category=13
+Order=1
+AppName=快玩浏览器历史
+ICONID=38
+ProcName=KWExplorer.exe
+Item1=Directory|%LOCAL_APPDATA%\KWExplorer\User Data\Default|(include=History Index *;Archived History*;Visited Links;Current Tabs;Top Sites*;Last Tabs;Current Session;Last Session;History Provider Cache;Shortcuts*;History)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\KWExplorer
+
+[TraceKWExplorerCookie]
+Category=13
+Order=1
+AppName=快玩浏览器Cookie
+ICONID=38
+ProcName=KWExplorer.exe
+Item1=Directory|%LOCAL_APPDATA%\KWExplorer\User Data\Default|(include=Cookies)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\KWExplorer
+
+[TraceKWExplorerFormData]
+Category=13
+Order=1
+AppName=快玩浏览器表单和密码
+ICONID=38
+ProcName=KWExplorer.exe
+InstallPath1=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\kchrome.exe\Path
+InstallPath2=RegValue|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\App Paths\kchrome.exe\Path
+Item1=Directory|%LOCAL_APPDATA%\KWExplorer\User Data\Default|(include=Login Data)(IncludeSubFolder=0)
+Item2=SQLite|%LOCAL_APPDATA%\KWExplorer\User Data\Default\Web Data|(Table=autofill)
+Item3=SQLite|%LOCAL_APPDATA%\KWExplorer\User Data\Default\Web Data|(Table=autofill_dates)
+Item4=SQLite|%LOCAL_APPDATA%\KWExplorer\User Data\Default\Web Data|(Table=autofill_profiles)
+Item4=SQLite|%LOCAL_APPDATA%\KWExplorer\User Data\Default\Web Data|(Table=logins)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\KWExplorer
+
+[TraceJuziHistory]
+Category=13
+Order=1
+AppName=桔子浏览器历史
+ICONID=38
+ProcName=Juzi.exe
+InstallPath1=RegValue|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\JuziBrowser.exe\Path
+InstallPath2=RegValue|HKEY_CURRENT_USER\Software\JuziBrowser\lastinstpath
+Item1=SQLite|%InstallPath%\User_Data\Default\History.db|(Table=history_main)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\JuziBrowser;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\JuziBrowser.exe
+
+[Trace2345ExplorerHistory]
+Category=13
+Order=1
+AppName=2345王牌浏览器历史
+ICONID=38
+ProcName=2345Explorer.exe
+Item1=SQLite|%APPDATA%\2345Explorer\Users\Default\History.data|(Table=url_history)
+Item2=SQLite|%APPDATA%\2345Explorer\Users\Default\History.data|(Table=url_info)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\2345Explorer.exe
+
+[Trace2345chromeHistory]
+Category=13
+Order=1
+AppName=2345加速浏览器历史
+ICONID=38
+ProcName=2345chrome.exe
+Item1=Directory|%LOCAL_APPDATA%\2345chrome\User Data\Default|(include=History Index *;Archived History*;Visited Links;Current Tabs;Last Tabs;Current Session;Last Session;History Provider Cache;Shortcuts*;History)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\2345chrome.exe;HKEY_CURRENT_USER\Software\2345Chrome
+
+[Trace2345chromeCookie]
+Category=13
+Order=1
+AppName=2345加速浏览器Cookie
+ICONID=38
+ProcName=2345chrome.exe
+Item1=Directory|%LOCAL_APPDATA%\2345chrome\User Data\Default|(include=Cookies*)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\2345chrome.exe;HKEY_CURRENT_USER\Software\2345Chrome
+
+[Tracehao123browserHistory]
+Category=13
+Order=1
+AppName=百度浏览器hao123专版历史
+ICONID=38
+ProcName=hao123browser.exe
+Item1=SQLite|%APPDATA%\Baidu\Hao123Browser\UserData\*\history.db|(Table=history)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Baidu\hao123Browser;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\hao123Browser.exe
+
+[Tracehao123browserCookie]
+Category=13
+Order=1
+AppName=百度浏览器hao123专版Cookie
+ICONID=38
+ProcName=hao123browser.exe
+Item1=Directory|%APPDATA%\Baidu\Hao123Browser\SysData|(include=Cookie*)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Baidu\hao123Browser;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\hao123Browser.exe
+
+[Tracehao123browserFormData]
+Category=13
+Order=1
+AppName=百度浏览器hao123专版表单和密码
+ICONID=38
+ProcName=hao123browser.exe
+Item1=Directory|%APPDATA%\Baidu\Hao123Browser\UserData\*\|(include=AutoFill_v2)(IncludeSubFolder=0)
+Item2=Directory|%APPDATA%\Baidu\Hao123Browser\UserData\*\|(include=AutoLogin_v2)(IncludeSubFolder=0)
+InstallKey=RegKey|HKEY_CURRENT_USER\Software\Baidu\hao123Browser;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\hao123Browser.exe
+
+[Tracespartan_edgeHistory]
+Category=13
+Order=1
+AppName=Microsoft Edge浏览历史
+ICONID=38
+ProcName=spartan_edge.exe;MicrosoftEdge.exe
+Item1=Directory|%LOCAL_APPDATA%\Packages\Microsoft.Windows.Spartan_cw5n1h2txyewy\AC\Spartan\History
+Item2=Directory|%LOCAL_APPDATA%\Packages\Microsoft.Windows.Spartan_cw5n1h2txyewy\AC\*\Spartan\History
+Item3=Directory|%LOCAL_APPDATA%\Packages\microsoft.microsoftedge_8wekyb3d8bbwe\AC\MicrosoftEdge\History
+Item4=Directory|%LOCAL_APPDATA%\Packages\microsoft.microsoftedge_8wekyb3d8bbwe\AC\*\MicrosoftEdge\History
+InstallKey=File|%windir%\SystemApps\Spartan_cw5n1h2txyewy\spartan_edge.exe
+InstallKey=File|%windir%\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\MicrosoftEdge.exe
+
+[Tracespartan_edgeDownloadHistory]
+Category=13
+Order=1
+AppName=Microsoft Edge下载历史
+ICONID=38
+ProcName=spartan_edge.exe;MicrosoftEdge.exe
+Item1=Directory|%LOCAL_APPDATA%\Packages\Microsoft.Windows.Spartan_cw5n1h2txyewy\AC\Spartan\User\Default\DownloadHistory
+Item2=Directory|%LOCAL_APPDATA%\Packages\microsoft.microsoftedge_8wekyb3d8bbwe\AC\MicrosoftEdge\User\Default\DownloadHistory
+InstallKey=File|%windir%\SystemApps\Spartan_cw5n1h2txyewy\spartan_edge.exe
+InstallKey=File|%windir%\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\MicrosoftEdge.exe
+
+[Tracespartan_edgeCookie]
+Category=13
+Order=1
+AppName=Microsoft Edge的Cookie
+ICONID=38
+ProcName=spartan_edge.exe;MicrosoftEdge.exe
+Item1=Directory|%LOCAL_APPDATA%\Packages\Microsoft.Windows.Spartan_cw5n1h2txyewy\AC\*\Spartan\Cookies|(include=*.txt)
+Item2=Directory|%LOCAL_APPDATA%\Packages\Microsoft.Windows.Spartan_cw5n1h2txyewy\AC\Spartan\Cookies|(include=*.txt)
+Item3=Directory|%LOCAL_APPDATA%\Packages\microsoft.microsoftedge_8wekyb3d8bbwe\AC\*\MicrosoftEdge\Cookies|(include=*.txt)
+Item4=Directory|%LOCAL_APPDATA%\Packages\microsoft.microsoftedge_8wekyb3d8bbwe\AC\MicrosoftEdge\Cookies|(include=*.txt)
+InstallKey=File|%windir%\SystemApps\Spartan_cw5n1h2txyewy\spartan_edge.exe
+InstallKey=File|%windir%\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\MicrosoftEdge.exe

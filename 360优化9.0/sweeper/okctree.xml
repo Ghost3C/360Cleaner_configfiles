@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<level1 groupid="sysclean" disname="电脑中的垃圾" desname="清理系统中的垃圾文件，释放磁盘空间！" check="true" internal="none" subitemid="none">
+		<level2 groupid="sysclean" disname="清理回收站" desname="清理回收站的垃圾文件" check="false" internal="3|" subitemid="sysclean5" cheat="false" />
+		<level2 groupid="sysclean" disname="Windows系统垃圾文件" desname="系统中无用的垃圾文件" check="true" internal="1|100|101|102|5|" subitemid="sysclean1"/>
+		<level2 groupid="sysclean" disname="上网浏览产生的垃圾文件" desname="清理上网产生的缓存文件" check="true" internal="105|3208|3207|3201|3202|3203|3204|3205|3206|3210|6000|6001|6002|5999|6003|6004|6008|6009|" subitemid="sysclean2"/>
+		<level2 groupid="sysclean" disname="应用程序垃圾文件" desname="清理第三方软件产生的垃圾文件" check="true" internal="2004|7000|7003|3403|2006|3402" subitemid="sysclean4"/>
+		<level2 groupid="sysclean" disname="看视频听音乐产生的垃圾文件" desname="清理播放器已下载的缓存文件" check="false" internal="2026|2027|2028|2031|2032|" subitemid="sysclean3"/>
+	</level1>
+	<level1 groupid="pluginclean" disname="电脑中不必要的插件" desname="清理系统和浏览器中可清理的插件，提升运行速度！" check="true" internal="none" subitemid="none">	
+		<level2 groupid="pluginclean" disname="placeholder" desname="placeholder" check="true" internal="0" subitemid="pluginclean1"/>
+	</level1>
+	<level1 groupid="traceclean" disname="使用电脑和上网产生的痕迹" desname="清理使用痕迹可以有效保证您的隐私安全！" check="false" internal="none" subitemid="none">
+		<level2 groupid="traceclean" disname="上网浏览痕迹" desname="上网时留下的浏览痕迹" check="false" internal="CustomTraceIE00119|Trace0000101135|Trace0000131238|Trace0000701387|Trace0000711338|Trace0000401332|Trace0000381329|Trace0000691368|TraceTTFormData1368|CustomTraceOpera0011337|CustomTraceOpera0021337|Trace0000191373|Trace0000161369|Trace0000181371|Trace0000171370|TraceSogouExplorerHistory1393|" subitemid="traceclean1"/>
+		<level2 groupid="traceclean" disname="Windows使用痕迹" desname="系统的运行痕迹与打开文档痕迹等" check="false" internal="Trace00005731|Trace00005832|Trace00005933|Trace00006034|Trace00006135|Trace00006236|CustomTraceFileExt0137|Trace0000204112|Trace0000224152|" subitemid="traceclean2"/>
+		<level2 groupid="traceclean" disname="办公软件使用痕迹" desname="常用办公软件的使用痕迹" check="false" internal="Trace0000304251|Trace0000314221|Trace0000344217|Trace0000334216|Trace0000324215|Trace0000434258|Trace0000274265|Trace0000284266|Trace0000294267|Trace0000214113|" subitemid="traceclean3"/>
+		<level2 groupid="traceclean" disname="最近看过的视频" desname="各种播放器观看视频后留下的痕迹" check="false" internal="Trace0000244114|TraceQuicktimePlayer4392|TraceShooter4385|" subitemid="traceclean4"/>
+		<level2 groupid="traceclean" disname="其他应用程序使用痕迹" desname="其它应用程序使用痕迹与历史记录等" check="false" internal="Trace000055986|Trace000065924|Trace0000235925|Trace0000364426|Trace0000374418|Trace360Zip5926|Trace0000464475|Trace0000425959|Trace0000475976|Trace0000495978|Trace0000505979|Trace0000515980|Trace0000525981|Trace0000535982|Trace0000445950|" subitemid="traceclean5"/>
+		<level2 groupid="traceclean" disname="搜索引擎跟踪cookies" desname="清理后防止搜索引擎跟踪搜索行为" check="false" internal="1;2;3;" subitemid="tracecleanex1"/>
+	</level1>
+	<level1 groupid="register" disname="注册表中的多余项目" desname="优化注册表结构，提高系统性能！" check="false" internal="none" subitemid="none">
+		<level2 groupid="register" disname="无效的注册表项" desname="清理无效文件关联和菜单等" check="false" internal="CustomInvalidStartMenu58|CustomInvalidRightMenu573|CustomInvalidMUICache541|CustomInvalidAppPath53|" subitemid="register1"/>
+		<level2 groupid="register" disname="错误的注册表项" desname="清理多余和错误的注册表键值" check="false" internal="CustomInvalidHelp554|CustomInvalidSoft54|" subitemid="register2"/>
+		<level2 groupid="register" disname="残留的软件信息" desname="软件安装和卸载残留的无用信息" check="false" internal="CustomInvalidInstaller511|CustomInvalidUnInstaller511|CustomInvalidFirewall560|" subitemid="register3"/>
+	</level1>
+</root>

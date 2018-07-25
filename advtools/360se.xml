@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="unicode"?>
+<AdvTools>	 
+  <CommonInfo XmlVer="10.0.0.1001"/>
+  <ToolsList>
+   	<ToolsInfo 
+    	id="30025" 
+		IDS="360se"
+    	Show="1"	
+		ExcludeSystem=""
+		GroupID="5"
+    	Name="安全浏览器" 
+    	Description="恶意网站拦截，下载保护" 
+    	IconPath="AdvanceTools_360se_10_52.png" 
+		IconPath_32="AdvanceTools_360se_10_32.png" 
+        AppPath="AutoFind"
+		Param="--oneinstance"	
+		Pdown32="http://dl.360safe.com/se/gndq.exe"
+		Pdown64="http://dl.360safe.com/se/gndq.exe"	
+		RegAppPathRoot="HKEY_LOCAL_MACHINE"
+		RegAppPathKey="SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\360se6.exe"
+		RegAppPathName="Path"
+		RegAppName="360se.exe"	
+		CHKFile="360se.exe;"	
+		Order="273"
+		UninstallType="1"
+		UninstallRegRoot="HKEY_CURRENT_USER"
+        UninstallRegPath="Software\360\360se6\Update\ClientState\{02E720BD-2B50-4404-947C-65DBE64F6970}"
+        UninstallRegName="UninstallString"
+		UninstallExe="%appdata%\360se6\Application\7.1.1.814\setup.exe"
+		UninstallArg="--uninstall"
+		Recommand="0"
+		MyTool="1"
+    />
+  </ToolsList>
+  
+</AdvTools>

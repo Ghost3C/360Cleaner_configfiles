@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+
+	<subitem id="CustomInvalidStartMenu58" disname="无效的开始菜单" desname="清理已经无法使用的开始菜单项" check="true" checksugg="建议清理" iconid="11"/>
+	<subitem id="CustomInvalidRightMenu573" disname="无效的右键菜单" desname="清理已经无法使用的右键菜单项" check="true" checksugg="建议清理" iconid="1"/>	
+	<subitem id="CustomInvalidMUICache541" disname="无效的MUI缓存" desname="清理已经失效了的MUI缓存信息" check="true" checksugg="建议清理" iconid="13"/>
+	<subitem id="CustomInvalidHelp554" disname="无效的帮助" desname="清理已经无法打开了的帮助文件信息" check="true" checksugg="建议清理" iconid="6"/>
+	<subitem id="CustomInvalidSoft54" disname="无效的软件信息" desname="清理因卸载或更新软件产生的已经失效的软件注册信息" check="true" checksugg="建议清理" iconid="16"/>
+	<subitem id="CustomInvalidAppPath53" disname="无效的应用程序路径" desname="清理对应文件已经不存在的程序路径信息" check="true" checksugg="建议清理" iconid="2"/>
+	<subitem id="CustomInvalidInstaller511" disname="无效的安装程序" desname="清理安装程序残留的安装信息" check="true" checksugg="建议清理" iconid="4"/>
+	<subitem id="CustomInvalidUnInstaller511" disname="无效的卸载程序" desname="清理卸载程序残留的卸载信息" check="true" checksugg="建议清理" iconid="5"/>
+	<subitem id="CustomInvalidFirewall560" disname="无效的防火墙设置" desname="清理Windows防火墙里已经不再生效了的规则" check="true" checksugg="建议清理" iconid="13"/>
+
+	<subitem id="CustomInvalidFileExt555" disname="错误的文件关联" desname="清理丢失对应关系或者对应错误的文件关联信息" check="false" checksugg="可以清理" iconid="10"/>
+	<subitem id="CustomInvalidFont561" disname="无效的字体" desname="清理对应字体已经不存在的字体注册信息" check="false" checksugg="可以清理" iconid="7"/>
+	<subitem id="CustomInvalidStartup51" disname="无效的启动项目" desname="清理要启动的文件已经不存在了的注册信息" check="false" checksugg="谨慎清理" iconid="14"/>
+	<subitem id="CustomInvalidActiveX555" disname="错误的ActiveX" desname="清理已经不存在了的ActiveX的注册信息" check="false" checksugg="谨慎清理" iconid="0"/>
+        <subitem id="CustomInvalidClass555" disname="错误的类信息" desname="清理已经丢失对应关系的类信息" check="false" checksugg="谨慎清理" iconid="10"/>
+	
+        <subitem id="CustomInvalidTypeLib555" disname="错误的类型库信息" desname="清理已经丢失对应关系的类库信息" check="false" checksugg="谨慎清理" iconid="10"/>
+	
+        <subitem id="CustomRedundanceDll541" disname="冗余的动态链接库" desname="清理文件不存在了的动态链接库(*.DLL)的注册信息" check="false" checksugg="谨慎清理" iconid="8"/>
+	
+        <countsum count="10000"/>
+</root>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

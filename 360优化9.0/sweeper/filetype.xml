@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <ring>
+    <subitem filetype=".doc|.docx|.txt|.xls|.xlsx|.ppt|.pps|.pptx|.pdf|.wps|.log|.rtf|" disname="文档" des="文档文件，用于存储文字、图像等数据的文件" dangrous="false" colornormal="0x440ced" colorhover="0x5c26fc" coloractive="0x3900e6"/>
+    <subitem filetype=".jpg|.jpeg|.png|.psd|.bmp|.tif|.gif|.psd|.tiff|.tga|.exif|.svg|.cdr|.pcd|.dxf|.ufo|.eps|.ai|.raw|" disname="图像" des="图像文件，电脑中常见保存画面的文件" dangrous="false" colornormal="0x00d0fa" colorhover="0x00e6ff" coloractive="0x00ace5"/>
+    <subitem filetype=".ra|.rm|.ram|.divx|.mov|.mpg|.amv|.divx|.asf|.avi|.wmv|.rmvb|.mp4|.m4v|.3gp|.mpeg|.flv|.f4v|.vob|.mkv|.ts|" disname="视频" des="视频文件，可使用视频类软件播放观看" dangrous="false" colornormal="0xf2b90c" colorhover="0xf8d312" coloractive="0xe6af0b"/>
+    <subitem filetype=".wav|.flac|.ogg|.wav|.mp3|.dts|.m4a|.mod|.acc|.ape|.wma|.ra|.md|.vqf|.mid|.m4a|.midi|.cda|.dsp|.mpc|.pac|.wv|" disname="音乐" des="音乐文件，可通过音乐播放器打开试听" dangrous="false" colornormal="0xcc0acc" colorhover="0xdd1ee1" coloractive="0xbf0abf"/>
+    <subitem filetype=".rar|.zip|.7z|.ari|.arj|.alz|.ace|.bz|.bh|.cab|.dar|.dbd|.jar|.kz|.lbr|.pak|.sfx|.tar|.tgz|.part|.iso|" disname="压缩" des="压缩文件，将文件进行压缩体积后存储的文件" dangrous="false" colornormal="0x007fff" colorhover="0x00b4ff" coloractive="0x0090f7"/>
+    <subitem filetype="*.*" disname="其他" des="描述" dangrous="false" colornormal="0x00cc99" colorhover="0x00ddb3" coloractive="00b383"/>
+  </ring>
+  
+  <spefile>
+   <spefileitem filename="chrome.dll" dir="" des="Chrome内核浏览器核心文件"/>
+   <spefileitem filename="chrome.7z" dir="" des="Chrome浏览器升级文件"/>
+   <spefileitem filename="data_*" dir="\chrome\" des="Chrome内核浏览器缓存文件"/>
+   <spefileitem filename="Msg2.0.db" dir="" des="腾讯QQ聊天记录数据文件"/>
+   <spefileitem filename="*KB936929*" dir="" des="Windows XP SP3补丁文件"/>
+   <spefileitem filename="*.pak" dir="\Resources\" des="QQ旋舞游戏文件"/>
+   <spefileitem filename="x51pak_*" dir="\Resources\" des="QQ旋舞游戏文件"/>
+   <spefileitem filename="NBA2KOnline*.exe" dir="" des="NBA2K Online游戏安装文件"/>
+   <spefileitem filename="sg_FullVersion*" dir="" des="QQ三国游戏安装文件"/>
+   <spefileitem filename="objects.pkg" dir="\qqsg\data" des="QQ三国游戏文件"/>
+   <spefileitem filename="HeroPak_client.zip" dir="" des="英雄联盟游戏补丁文件"/>
+   <spefileitem filename="QQdancer_bz_*.exe" dir="" des="QQ旋舞游戏安装文件"/>
+   <spefileitem filename="DNF_SEASON*.exe" dir="" des="DNF游戏安装文件"/>
+   <spefileitem filename="lol_v*.exe" dir="" des="英雄联盟游戏安装文件"/>
+   <spefileitem filename="IE9-Windows7-*chs.exe" dir="" des="IE9安装文件"/>
+   <spefileitem filename="ProPrWW.cab" dir="" des="Office安装文件"/>
+   <spefileitem filename="PptLR.cab" dir="" des="Office安装文件"/>
+   <spefileitem filename="WordLR.cab" dir="" des="Office安装文件"/>
+   <spefileitem filename="IME32.cab" dir="" des="Office安装文件"/>
+   <spefileitem filename="ProPrWW2.cab" dir="" des="Office安装文件"/>
+   <spefileitem filename="OfficeLR.cab" dir="" des="Office安装文件"/>
+   <spefileitem filename="ENTERWW.CAB" dir="" des="Office安装文件"/>
+   <spefileitem filename="ProPlsWW.cab" dir="" des="Office安装文件"/>
+   <spefileitem filename="MAINWWsp1.msp" dir="" des="Office安装文件"/>
+   <spefileitem filename="Proof.cab0" dir="" des="Office安装文件"/>
+   <spefileitem filename="pubww.cab" dir="" des="Office安装文件"/>
+   <spefileitem filename="INFWW.CAB" dir="" des="Office安装文件"/>
+   <spefileitem filename="pptww.cab" dir="" des="Office安装文件"/>
+   <spefileitem filename="excelww.cab" dir="" des="Office安装文件"/>
+   <spefileitem filename="olkww.cab" dir="" des="Office安装文件"/>
+   <spefileitem filename="visproww.cab" dir="" des="Office安装文件"/>
+   <spefileitem filename="grooveww.cab" dir="" des="Office安装文件"/>
+   <spefileitem filename="accww.cab" dir="" des="Office安装文件"/>
+   <spefileitem filename="visstdww.cab" dir="" des="Office安装文件"/>
+   <spefileitem filename="prjproww.cab" dir="" des="Office安装文件"/>
+   <spefileitem filename="noteww.cab" dir="" des="Office安装文件"/>
+   <spefileitem filename="prjstdww.cab" dir="" des="Office安装文件"/>
+   <spefileitem filename="data1.vfs" dir="\NBA2K Online\Data" des="NBA2K Online游戏文件"/>
+   <spefileitem filename="gamefile*.vfs" dir="\NBA2K Online\gamefile" des="NBA2K Online游戏文件"/>
+   <spefileitem filename="map.vfs" dir="\vfs\" des="轩辕传奇游戏文件"/>
+   <spefileitem filename="data.vfs" dir="\vfs\" des="轩辕传奇游戏文件"/>
+   <spefileitem filename="lines*.bin" dir="\NBA 2K11" des="NBA2K11 游戏文件"/>
+   <spefileitem filename="eventmusic.bin" dir="\NBA 2K11" des="NBA2K11 游戏文件"/>
+   <spefileitem filename="streamedchatter.bin" dir="\NBA 2K11" des="NBA2K11 游戏文件"/>
+   <spefileitem filename="palines.bin" dir="\NBA 2K11" des="NBA2K11 游戏文件"/>
+   <spefileitem filename="portrait_hi.cdf" dir="\NBA 2K11" des="NBA2K11 游戏文件"/>
+   <spefileitem filename="streamedplayerchatter.bin" dir="\NBA 2K11" des="NBA2K11 游戏文件"/>
+   <spefileitem filename="paplayers.bin" dir="\NBA 2K11" des="NBA2K11 游戏文件"/>
+   <spefileitem filename="data.vfs" dir="\QQ飞车" des="QQ飞车游戏文件"/>
+   <spefileitem filename="res.vfs" dir="\QQ飞车" des="QQ飞车游戏文件"/>
+   <spefileitem filename="ppsds.pgf" dir="" des="PPS网络电视缓存文件"/>
+   <spefileitem filename="Data1.cab" dir="\Adobe Acrobat 9 Pro\" des="Adobe Acrobat 安装文件"/>
+   <spefileitem filename="Data.DND" dir="\Data" des="WinPE启动盘制作文件"/>
+   <spefileitem filename="cache*.dat" dir="\ikudisk" des="优酷视频缓存文件"/>
+   <spefileitem filename="cache*.dat" dir="\youkudisk" des="优酷视频缓存文件"/>
+   <spefileitem filename="Nokia_Suite.msi" dir="" des="诺基亚PC套件安装文件"/>
+   <spefileitem filename="pak0.pak" dir="\valve\" des="CS游戏文件"/>
+   <spefileitem filename="c9_setup_*" dir="" des="第九大陆游戏安装文件"/>
+   <spefileitem filename="QQFFO*install*" dir="" des="QQ自由幻想游戏安装文件"/>
+   <spefileitem filename="objects*.pkg" dir="" des="QQ自由幻想游戏安装文件"/>
+   <spefileitem filename="QQSpeed1.00_*.exe" dir="" des="QQ飞车游戏安装文件"/>
+   <spefileitem filename="AVA_Client_Ver_*" dir="" des="战地之王游戏安装文件"/>
+   <spefileitem filename="QQR2_v*.exe" dir="" des="QQ音速游戏安装文件"/>
+   <spefileitem filename="QQTang4.3_*.exe" dir="" des="QQ堂游戏安装文件"/>
+   <spefileitem filename="QQPets3D1.0*.exe" dir="" des="QQ宠物安装文件"/>
+   <spefileitem filename="QQSpeed1.00_Beta*.exe" dir="" des="QQ飞车游戏安装文件"/>
+   <spefileitem filename="XD_V1.*.exe" dir="" des="炫斗之王游戏安装文件"/>
+   <spefileitem filename="Battery_Alpha_V*.exe" dir="" des="烈焰行动游戏安装文件"/>
+   <spefileitem filename="QQNZ_1*.exe" dir="" des="逆战游戏安装文件"/>
+   <spefileitem filename="YXD4.*.exe" dir="" des="英雄岛游戏安装文件"/>
+   <spefileitem filename="CrossFire_OBV*" dir="" des="穿越火线游戏安装文件"/>
+   <spefileitem filename="D2_V0.*.exe" dir="" des="刀剑游戏安装文件"/>
+   <spefileitem filename="qqhx_full_*" dir="" des="QQ华夏游戏安装文件"/>
+   <spefileitem filename="QQYL_install_*" dir="" des="御龙在天游戏安装文件"/>
+   <spefileitem filename="Tencent_Lineage_V*" dir="" des="天堂游戏安装文件"/>
+   <spefileitem filename="XYCQ1.2.*.exe" dir="" des="轩辕传奇游戏安装文件"/>
+   <spefileitem filename="qqxlinstaller_*" dir="" des="QQ仙灵游戏安装文件"/>
+   <spefileitem filename="Tencent_LineageII_CBT*" dir="" des="天堂游戏安装文件"/>
+   <spefileitem filename="QQXJ_FULL_*" dir="" des="QQ仙境游戏安装文件"/>
+   <spefileitem filename="XunXian-FULL*" dir="" des="QQ寻仙游戏安装文件"/>
+   <spefileitem filename="qqhxsj1.*.exe" dir="" des="幻想世界游戏安装文件"/>
+   <spefileitem filename="acad.cui" dir="" des="Auto CAD软件相关文件"/>
+   <spefileitem filename="acad.mnr" dir="" des="Auto CAD软件相关文件"/>
+   <spefileitem filename="acad_Migrated.cui" dir="" des="Auto CAD软件相关文件"/>
+  </spefile>
+  
+  <list>
+    <speitem filetail=".edb" des="Windows索引文件" type="数据" dangrous="true"/>
+    <speitem filetail=".xlmv" des="迅雷看看的视频文件" type="视频" dangrous="false"/>
+    <speitem filetail=".ost" des="微软Office Outlook邮件数据文件" type="邮件" dangrous="true"/>
+    <speitem filetail=".vhd" des="微软Virtual PC文件" type="虚拟机" dangrous="true"/>
+    <speitem filetail=".vsv" des="微软Virtual PC文件" type="虚拟机" dangrous="true"/>
+    <speitem filetail=".vdi" des="VirtualBox虚拟机文件" type="虚拟机" dangrous="true"/>
+    <speitem filetail=".vdisk" des="微软Virtual PC文件" type="虚拟机" dangrous="true"/>
+    <speitem filetail=".vmem" des="VMware Workstation虚拟机文件" type="虚拟机" dangrous="true"/>
+    <speitem filetail=".vmdk" des="VMware Workstation虚拟机文件" type="虚拟机" dangrous="true"/>
+    <speitem filetail=".vmss" des="VMware Workstation虚拟机文件" type="虚拟机" dangrous="true"/>
+    <speitem filetail=".dmg" des="苹果Mac OS镜像文件" type="镜像" dangrous="true"/>
+    <speitem filetail=".msu" des="Windows补丁文件包" type="安装包" dangrous="false"/>
+    <speitem filetail=".img" des="镜像文件，采用特定压缩方式的大型文件" type="镜像" dangrous="true"/>
+    <speitem filetail=".gho" des="Ghost软件镜像文件" type="镜像" dangrous="true"/>
+    <speitem filetail=".wim" des="Windows系统安装文件" type="镜像" dangrous="true"/>
+    <speitem filetail=".tdl" des="腾讯下载临时缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".ttd" des="腾讯下载临时缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".tdi" des="腾讯下载临时缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".tii" des="腾讯下载临时缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".tpt" des="腾讯下载临时缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".qqplayer" des="腾讯下载临时缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".ipa" des="苹果产品软件安装程序文件" type="安装包" dangrous="true"/>
+    <speitem filetail=".exe" des="软件可执行程序（不包括已下载的安装包文件）" type="程序" dangrous="true"/>
+    <speitem filetail=".mpq" des="暴雪游戏关键地图文件" type="游戏" dangrous="true"/>
+    <speitem filetail=".mpqe" des="暴雪安装文件" type="游戏" dangrous="true"/>
+    <speitem filetail=".bdtp" des="百度影音视频格式缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".bdre" des="百度影音视频格式缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".ppd" des="PP点点通视频缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".dat" des="数据格式文件" type="数据" dangrous="true"/>
+    <speitem filetail=".td" des="迅雷下载临时缓存文件" type="缓存" dangrous="true"/>
+    <speitem filetail=".buf" des="ProgDVB视频缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".xv" des="迅雷看看视频缓存文件" type="缓存" dangrous="true"/>
+    <speitem filetail=".msi" des="Windows安装文件包" type="安装包" dangrous="true"/>
+    <speitem filetail=".dll" des="Windows动态链接库文件" type="DLL文件" dangrous="true"/>
+    <speitem filetail=".emule" des="电驴下载缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".met" des="电驴下载缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".torrent" des="P2P下载种子文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".dmp" des="Windows临时转储文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".!mv" des="快播视频缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".jfenc" des="皮皮影音视频缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".inpart" des="皮皮影音视频缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".jfrec" des="皮皮影音视频缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".cgd" des="暴风影音视频缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".cache" des="暴风影音视频缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".k6p" des="极速酷6视频缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".fc!" des="风行网络电视缓冲文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".fsp" des="风行网络电视缓冲文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".kg!" des="酷狗音乐缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".cfg" des="常见于软件的配置文件" type="配置" dangrous="true"/>
+    <speitem filetail=".ini" des="常见于软件的配置文件" type="配置" dangrous="true"/>
+    <speitem filetail=".kgx" des="酷狗音乐缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".tdd!" des="飞速土豆视频缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".pgf" des="PPS网络电视缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".sh" des="搜狐影音视频缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".ubp" des="微软virtual machine文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".uuo" des="微软virtual machine文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".qsc" des="奇艺影音缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".p2p" des="p2p下载缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".vs" des="51高清娱乐缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".qmcf" des="咪咕音乐缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".temp" des="Windows临时文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".tmp" des="Windows临时文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".db" des="数据库格式文件" type="数据" dangrous="true"/>
+    <speitem filetail=".tlg" des="腾讯软件日志文件" type="日志" dangrous="false"/>
+    <speitem filetail=".bmc" des="远程桌面缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".chk" des="磁盘碎片文件" type="碎片" dangrous="false"/>
+    <speitem filetail=".sqlite" des="微软SQL表单文件" type="数据" dangrous="true"/>
+    <speitem filetail=".pic1" des="富甲天下游戏文件" type="游戏" dangrous="true"/>
+    <speitem filetail=".upk" des="暴风战驱游戏文件" type="游戏" dangrous="true"/>
+    <speitem filetail=".gvod" des="迅播视频缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".qsc" des="奇艺视频缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".z01" des="盛大游戏下载缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".dwg" des="Auto CAD 制图文件" type="图像" dangrous="true"/>
+    <speitem filetail=".max" des="3DsMAX制图文件" type="图像" dangrous="true"/>
+    <speitem filetail=".msp" des="Windows程序安装包文件" type="安装包" dangrous="true"/>
+    <speitem filetail=".xml" des="可扩展标记语言文件" type="文件" dangrous="true"/>
+    <speitem filetail=".exw" des="屏幕录像专家相关文件" type="录像" dangrous="false"/>
+    <speitem filetail=".reg" des="注册表文件" type="注册表" dangrous="true"/>
+    <speitem filetail=".ttc" des="字体文件" type="字体" dangrous="true"/>
+    <speitem filetail=".ttf" des="字体文件" type="字体" dangrous="true"/>
+    <speitem filetail=".fon" des="字体文件" type="字体" dangrous="true"/>
+    <speitem filetail=".tte" des="字体文件" type="字体" dangrous="true"/>
+    <speitem filetail=".qmv" des="快播视频缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".dbx" des="Visual FoxPro数据库文件" type="数据" dangrous="true"/>
+    <speitem filetail=".cpl" des="Windows控制面板文件" type="系统" dangrous="true"/>
+    <speitem filetail=".vtg" des="常见于配置文件" type="配置" dangrous="true"/>
+    <speitem filetail=".dic" des="字典、词典文件" type="文档" dangrous="true"/>
+    <speitem filetail=".dict" des="字典、词典文件" type="文档" dangrous="true"/>
+    <speitem filetail=".ci" des="Windows索引文件" type="数据" dangrous="false"/>
+    <speitem filetail=".ssup" des="软件升级包文件" type="升级" dangrous="true"/>
+    <speitem filetail=".ssdb" des="数据库格式文件" type="数据" dangrous="true"/>
+    <speitem filetail=".!qd" des="P2P下载种子文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".s3db" des="数据库格式文件" type="数据" dangrous="true"/>
+    <speitem filetail=".hxw" des="Windows帮助文件索引" type="索引" dangrous="false"/>
+    <speitem filetail=".qsc" des="爱奇艺视频缓存文件" type="缓存" dangrous="false"/>
+    <speitem filetail=".hxh" des="Windows帮助文件索引" type="索引" dangrous="true"/>
+    <speitem filetail=".sta" des="数据库格式文件" type="数据" dangrous="true"/>
+    <speitem filetail=".vdf" des="视频字幕文件" type="字幕" dangrous="false"/>
+    <speitem filetail=".rdb" des="数据库格式文件" type="数据" dangrous="true"/>
+    <speitem filetail=".qpsf" des="外观皮肤文件" type="外观" dangrous="false"/>
+    <speitem filetail=".apk" des="安卓手机系统安装文件" type="安装包" dangrous="false"/>
+    <speitem filetail=".sis" des="塞班手机系统安装文件" type="安装包" dangrous="false"/>
+    <speitem filetail=".sisx" des="塞班手机系统安装文件" type="安装包" dangrous="false"/>
+    <speitem filetail=".ipsw" des="苹果iOS系统更新文件" type="固件包" dangrous="false"/>
+    <speitem filetail=".ipa" des="苹果iOS系统安装文件" type="安装包" dangrous="false"/>
+    <speitem filetail=".vmsn" des="虚拟机快照文件" type="镜像" dangrous="true"/>
+    <speitem filetail=".wtv" des="Windows录制的节目" type="录相" dangrous="true"/>
+    <speitem filetail=".fsb" des="英雄联盟游戏文件" type="游戏" dangrous="true"/>
+    <speitem filetail=".sft" des="Microsoft Office 安装文件" type="安装" dangrous="true"/>
+    <speitem filetail=".qsv" des="爱奇艺视频文件" type="视频" dangrous="false"/>
+    <speitem filetail=".qgi" des="QQ游戏安装包" type="安装" dangrous="false"/>
+    <speitem filetail=".box" des="Foxmail邮件数据" type="邮件" dangrous="true"/>
+    <speitem filetail=".cui" des="Auto CAD软件文件" type="软件" dangrous="true"/>
+  </list>
+
+  <exclude>
+    <excludeitem keyword=".ini" type="file" issys="true"/>
+    <excludeitem keyword=".sys" type="file" issys="true"/>
+    <excludeitem keyword=".jar" type="file" issys="true"/>
+    <excludeitem keyword=".pst" type="file" issys="true"/>
+    <excludeitem keyword=".pst" type="file" issys="false"/>
+    <excludeitem keyword="bootfoot" type="file" issys="true"/>
+    <excludeitem keyword="bootmgr" type="file" issys="true"/>
+    <excludeitem keyword="ntldr" type="file" issys="true"/>
+    <excludeitem keyword="INFO2" type="file" issys="true"/>
+    <excludeitem keyword="windows.edb" type="file" issys="true"/>
+    <excludeitem keyword="program files" type="dir" issys="true"/>
+    <excludeitem keyword="program files" type="dir" issys="false"/>
+    <excludeitem keyword="\system volume information" type="dir" issys="true"/>
+    <excludeitem keyword="\system volume information" type="dir" issys="false"/>
+    <excludeitem keyword="\boot" type="dir" issys="true"/>
+    <excludeitem keyword="\recovery" type="dir" issys="true"/>
+    <excludeitem keyword="\windows" type="dir" issys="true"/>
+    <excludeitem keyword="\windows" type="dir" issys="false"/>
+    <excludeitem keyword="\programdata" type="dir" issys="true"/>
+    <excludeitem keyword="\programdata" type="dir" issys="false"/>
+    <excludeitem keyword="\microsoft" type="dir" issys="true"/>
+    <excludeitem keyword="\microsoft" type="dir" issys="false"/>
+    <excludeitem keyword="\identities" type="dir" issys="true"/>
+    <excludeitem keyword="\360safe" type="dir" issys="true"/>
+    <excludeitem keyword="\360safe" type="dir" issys="false"/>
+    <excludeitem keyword="\360SandBox" type="dir" issys="true"/>
+    <excludeitem keyword="\360SandBox" type="dir" issys="false"/>
+    <excludeitem keyword=".lnk" type="file" issys="true"/>
+    <excludeitem keyword=".lnk" type="file" issys="false"/>
+
+  </exclude>
+</root>

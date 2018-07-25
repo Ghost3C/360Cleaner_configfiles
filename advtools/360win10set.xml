@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<AdvTools>	 
+  <CommonInfo XmlVer="10.0.0.1011"/>
+  <ToolsList>
+   	<ToolsInfo 
+    	id="30104" 
+		IDS="360win10set"
+    	Show="1"	
+		ExcludeSystem="Server;WindowXP;WindowsVista;Windows7;Windows8;Windows8.1;Windows8.1SP1;"
+		GroupID="4"
+    	Name="Win10设置" 
+    	Description="一键助您顺畅驾驭Win10" 
+    	IconPath="AdvanceTools_360win10set_10_52.png" 
+		IconPath_32="AdvanceTools_360win10set_10_32.png" 
+        AppPath="Utils\360win10set.exe"
+ 		Param=" /from=tool" 	
+		InstallType="1"
+		Pdown32="http://update.360safe.com/v3/adv360win10set.cab"
+		Pdown64="http://update.360safe.com/v3/adv360win10set.cab"
+		CHKFile="Utils\360win10set.exe;"
+		CHKDataFile=""			
+		Order="340"
+		UninstallType="2"
+		UninstallFile="Utils\360win10set.exe;Utils\360win10set.dll;Config\newui\themes\default\360win10set\360win10set_theme.ui;"
+		UninstDelCfgSect="360win10set.exe;360win10set.dll;360win10set_theme.ui;"
+		Recommand="1"
+        RecommandOrder="951"
+        MyTool="1"
+    />
+  </ToolsList>
+  
+</AdvTools>

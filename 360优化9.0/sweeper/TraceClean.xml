@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TraceClean>
+<UI>
+  <Group Title="Windows 8 Store 应用的使用痕迹" Desc="Windows 8 应用商店中已下载应用的使用痕迹" Pri="{&amp;#color=0x0000CC}重要隐私" icon="6" os="win8">
+    <Item Des="Metro IE 缓存文件清理" id="TraceMetroIECache89" Recommand="0" />
+    <Item Des="Metro IE 自动保存的登录信息(Cookie)" id="TraceMetroIECookie89" Recommand="0"  SecurityLevel="1" />
+	<Item Des="Chrome 应用缓存文件清理" id="TraceMetroChromeCache838" Recommand="0" />
+    <Item Des="Chrome 应用历史清理" id="TraceMetroChromeHistory838" Recommand="0" />
+    <Item Des="Chrome 应用自动保存的表单" id="TraceMetroChromeForm838" Recommand="0" SecurityLevel="1" />
+    <Item Des="Chrome 应用自动保存的密码" id="TraceMetroChromePwd838" Recommand="0"  SecurityLevel="1" />
+    <Item Des="Chrome 应用Cookie" id="TraceMetroChromeCookie838" Recommand="0"  SecurityLevel="1" />
+    <Item Des="PPTV 网络电视历史记录" id="TraceMetroPPTV890" Recommand="0" />
+    <Item Des="爱奇艺影音播放器历史记录" id="TraceMetroQiyi892" Recommand="0" />
+  </Group>
+  <Group Title="上网浏览痕迹" Desc="上网时留下的浏览痕迹，支持各种主流浏览器。" Pri="{&amp;#color=0x0000CC}重要隐私" icon="0" >
+    <Item Des="IE 浏览器缓存文件清理" id="CustomTraceIE00119" Recommand="1" />
+    <Item Des="IE 浏览器地址栏历史" id="CustomTraceIE00519" Recommand="0" />
+    <Item Des="IE 浏览器自动保存的登录信息(Cookie)" id="CustomTraceIE00419" Recommand="0" SecurityLevel="1" />
+    <Item Des="IE 浏览器自动保存的表单(清理时有效)" id="CustomTraceIE00219" Recommand="0" SecurityLevel="1" />
+    <Item Des="IE 浏览器自动保存的密码(清理时有效)" id="CustomTraceIE00319" Recommand="0" SecurityLevel="1" />
+    <Item Des="IE 浏览器 Index.dat 上网痕迹清理(重启系统有效)" id="CustomTraceIEIndexDat19" Recommand="0" />
+    <Item Des="FireFox 缓存文件清理" id="Trace0000101135" Recommand="1" />
+    <Item Des="FireFox 历史清理" id="TraceFireFoxHistory1135" Recommand="0" />
+    <Item Des="FireFox 自动保存的表单和搜索历史" id="Trace0000111135" Recommand="0" SecurityLevel="1" />
+    <Item Des="FireFox 自动保存的密码" id="Trace0000121135" Recommand="0" SecurityLevel="1" />
+    <Item Des="FireFox 自动保存的登录信息(Cookie)" id="TraceFirefoxCookie1135" Recommand="0" SecurityLevel="1" />
+    <Item Des="Chrome 缓存文件清理" id="Trace0000131238" Recommand="1" />
+    <Item Des="Chrome 历史清理" id="Trace000013Chrome1238" Recommand="1" />
+    <Item Des="Chrome 自动保存的表单" id="Trace0000141238" Recommand="0" SecurityLevel="1" />
+    <Item Des="Chrome 自动保存的密码" id="Trace0000151238" Recommand="0" SecurityLevel="1" />
+    <Item Des="Chrome 自动保存的登录信息(Cookie)" id="TraceChromeCookie1238" Recommand="0" SecurityLevel="1" />
+    <Item Des="Chromium 缓存文件清理" id="TraceChromiumCache1238" Recommand="1" />
+    <Item Des="Chromium 历史清理" id="TraceChromiumHistory1238" Recommand="0" />
+    <Item Des="Chromium 自动保存的表单" id="TraceChromiumForm1238" Recommand="0" SecurityLevel="1" />
+    <Item Des="Chromium 自动保存的密码" id="TraceChromiumPassword1238" Recommand="0" SecurityLevel="1" />
+    <Item Des="Chromium 自动保存的登录信息(Cookie)" id="TraceChromiumCookie1238" Recommand="0" SecurityLevel="1" />
+    <Item Des="Chrome Canary 缓存文件清理" id="TraceChromeCanaryCache1238" Recommand="1" />
+    <Item Des="Chrome Canary 历史清理" id="TraceChromeCanaryHistory1238" Recommand="0" />
+    <Item Des="Chrome Canary 自动保存的表单" id="TraceChromeCanaryForm1238" Recommand="0" SecurityLevel="1" />
+    <Item Des="Chrome Canary 自动保存的密码" id="TraceChromeCanaryPassword1238" Recommand="0" SecurityLevel="1" />
+    <Item Des="Chrome Canary 自动保存的登录信息(Cookie)" id="TraceChromeCanaryCookie1238" Recommand="0" SecurityLevel="1" />
+    <Item Des="360安全浏览器历史(不包含地址栏)" id="Trace0000701387" Recommand="1" />
+    <Item Des="360极速浏览器缓存" id="Trace0000711338" Recommand="1" />
+    <Item Des="360极速浏览器历史(不包含地址栏)" id="Trace360Chrome1338" Recommand="0" />
+    <Item Des="360极速浏览器表单和密码" id="Trace360ChromeFormData1338" Recommand="0" SecurityLevel="1" />
+    <Item Des="360极速浏览器自动保存的登录信息(Cookie)" id="Trace360ChromeCookie1338" Recommand="0" SecurityLevel="1" />
+    <Item Des="360安全浏览器超速版缓存" id="Trace360se6Cache1338" Recommand="1" />
+    <Item Des="360安全浏览器超速版历史" id="Trace360se6History1338" Recommand="0" />
+    <Item Des="360安全浏览器超速版表单和密码" id="Trace360se6FormData1338" Recommand="0" SecurityLevel="1" />
+    <Item Des="360安全浏览器超速版Cookie" id="Trace360se6Cookie1338" Recommand="0" SecurityLevel="1" />
+    <Item Des="傲游浏览器历史" id="Trace0000401332" Recommand="1" />
+    <Item Des="傲游浏览器地址栏历史记录" id="Trace0000751332" Recommand="0" />
+    <Item Des="傲游浏览器自动保存的登录信息(Cookie)" id="TraceMaxthonCookie1332" Recommand="0" SecurityLevel="1" />
+    <Item Des="MyIE2 浏览器上网历史记录" id="Trace0000381329" Recommand="1" />
+    <Item Des="腾讯TT浏览器历史记录" id="Trace0000691368" Recommand="1" />
+    <Item Des="腾讯TT浏览器自动填表记录" id="TraceTTFormData1368" Recommand="0" SecurityLevel="1" />
+    <Item Des="Opera 浏览器缓存文件" id="CustomTraceOpera0011337" Recommand="1" />
+    <Item Des="Opera 地址栏网址历史" id="CustomTraceOpera0021337" Recommand="1" />
+    <Item Des="Opera 自动保存的登录信息(Cookie)" id="TraceOperaCookie1337" Recommand="0" SecurityLevel="1" />
+    <Item Des="Opera 快速拨号" id="TraceOperaDial1337" Recommand="0" />
+    <Item Des="Opera 会话" id="TraceOperaSession1337" Recommand="0" />
+    <Item Des="Opera 自动保存的密码" id="TraceOperaPassword1337" Recommand="0" SecurityLevel="1" />
+    <Item Des="Live 工具条搜索记录" id="Trace0000191373" Recommand="1" />
+    <Item Des="谷歌工具栏搜索记录" id="Trace0000161369" Recommand="1" />
+    <Item Des="百度工具条搜索记录" id="Trace0000181371" Recommand="1" />
+    <Item Des="QQ 工具条搜索记录" id="Trace0000171370" Recommand="1" />
+    <Item Des="腾讯QQ浏览器历史记录" id="TraceQQBrowser1368" Recommand="1" />
+    <Item Des="腾讯QQ浏览器自动保存的登录信息(Cookie)" id="TraceQQBrowserCookie1368" Recommand="0" SecurityLevel="1" />
+    <Item Des="腾讯QQ浏览器自动保存的表单和密码" id="TraceQQBrowserFormData1368" Recommand="0" SecurityLevel="1" />
+    <Item Des="搜狗浏览器上网历史记录" id="TraceSogouExplorerHistory1393" Recommand="1" />
+    <Item Des="搜狗浏览器智能填表记录" id="TraceSogouExplorerFormData1393" Recommand="0" SecurityLevel="1" />
+    <Item Des="搜狗浏览器高速模式自动保存的登录信息(Cookie)" id="TraceSogouExplorerCookie1393" Recommand="0" SecurityLevel="1" />
+    <Item Des="世界之窗浏览器历史" id="Trace0000801329" Recommand="0" />
+    <Item Des="世界之窗极速浏览器缓存" id="Trace0000811338" Recommand="0" />
+    <Item Des="世界之窗极速浏览器历史(不包含地址栏)" id="TraceTheWorldChrome1338" Recommand="0" />
+    <Item Des="世界之窗极速浏览器表单" id="TraceTheWorldChromeForm1338" Recommand="0" SecurityLevel="1" />
+    <Item Des="世界之窗极速浏览器密码" id="TraceTheWorldChromePassword1338" Recommand="0" SecurityLevel="1" />
+    <Item Des="世界之窗极速浏览器自动保存的登录信息(Cookie)" id="TraceTheWorldChromeCookie1338" Recommand="0" SecurityLevel="1" />
+    <Item Des="Safari 浏览器缓存" id="TraceSafariCache1238" Recommand="0" />
+    <Item Des="Safari 浏览器历史" id="TraceSafariHistory1238" Recommand="0" />
+    <Item Des="Safari 浏览器自动保存的登录信息(Cookie)" id="TraceSafariCookies1238" Recommand="0" SecurityLevel="1" />
+    <Item Des="Safari 浏览器自动保存的表单和密码" id="TraceSafariForm1238" Recommand="0" SecurityLevel="1" />
+    <Item Des="太阳花浏览器缓存" id="TraceSunChromeCache1338" Recommand="1" />
+    <Item Des="太阳花浏览器历史" id="TraceSunChromeHistory1338" Recommand="0" />
+    <Item Des="太阳花浏览器自动保存的表单" id="TraceSunChromeForm1338" Recommand="0" SecurityLevel="1" />
+    <Item Des="太阳花浏览器自动保存的密码" id="TraceSunChromePassword1338" Recommand="0" SecurityLevel="1" />
+    <Item Des="太阳花浏览器自动保存的登录信息(Cookie)" id="TraceSunChromeCookie1338" Recommand="0" SecurityLevel="1" />
+    <Item Des="枫树浏览器缓存" id="TraceMapleSChromeCache1338" Recommand="1" />
+    <Item Des="枫树浏览器历史" id="TraceMapleChromeHistory1338" Recommand="0" />
+    <Item Des="枫树浏览器自动保存的表单" id="TraceMapleChromeForm1338" Recommand="0" SecurityLevel="1" />
+    <Item Des="枫树浏览器自动保存的密码" id="TraceMapleChromePassword1338" Recommand="0" SecurityLevel="1" />
+    <Item Des="枫树浏览器自动保存的登录信息(Cookie)" id="TraceMapleChromeCookie1338" Recommand="0" SecurityLevel="1" />
+    <Item Des="猎豹浏览器缓存" id="TraceLiebaoCache1338" Recommand="1" />
+    <Item Des="猎豹浏览器历史" id="TraceLiebaoHistory1338" Recommand="0" />
+    <Item Des="猎豹浏览器自动保存的表单" id="TraceLiebaoForm1338" Recommand="0" SecurityLevel="1" />
+    <Item Des="猎豹浏览器自动保存的密码" id="TraceLiebaoPassword1338" Recommand="0" SecurityLevel="1" />
+    <Item Des="猎豹浏览器自动保存的登录信息(Cookie)" id="TraceLiebaoCookie1338" Recommand="0" SecurityLevel="1" />
+    <Item Des="Comodo 龙安全浏览器缓存文件清理" id="TraceComodoDragonCache1238" Recommand="1" />
+    <Item Des="Comodo 龙安全浏览器历史清理" id="TraceComodoDragonHistory1238" Recommand="0" />
+    <Item Des="Comodo 龙安全浏览器自动保存的表单" id="TraceComodoDragonForm1238" Recommand="0" SecurityLevel="1" />
+    <Item Des="Comodo 龙安全浏览器自动保存的密码" id="TraceComodoDragonPassword1238" Recommand="0" SecurityLevel="1" />
+    <Item Des="Comodo 龙安全浏览器自动保存的登录信息(Cookie)" id="TraceComodoDragonCookie1238" Recommand="0" SecurityLevel="1" />
+    <Item Des="云客户端缓存文件清理" id="TraceAlibrowserCache1238" Recommand="1" />
+    <Item Des="云客户端历史清理(我的起始页也会被清理)" id="TraceAlibrowserHistory1238" Recommand="0" />
+    <Item Des="云客户端自动保存的表单和密码" id="TraceAlibrowserFormPassWord1238" Recommand="0" SecurityLevel="1" />
+    <Item Des="云客户端自动保存的登录信息(Cookie)" id="TraceAlibrowserCookie1238" Recommand="0" SecurityLevel="1" />
+    <Item Des="百度浏览器缓存文件清理" id="TraceBaidubrowserCache1238" Recommand="1" />
+    <Item Des="百度浏览器历史清理" id="TraceBaidubrowserHistory1238" Recommand="0" />
+    <Item Des="百度浏览器自动保存的表单、密码和登录信息(Cookie)" id="TraceBaidubrowserFormData1238" Recommand="0" SecurityLevel="1" />
+  </Group>
+  <Group Title="Windows使用痕迹" Desc="Windows的运行痕迹，打开文档痕迹等。" Pri="{&amp;#color=0x0000CC}重要隐私" icon="1" >
+    <Item Des="剪贴板内容" id="CustomTraceClipBoard364" Recommand="0" />
+    <Item Des="突出显示新安装的程序(清理后重启生效)" id="CustomNotifyNewApps37" Recommand="0" />
+    <Item Des="开始菜单运行历史记录(清理后重启生效)" id="Trace00005731" Recommand="1" />
+    <Item Des="公用对话框模块运行的历史记录" id="Trace00005832" Recommand="1" />
+    <Item Des="保存和打开窗口文件名历史记录" id="Trace00005933" Recommand="1" />
+    <Item Des="窗口位置与大小历史记录" id="Trace00006034" Recommand="1" />
+    <Item Des="查找计算机历史记录文件" id="Trace00006135" Recommand="1" />
+    <Item Des="Windows 网上邻居" id="TraceNetHood36" Recommand="0" />
+    <Item Des="查找打印机历史记录" id="TracePrintHood36" Recommand="0" />
+    <Item Des="注册表编辑器最后一次使用位置" id="TraceLastRegisterPos36" Recommand="0" />
+    <Item Des="开始菜单最近使用的项目" id="Trace00006236" Recommand="1" />
+    <Item Des="Windows 跳转列表(用户锁定跳转列表项目也会被删除,请慎用)" id="Trace00003536" Recommand="0" />
+    <Item Des="文件扩展名历史记录" id="CustomTraceFileExt0137" Recommand="1" />
+    <Item Des="开始菜单最近打开的程序的历史记录" id="CustomTraceRecentProgram37" Recommand="0" />
+    <Item Des="通知区域图标历史记录(重启explorer后生效)" id="Trace00006438" Recommand="0" />
+    <Item Des="Windows搜索历史" id="Trace000066362" Recommand="0" />
+    <Item Des="网络驱动器映射历史" id="Trace000068363" Recommand="0" />
+    <Item Des="Windows 系统日志" id="CustomTraceSysLog327" Recommand="0" />
+    <Item Des="Windows 画图" id="Trace0000204112" Recommand="1" />
+    <Item Des="Windows Defender" id="Trace0000224152" Recommand="1" />
+    <Item Des="Windows 控制台历史记录" id="TraceWindowsConsole31" Recommand="0" />
+  </Group>
+  <Group Title="常用软件的使用痕迹" Desc="常用软件的使用痕迹、历史记录等。" Pri="{&amp;#color=0x808080}一般隐私" icon="4" >
+    <Item Des="SnagIt Editor 图片处理历史记录文件" id="Trace000055986" Recommand="1" />
+    <Item Des="EditPlus 文本编辑器历史记录" id="Trace000065924" Recommand="1" />
+    <Item Des="UltraEdit 文件编辑器历史记录" id="Trace0000235925" Recommand="1" />
+    <Item Des="WinZip 压缩历史记录" id="Trace0000364426" Recommand="1" />
+    <Item Des="WinRAR 压缩历史记录" id="Trace0000374418" Recommand="1" />
+    <Item Des="360 压缩历史记录" id="Trace360Zip5926" Recommand="1" />
+    <Item Des="7-Zip 压缩历史记录" id="Trace0000464475" Recommand="1" />
+    <Item Des="鲁大师漏洞修复留下的补丁" id="Trace0000675956" Recommand="0" />
+    <Item Des="Windows Live Messenger 登录历史记录" id="Trace0000425959" Recommand="1" />
+    <Item Des="迅雷搜索历史记录" id="Trace0000475976" Recommand="1" />
+    <Item Des="淘宝旺旺登录名信息" id="TraceWangWang5977" Recommand="0" SecurityLevel="1" />
+    <Item Des="WinImage 磁盘应用软件历史记录" id="Trace0000495978" Recommand="1" />
+    <Item Des="HyperSnap 截图软件历史记录" id="Trace0000505979" Recommand="1" />
+    <Item Des="Download Accelerator Plus 下载软件历史记录" id="Trace0000515980" Recommand="1" />
+    <Item Des="GetRight 下载软件历史记录" id="Trace0000525981" Recommand="1" />
+    <Item Des="EmEditor 文本编辑器历史记录" id="Trace0000535982" Recommand="1" />
+    <Item Des="Adobe Acrobat Reader PDF阅读器历史记录" id="Trace0000445950" Recommand="1" />
+    <Item Des="eMule搜索及文件哈希记录" id="TraceeMule5982" Recommand="0" />
+    <Item Des="Internet Download Manager 下载历史记录" id="TraceInternetDownloadManager5982" Recommand="0" />
+    <Item Des="UltraISO(软碟通)光盘映像软件历史记录" id="TraceUltraISO5982" Recommand="0" />
+    <Item Des="福昕PDF阅读器历史记录" id="TraceFoxit5981" Recommand="0" />
+    <Item Des="FlashGet 下载记录" id="TraceFlashGet5981" Recommand="0" />
+    <Item Des="BitComet 下载记录" id="TraceBitComet5981" Recommand="0" />
+    <Item Des="QQ 旋风下载记录" id="TraceQQDownload5981" Recommand="0" />
+    <Item Des="Dreamweaver 历史记录" id="TraceDreamweaver5981" Recommand="0" />
+    <Item Des="Fireworks 历史记录" id="TraceFireWorks5981" Recommand="0" />
+    <Item Des="Flash 播放历史记录" id="TraceFlash5981" Recommand="0" />
+    <Item Des="360网盾历史记录" id="CustomWDHistoryTrace5981" Recommand="0" />
+    <Item Des="CuteFtp 站点和日志历史记录" id="CustomTraceCuteFtp5981" Recommand="0" />
+    <Item Des="FlashFXP 连接历史记录" id="TraceFlashFXP5981" Recommand="0" />
+    <Item Des="Beyond Compare 历史记录" id="TraceBeyondCompare5981" Recommand="0" />
+    <Item Des="Nero 历史记录" id="TraceNero5981" Recommand="0" />
+  </Group>
+  <Group Title="最近看过的视频" Desc="使用各种主流播放器观看视频后留下的痕迹。" Pri="{&amp;#color=0x0000CC}重要隐私" icon="3">
+    <Item Des="RealPlayer/One 媒体播放器历史记录" id="Trace0000254322" Recommand="0" />
+    <Item Des="暴风影音/暴风影音5播放器历史记录" id="Trace0000264323" Recommand="0" />
+    <Item Des="酷狗音乐播放器搜索历史记录" id="TraceKugoo4331" Recommand="0" />
+    <Item Des="KMPlayer 播放器历史记录" id="Trace0000414333" Recommand="0" />
+    <Item Des="QQ 影音历史记录" id="Trace0000454372" Recommand="0" />
+    <Item Des="腾讯视频网络电视历史记录" id="Trace000074385" Recommand="0" />
+    <Item Des="Media Player Classic 播放器历史记录" id="Trace0000544383" Recommand="0" />
+    <Item Des="迅雷看看播放历史记录" id="Trace0000554374" Recommand="0" />
+    <Item Des="风行网络电视播放历史记录" id="TraceFunshion4389" Recommand="0" />
+    <Item Des="PPTV 网络电视播放历史记录" id="TracePPTV4390" Recommand="0" />
+    <Item Des="PPS 网络电视播放历史记录" id="TracePPS4391" Recommand="0" />
+    <Item Des="快播播放器历史记录" id="TraceQVOD4392" Recommand="0" />
+    <Item Des="Windows Media Player 播放器历史记录" id="Trace0000244114" Recommand="1" />
+    <Item Des="QuickTime 播放器历史记录" id="TraceQuicktimePlayer4392" Recommand="1" />
+    <Item Des="射手影音播放器历史记录" id="TraceShooter4385" Recommand="1" />
+    <Item Des="百度影音播放器历史记录" id="TraceBaiduPlayer4392" Recommand="1" />
+    <Item Des="风雷影音播放历史" id="TraceFenglei4392" Recommand="0" />
+    <Item Des="Windows Media Center历史记录" id="TraceWindowsMediaCenter4383" Recommand="0" />
+    <Item Des="乐视网络电视播放历史记录" id="TraceLetv4392" Recommand="0" />
+    <Item Des="爱奇艺影音播放器历史记录(未登录生成的列表)" id="TraceQiyi4392" Recommand="0" />
+    <Item Des="超级解霸播放器历史记录" id="TraceHaoJieDVD4392" Recommand="0" />
+    <Item Des="ting播放器历史记录" id="TraceBaiduTing4392" Recommand="0" />
+    <Item Des="迅播播放器历史记录" id="TraceGVOD4385" Recommand="0" />
+    <Item Des="影音先锋播放器历史记录" id="TraceYingYinxf4385" Recommand="0" />
+    <Item Des="多米音乐历史记录" id="TraceDuoMi4385" Recommand="0" />
+  </Group> 
+  <Group Title="USB设备使用痕迹" Desc="U盘、智能手机、数码相机、Mp3等USB设备的使用痕迹。" Pri="{&amp;#color=0x0000CC}重要隐私" icon="7" >
+    <Item Des="清理USB设备的使用痕迹" id="CustomTraceUSBTraceClean4188" Recommand="0" />
+  </Group>  
+  <Group Title="办公软件使用痕迹" Desc="常用办公软件的使用痕迹。" Pri="{&amp;#color=0x0000CC}重要隐私" icon="2" >
+    <Item Des="微软 Office 2003\2007\2010\2013 历史记录" id="Trace0000304251" Recommand="1" />
+    <Item Des="微软 Office Word 历史记录" id="Trace0000314221" Recommand="1" />
+    <Item Des="微软 Office Excel 历史记录" id="Trace0000344217" Recommand="1" />
+    <Item Des="微软 Office PowerPoint 历史记录" id="Trace0000334216" Recommand="1" />
+    <Item Des="微软 Office FrontPage 历史记录" id="Trace0000324215" Recommand="1" />
+    <Item Des="微软 Office Access 历史记录" id="TraceAccess4216" Recommand="0" />
+    <Item Des="微软 Office SharePoint 历史记录" id="TraceSharePoint4216" Recommand="0" />
+    <Item Des="微软 Office Publisher 历史记录" id="TracePublisher4216" Recommand="0" />
+    <Item Des="微软 Office Visio 历史记录" id="TraceVisio4216" Recommand="0" />
+    <Item Des="微软 Office Picture Manager 历史记录" id="Trace0000434258" Recommand="1" />
+    <Item Des="金山 WPS 文字历史记录" id="Trace0000274265" Recommand="1" />
+    <Item Des="金山 WPS 表格历史记录" id="Trace0000284266" Recommand="1" />
+    <Item Des="金山 WPS 演示历史记录" id="Trace0000294267" Recommand="1" />
+    <Item Des="Windows 写字板历史记录" id="Trace0000214113" Recommand="1" />
+  </Group>  
+  <Group Title="搜索引擎跟踪cookies清理" Desc="防止搜索引擎记录您的搜索行为，避免这些缓存泄漏隐私。" id="6" Pri="{&amp;#color=0x0000CC}重要隐私" icon="5"  >
+    <Item Des="清理谷歌搜索引擎跟踪cookies" id="socookiegoogle" Recommand="1" />
+    <Item Des="清理百度搜索引擎跟踪cookies" id="socookiebaidu" Recommand="1" />
+    <Item Des="清理搜狗搜索引擎跟踪cookies" id="socookiesogou" Recommand="1" />
+  </Group>
+
+</UI>
+</TraceClean>
